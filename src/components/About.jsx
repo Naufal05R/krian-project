@@ -6,12 +6,12 @@ const About = () => {
       <div className="-z-30 absolute w-60 h-60 bg-about-ornament right-[-147.5px] top-[-169.96px]" />
       <div className="-z-30 absolute w-60 h-60 bg-about-ornament left-[-152.5px] top-[210.04px]" />
       <div
-        className={`${styles.paddingX} mx-auto mt-6 flex max-w-[70%] flex-col items-start`}
+        className={`${styles.paddingX} mt-6 flex flex-col items-start`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} w-full`}>Tentang Kami</h1>
         </div>
-        <div className="max-w-[240px]">
+        <div className='mr-10'>
           <p className={`${styles.heroParagraph} mt-3`}>
             SMP Alam Al-Izzah memadukan tiga kurikulum, yaitu Kurikulum Sekolah
             Alam, Kurikulum Kemendikbud, dan Kurikulum Pesantren. Program

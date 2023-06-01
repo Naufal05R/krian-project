@@ -2,14 +2,14 @@ import { useState } from "react";
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
 
-import { logo } from "../assets";
+import { jsan, logo } from "../assets";
 import { navLinks, footerLinks, footerIcons } from "../constants";
 
 const Footer = () => {
   const [active, setActive] = useState("");
 
   return (
-    <section className="relative mx-auto mt-6 w-full bg-blue-950">
+    <footer className="relative mx-auto mt-6 w-full bg-blue-950">
       <div className={`${styles.padding} mx-auto max-w-7xl`}>
         <article className="flex flex-col pb-12">
           <div>
@@ -21,9 +21,10 @@ const Footer = () => {
               }}
             >
               <img src={logo} alt="logo" className="h-9 w-9 object-contain " />
+              <img src={jsan} alt="jsan" className="h-9 w-9 object-contain " />
             </Link>
           </div>
-          <ul className="mt-3 flex flex-wrap gap-4 w-full list-none justify-between">
+          <ul className="mt-3 flex w-full list-none flex-wrap justify-between gap-4">
             {navLinks.map((link) => (
               <li
                 key={link.id}
@@ -52,18 +53,29 @@ const Footer = () => {
               key={link.title}
             >
               <h5 className={`${styles.footerSubText}`}>{link.title}</h5>
-              {link.content.map((content) => (
-                <p className={`${styles.footerParagraph}`} key={content}>
-                  {content}
-                </p>
+              {link.contents.map((content) => (
+                <a
+                  className={`${styles.footerParagraph}`}
+                  key={content.text}
+                  href={`${content.url}`}
+                >
+                  {content.text}
+                </a>
               ))}
             </article>
           ))}
         </div>
         <div className={`mt-6 flex w-full flex-col justify-between`}>
           <hr className="w-full border-[.5px] border-[#BFDBFE]/30" />
-          <div className="flex justify-between items-center mt-6">
-            <p className={`${styles.footerParagraph}`}>© 2022 IDN™</p>
+          <div className="mt-6 flex items-center justify-between">
+            <div className="flex flex-col gap-1">
+              <p className={`${styles.footerParagraph}`}>
+                Established at 2017.
+              </p>
+              <p className={`${styles.footerParagraph}`}>
+                &#169; 2023 All right reserved.
+              </p>
+            </div>
             <ul className="flex gap-x-2">
               {footerIcons.map((link) => (
                 <li
@@ -74,7 +86,7 @@ const Footer = () => {
                   onClick={() => setActive(link.title)}
                 >
                   <a href={`${link.url}`} target="blank">
-                    <img src={`${link.img}`} alt="" height="18" width="18" />
+                    <img src={`${link.img}`} alt="" height="24" width="24" />
                   </a>
                 </li>
               ))}
@@ -82,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

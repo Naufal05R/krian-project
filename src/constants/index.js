@@ -64,20 +64,95 @@ export const activityCard = [
     text: "Kegiatan di alam yang melibatkan keluarga siswa dalam pembelajaran yang dikemas dalam keseruan camping.",
     img: activity04,
   },
+  {
+    title: "Karantina Tahfidz",
+    text: "Menghafal ayat-ayat suci Al-Qur’an bersama-sama, lengkap dengan cerita indah dan keseruan para siswa.",
+    img: activity05,
+  },
+  {
+    title: "LIVE in Bondowoso",
+    text: "Kegiatan berbaur dengar warga Bondowoso, siswa mengikuti keseharian warga dalam rangka pembelajaran.",
+    img: activity06,
+  },
+  {
+    title: "Internship (Magang)",
+    text: "Intership atau magang diajarkan kepada siswa agar mereka dapat mengetahui bagaimana kehidupan",
+    img: activity07,
+  },
+  {
+    title: "Proyek Berkebun",
+    text: "Mengenalkan siswa untuk merawat alam sekitarnya dan peka terhadap lingkungan yang ditinggalinya.",
+    img: activity08,
+  },
+  {
+    title: "Sosialisasi ECO Enzym",
+    text: "Menunjukkan salah satu hasil karya para siswa dan menjelaskan manfaat serta kegunaannya kepada warga.",
+    img: activity09,
+  },
+  {
+    title: "Survival Training",
+    text: "Disini siswa diajarkan ilmu-ilmu dasar bertahan hidup di alam dan cara pemanfaatannya.",
+    img: activity10,
+  },
+  {
+    title: "Upacara Kemerdekaan",
+    text: "Para siswa ikut andil dalam meperingati kemerdekaan Indonesia dengan diadakannya upacara bendera.",
+    img: activity11,
+  },
 ];
 
 export const footerLinks = [
   {
-    title: "List Grid Pertama",
-    content: ["Content Pertama", "Content Kedua", "Content Ketiga"],
+    title: "Tentang Kami",
+    contents: [
+      {
+        text: "Home",
+        url: "https://www.",
+      },
+      {
+        text: "Visi & Misi",
+        url: "#",
+      },
+      {
+        text: "Dokumentasi",
+        url: "#",
+      },
+    ],
   },
   {
-    title: "List Grid Kedua",
-    content: ["Content Pertama", "Content Kedua", "Content Ketiga"],
+    title: "Hubungi Kami",
+    contents: [
+      {
+        text: "Jl. Embong Kali, Kemasan, Kec. Krian, Kabupaten Sidoarjo, Jawa Timur 61262",
+        url: "#",
+      },
+      {
+        text: "No. Telp: 0888-4936-122",
+        url: "https://api.whatsapp.com/send?phone=628884936122&text=Pendaftaran%20Al-Izzah%20Krian",
+      },
+      {
+        text: "Email: email@example.com",
+        url: "#",
+      },
+    ],
   },
   {
-    title: "List Grid Ketiga",
-    content: ["Content Pertama", "Content Kedua", "Content Ketiga"],
+    title: "Pendaftaran",
+    contents: [
+      {
+        text: "PPDB 2023/2024",
+        url: "https://api.whatsapp.com/",
+      },
+      {
+        text: "Panduan PPDB",
+
+        url: "https://api.whatsapp.com/",
+      },
+      {
+        text: "Contact Person",
+        url: "https://api.whatsapp.com/",
+      },
+    ],
   },
 ];
 

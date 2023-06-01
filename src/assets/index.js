@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import jsan from "./jsan.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
 import ornament from "./ornament.png";
@@ -27,6 +28,7 @@ import activity11 from "./slider/activity/activity11.png";
 
 export {
   logo,
+  jsan,
   close,
   menu,
   ornament,

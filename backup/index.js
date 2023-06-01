@@ -55,7 +55,7 @@ function SwipeableTextMobileStepper() {
                   src={step.img}
                   alt={step.title}
                 />
-                <div className="filter-gradient absolute bottom-0 z-10 h-1/2 w-full mix-blend-multiply" />
+                <div className="filter-gradient absolute bottom-0 h-1/2 w-full z-10 mix-blend-multiply" />
               </>
             ) : null}
             <div
@@ -74,7 +74,6 @@ function SwipeableTextMobileStepper() {
         ))}
       </AutoPlaySwipeableViews>
       <MobileStepper
-        // className="flex "
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -83,8 +82,8 @@ function SwipeableTextMobileStepper() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-            sx={{ padding: "12px 6px" }}
           >
+            Next
             {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
             ) : (
@@ -93,17 +92,13 @@ function SwipeableTextMobileStepper() {
           </Button>
         }
         backButton={
-          <Button
-            size="small"
-            onClick={handleBack}
-            disabled={activeStep === 0}
-            sx={{ padding: "12px 6px" }}
-          >
+          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
               <KeyboardArrowLeft />
             )}
+            Back
           </Button>
         }
       />
