@@ -1,47 +1,49 @@
-import { styles } from "../styles";
+import Button from '@mui/material/Button';
+import { motion } from 'framer-motion';
 
-import { heroHeadings } from "../constants";
+import { styles } from '../js';
+
+import { heroHeadings } from '../constants';
 
 const Hero = () => {
   return (
-    <section className="relative mx-auto h-screen w-full">
-      <div
-        className={`${styles.paddingX} absolute inset-0 top-[84px] mx-auto flex max-w-7xl flex-col items-start xs:top-[120px]`}
-      >
-        <div>
-          <h2 className={`${styles.heroHeadText} w-full text-center`}>
+    <section className='relative mx-auto h-screen w-full bg-[]'>
+      <div className={`${styles.paddingX} absolute inset-0 top-[84px] mx-auto flex flex-col items-start xs:top-[120px]`}>
+        <div className='mx-auto w-full text-center'>
+          <h2 className={`${styles.heroHeadText} text-center`}>
             Sekolah Al-Izzah
-            <br />{" "}
-            <div className="flex flex-col w-full max-h-[32px] xs:max-h-[40px] overflow-hidden">
-              {heroHeadings.map((text) => (
-                <span
-                  className={`${styles.heroHeadText} relative z-10 w-fit mx-auto`}
-                  key={text}
-                >
-                  {text}
-                  <div className="absolute bottom-0 left-0 -z-10 h-1/3 w-full bg-blue-300" />
-                </span>
-              ))}
+            <br />{' '}
+            <div className='xl relative h-[33px] overflow-clip xs:h-[42px] sm:h-[51px] md:h-[60px] lg:h-[72px] xl:h-[75px] 2xl:h-[84px]'>
+              <div className='text-animate absolute flex w-full flex-col gap-y-3'>
+                <span className={`${styles.heroHeadText} animate-line relative z-0 mx-auto w-fit`}>{heroHeadings[heroHeadings.length - 1]}</span>
+                {heroHeadings.map((text) => (
+                  <span
+                    className={`${styles.heroHeadText} animate-line relative z-0 mx-auto w-fit`}
+                    key={text}
+                  >
+                    {text}
+                  </span>
+                ))}
+              </div>
             </div>
           </h2>
-          <p className={`${styles.heroParagraph} mt-8 text-center`}>
-            Lorem ipsum dolor sit amet consectetur. Rutrum blandit bibendum mi
-            ultricies tristique. Lorem Ipsum Dolor sit
-          </p>
+          <p className={`${styles.heroParagraphText} mx-auto mt-8 max-w-[348px] text-center italic sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl`}>Kami tunggu para petualang hebat di sekolah kami, together to be excellent!</p>
         </div>
-        <div className="mx-auto mt-6 flex w-full max-w-[244px] justify-between text-[12px] font-bold">
-          <a
-            href="#"
-            className="inline-flex items-center justify-center rounded-full bg-sky-500 px-[18px] py-3 text-white hover:bg-sky-400 hover:text-neutral-50 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-          >
-            Pendaftaran
-          </a>
-          <a
-            href="#"
-            className="inline-flex items-center justify-center rounded-full border border-sky-500 px-[18px] py-3 text-sky-500 hover:border-sky-400 hover:bg-sky-400 hover:text-neutral-50 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+        <div className='mx-auto mt-6 flex w-full flex-col items-center justify-center gap-3 text-[14px] font-bold xs:flex-row'>
+          <Button
+            variant='outlined'
+            disableElevation
+            href='https://api.whatsapp.com/send?phone=628884936122'
           >
             Hubungi Kami
-          </a>
+          </Button>
+          <Button
+            variant='contained'
+            disableElevation
+            href='https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz,%20mohon%20info%20PPDB%202023/2024%20'
+          >
+            Pendaftaran
+          </Button>
         </div>
       </div>
     </section>

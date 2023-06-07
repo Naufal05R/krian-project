@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
+import { styles } from '../js/styles';
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
@@ -32,7 +32,7 @@ const Navbar = () => {
       <div
         className={`${styles.paddingX} ${bgNavbar} fixed z-20 flex w-full items-center py-5`}
       >
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+        <div className="mx-auto flex w-full items-center justify-between">
           <Link
             to="/"
             className="flex items-center gap-2"
@@ -43,16 +43,16 @@ const Navbar = () => {
           >
             <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
             <p className="flex cursor-pointer text-[18px] font-bold">
-              <span className="block">Al-Izzah</span>
+              <span className="block uppercase">Al-Izzah</span>
             </p>
           </Link>
-          <ul className="hidden list-none flex-row gap-10 sm:flex">
+          <ul className="hidden list-none flex-row gap-10 md:flex">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`${
                   active === link.title ? "text-blue-500" : "text-tertiary"
-                } cursor-pointer text-[18px] font-medium hover:text-blue-500`}
+                } cursor-pointer text-[18px] font-medium hover:text-blue-500 transition-colors duration-500`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{`${link.title}`}</a>
@@ -60,7 +60,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="flex flex-1 items-center justify-end sm:hidden">
+          <div className="flex flex-1 items-center justify-end md:hidden">
             <img
               src={toggle ? close : menu}
               alt="menu"

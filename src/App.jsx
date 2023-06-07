@@ -1,13 +1,5 @@
 import { createTheme, ThemeProvider } from "@mui/material";
-import {
-  Navbar,
-  Hero,
-  About,
-  Activity,
-  // Documentation,
-  Shared,
-  Footer,
-} from "./components";
+import { Navbar, Hero, About, Activity, Shared, Footer } from "./components";
 
 const theme = createTheme({
   palette: {
@@ -20,12 +12,14 @@ const theme = createTheme({
   },
   components: {
     MuiButton: {
+      defaultProps: {
+        disableElevation: true,
+      },
       styleOverrides: {
         root: {
           borderRadius: 28,
-          fontSize: 12,
+          fontSize: 14,
           fontWeight: 700,
-          boxShadow: "none",
           padding: "12px 24px",
         },
       },
@@ -39,14 +33,15 @@ const theme = createTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <div className="relative z-0 overflow-clip bg-white">
-        <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+      <div className="relative z-0 overflow-hidden bg-white">
+        <div className="blue-gradient bg-cover bg-no-repeat bg-center text-black-200">
           <Navbar />
           <Hero />
         </div>
+        <div className="absolute right-[-147.5px] top-[1069.96px] -z-30 h-60 w-60 bg-about-ornament" />
+        <div className="absolute left-[-152.5px] top-[1310.04px] -z-30 h-60 w-60 bg-about-ornament" />
         <About />
         <Activity />
-        {/* <Documentation /> */}
         <Shared />
         <Footer />
       </div>

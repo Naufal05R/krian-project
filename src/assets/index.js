@@ -4,10 +4,18 @@ import close from "./close.svg";
 import menu from "./menu.svg";
 import ornament from "./ornament.png";
 
-import frame1 from "./frame/frame1.png";
-import frame2 from "./frame/frame2.png";
-import frame3 from "./frame/frame3.png";
-import frame4 from "./frame/frame4.png";
+import frame11001 from "./frame/frame-1x1-001.png";
+import frame11002 from "./frame/frame-1x1-002.png";
+import frame11003 from "./frame/frame-1x1-003.png";
+import frame11004 from "./frame/frame-1x1-004.png";
+import frame11005 from "./frame/frame-1x1-005.png";
+import frame11006 from "./frame/frame-1x1-006.png";
+import frame11007 from "./frame/frame-1x1-007.png";
+import frame11008 from "./frame/frame-1x1-008.png";
+
+import frame23001 from "./frame/frame-2x3-001.png";
+
+import frame43001 from "./frame/frame-4x3-001.png";
 
 import facebook from "./sosmed/facebook.svg";
 import instagram from "./sosmed/instagram.svg";
@@ -26,16 +34,24 @@ import activity09 from "./slider/activity/activity09.png";
 import activity10 from "./slider/activity/activity10.png";
 import activity11 from "./slider/activity/activity11.png";
 
+import hero1 from "./hero/hero01.jpg";
+
 export {
   logo,
   jsan,
   close,
   menu,
   ornament,
-  frame1,
-  frame2,
-  frame3,
-  frame4,
+  frame11001,
+  frame11002,
+  frame11003,
+  frame11004,
+  frame11005,
+  frame11006,
+  frame11007,
+  frame11008,
+  frame23001,
+  frame43001,
   facebook,
   instagram,
   tiktok,
@@ -51,4 +67,5 @@ export {
   activity09,
   activity10,
   activity11,
+  hero1,
 };

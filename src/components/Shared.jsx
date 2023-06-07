@@ -1,39 +1,101 @@
 import Button from "@mui/material/Button";
-import { styles } from "../styles";
+import { styles, absolutes } from "../js";
+
+import { motion } from "framer-motion";
+import { fadeIn, slideIn, zoomIn, shuffle, random } from "../utils";
+
+import { SectionWrapper } from "../hoc";
+
+import { image } from "../constants";
+
+const shuffleImg11 = shuffle(image.img11);
+const sharedImgTop = shuffleImg11.slice(0, 4);
+const sharedImgBottom = shuffleImg11.slice(4, 8);
+const arrayAbsolutes = Object.values(absolutes);
 
 const Shared = () => {
   return (
-    <section className="relative mx-auto mt-5 h-[425px] w-full overflow-y-clip">
-      <div
-        className={`${styles.paddingX} absolute mx-auto mt-6 flex h-full w-full max-w-7xl flex-col items-start`}
-      >
-        <div className="relative h-full w-full">
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user1.png')]" />
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user2.png')]" />
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user3.png')]" />
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user4.png')]" />
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user5.png')]" />
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user6.png')]" />
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user7.png')]" />
-          <div className="absolute flex h-full w-full bg-[url('/src/assets/users/user8.png')]" />
+    <div className="">
+      <div className="relative mx-auto mt-4 w-full">
+        <div className={`-z-20 mx-auto flex w-full flex-col items-start`}>
+          <div className="flex w-full flex-1 grow flex-wrap justify-between gap-4 sm:gap-8">
+            {sharedImgTop.map((img, index) => (
+              <motion.div
+                className="h-52 grow basis-1/3 sm:basis-1/5"
+                variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
+                key={index}
+              >
+                <motion.div
+                  className={`relative h-full w-full overflow-hidden`}
+                  variants={slideIn("down", "spring", 0.5 * index, 0.75)}
+                >
+                  <motion.div
+                    className={`absolute ${random(
+                      arrayAbsolutes
+                    )} w-2/3 max-h-full overflow-clip rounded-2xl border-2 border-tertiary sm:w-2/3 object-cover`}
+                    variants={zoomIn(0.5 * index, 0.75)}
+                  >
+                    <motion.img
+                      src={img.url}
+                      alt=""
+                      className="h-full w-full"
+                    />
+                  </motion.div>
+                </motion.div>
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div
-        className={`${styles.paddingX} mx-auto mt-6 flex h-full w-full max-w-7xl flex-col items-start`}
-      >
-        <div className="grid h-full w-full place-items-center">
-          <div className="mx-auto flex w-full flex-col gap-y-3 items-center text-center text-[12px] font-bold">
-            <h1 className={`${styles.sectionHeadText} w-full`}>
-              Daftar <span className="hidden xs:inline">Al-Izzah</span> Sekarang
-            </h1>
-            <Button variant="contained" href="#contained-buttons">
-              PPDB 2023/2024
-            </Button>
+        <div
+          className={`${styles.paddingX} top-1/2 z-20 mx-auto my-6 flex w-full flex-col items-start bg-transparent`}
+        >
+          <div className="grid w-full place-items-center">
+            <div className="mx-auto flex w-full flex-col items-center gap-y-3 text-center text-[14px] font-bold">
+              <h1 className={`${styles.sectionHeadText} w-full`}>
+                Daftar <span className="hidden md:inline">Al-Izzah</span>{" "}
+                Sekarang
+              </h1>
+              <Button
+                variant="contained"
+                href="https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz,%20mohon%20info%20PPDB%202023/2024%20👋"
+              >
+                PPDB 2023/2024
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className={`-z-20 mx-auto flex w-full flex-col items-start`}>
+          <div className="flex w-full flex-1 grow flex-wrap justify-between gap-4 sm:gap-8">
+            {sharedImgBottom.map((img, index) => (
+              <motion.div
+                className="h-52 grow basis-1/3 sm:basis-1/5"
+                variants={fadeIn("up", "spring", 0.5 * (index + 4), 0.75)}
+                key={index}
+              >
+                <motion.div
+                  className={`relative h-full w-full overflow-hidden`}
+                  variants={slideIn("down", "spring", 0.5 * (index + 4), 0.75)}
+                >
+                  <motion.div
+                    className={`absolute ${random(
+                      arrayAbsolutes
+                    )} max-h-full w-2/3 overflow-clip rounded-2xl border-2 border-tertiary sm:w-2/3`}
+                    variants={zoomIn(0.5 * (index + 4), 0.75)}
+                  >
+                    <motion.img
+                      src={img.url}
+                      alt=""
+                      className="h-full w-full"
+                    />
+                  </motion.div>
+                </motion.div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Shared;
+export default SectionWrapper(Shared, "shared");

@@ -12,27 +12,35 @@ import {
   activity10,
   activity11,
 } from "../assets";
+import {
+  frame11001,
+  frame11002,
+  frame11003,
+  frame11004,
+  frame11005,
+  frame11006,
+  frame11007,
+  frame11008,
+} from "../assets";
+import { frame23001 } from "../assets";
+import { frame43001 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Tentang",
   },
   {
     id: "activity",
-    title: "Activity",
+    title: "Kegiatan",
   },
   {
-    id: "documentation",
-    title: "Documentation",
-  },
-  {
-    id: "partner",
-    title: "Partner",
+    id: "shared",
+    title: "Bergabung",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Kontak",
   },
 ];
 
@@ -42,6 +50,76 @@ export const heroHeadings = [
   "Pengembangan Akhlak",
   "Membangun Peradaban",
 ];
+
+export const aboutImages = [
+  {
+    title: "frame1",
+    url: frame11001,
+  },
+  {
+    title: "frame2",
+    url: frame11002,
+  },
+  {
+    title: "frame3",
+    url: frame11003,
+  },
+  {
+    title: "frame4",
+    url: frame11004,
+  },
+];
+
+export const image = {
+  img11: [
+    {
+      title: "frame-1",
+      url: frame11001,
+    },
+    {
+      title: "frame-2",
+      url: frame11002,
+    },
+    {
+      title: "frame-3",
+      url: frame11003,
+    },
+    {
+      title: "frame-4",
+      url: frame11004,
+    },
+    {
+      title: "frame-5",
+      url: frame11005,
+    },
+    {
+      title: "frame-6",
+      url: frame11006,
+    },
+    {
+      title: "frame-7",
+      url: frame11007,
+    },
+    {
+      title: "frame-8",
+      url: frame11008,
+    },
+  ],
+
+  img23: [
+    {
+      title: "frame-1",
+      url: frame23001,
+    },
+  ],
+
+  img43: [
+    {
+      title: "frame-1",
+      url: frame43001,
+    },
+  ],
+};
 
 export const activityCard = [
   {
@@ -107,32 +185,15 @@ export const footerLinks = [
     contents: [
       {
         text: "Home",
-        url: "https://www.",
+        url: "#",
       },
       {
         text: "Visi & Misi",
-        url: "#",
+        url: "https://api.whatsapp.com/send?phone=628884936122",
       },
       {
         text: "Dokumentasi",
-        url: "#",
-      },
-    ],
-  },
-  {
-    title: "Hubungi Kami",
-    contents: [
-      {
-        text: "Jl. Embong Kali, Kemasan, Kec. Krian, Kabupaten Sidoarjo, Jawa Timur 61262",
-        url: "#",
-      },
-      {
-        text: "No. Telp: 0888-4936-122",
-        url: "https://api.whatsapp.com/send?phone=628884936122&text=Pendaftaran%20Al-Izzah%20Krian",
-      },
-      {
-        text: "Email: email@example.com",
-        url: "#",
+        url: "https://api.whatsapp.com/send?phone=628884936122",
       },
     ],
   },
@@ -141,16 +202,33 @@ export const footerLinks = [
     contents: [
       {
         text: "PPDB 2023/2024",
-        url: "https://api.whatsapp.com/",
+        url: "https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz,%20mohon%20info%20PPDB%202023/2024%20",
       },
       {
         text: "Panduan PPDB",
 
-        url: "https://api.whatsapp.com/",
+        url: "https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz,%20mohon%20info%20PPDB%202023/2024%20",
       },
       {
         text: "Contact Person",
-        url: "https://api.whatsapp.com/",
+        url: "https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz%20",
+      },
+    ],
+  },
+  {
+    title: "Hubungi Kami",
+    contents: [
+      {
+        text: "Jl. Embong Kali, Kemasan, Kec. Krian, Kabupaten Sidoarjo, Jawa Timur 61262",
+        url: "https://www.google.co.id/maps/place/SEKOLAH+ALAM+AL+'IZZAH+KRIAN+SIDOARJO+-TAHFIDZ,+BOARDING,+FULL+DAY+SCHOOL/@-7.4031311,112.5941298,15z/data=!4m5!3m4!1s0x0:0x326621d12b3da577!8m2!3d-7.4031311!4d112.5941298?shorturl=1",
+      },
+      {
+        text: "No. Telp: 0888-4936-122",
+        url: "https://api.whatsapp.com/send?phone=628884936122",
+      },
+      {
+        text: "Email: smpalamalizzah@gmail.com",
+        url: "#",
       },
     ],
   },

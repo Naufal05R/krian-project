@@ -8,7 +8,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { activityCard } from "../constants";
-import { styles } from "../styles";
+import { styles } from '../js/styles';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -45,7 +45,7 @@ function SwipeableTextMobileStepper() {
                 <Box
                   component="img"
                   sx={{
-                    // objectFit: "cover",
+                    objectFit: "cover",
                     height: 320,
                     display: "block",
                     maxWidth: 420,
@@ -59,7 +59,7 @@ function SwipeableTextMobileStepper() {
               </>
             ) : null}
             <div
-              className={`${styles.paddingX} absolute bottom-[33px] left-1/2 z-20 w-full -translate-x-1/2`}
+              className={`${styles.paddingX} absolute top-[195px] left-1/2 z-20 w-full -translate-x-1/2`}
             >
               <h5 className={`${styles.sectionSubText} text-center text-white`}>
                 {step.title}
@@ -74,7 +74,6 @@ function SwipeableTextMobileStepper() {
         ))}
       </AutoPlaySwipeableViews>
       <MobileStepper
-        // className="flex "
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -83,7 +82,7 @@ function SwipeableTextMobileStepper() {
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
-            sx={{ padding: "12px 6px" }}
+            sx={{ padding: "12px 0" }}
           >
             {theme.direction === "rtl" ? (
               <KeyboardArrowLeft />
@@ -97,7 +96,7 @@ function SwipeableTextMobileStepper() {
             size="small"
             onClick={handleBack}
             disabled={activeStep === 0}
-            sx={{ padding: "12px 6px" }}
+            sx={{ padding: "12px 0" }}
           >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />

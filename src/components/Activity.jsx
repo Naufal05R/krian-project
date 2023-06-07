@@ -1,21 +1,23 @@
-import { styles } from "../styles";
+/* eslint-disable react-refresh/only-export-components */
+import { styles } from '../js/styles';
 
-import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
+import { SectionWrapper } from "../hoc";
+import SwiperAlbum from "./swiperAlbum";
 
 const Activity = () => {
   return (
-    <section className="relative mx-auto mt-5 w-full">
+    <div className="relative mx-auto w-full">
       <div
-        className={`${styles.paddingX} mx-auto mt-6 flex max-w-7xl flex-col items-start`}
+        className="mx-auto mt-4 flex flex-col items-start"
       >
-        <div className='mb-5'>
-          <h1 className={`${styles.heroHeadText} w-full`}>Kegiatan Kami</h1>
+        <div className="mb-5">
+          <h1 className={`${styles.sectionHeadText} w-full`}>Kegiatan Kami</h1>
         </div>
 
-        <SwipeableTextMobileStepper />
+        <SwiperAlbum />
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Activity;
+export default SectionWrapper(Activity, "activity");

@@ -1,16 +1,14 @@
-/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
         primary: "#e6e6e8",
-        secondary: "#ade8f4",
+        secondary: "#f0faffaa",
         tertiary: "#052026",
         "black-100": "#031013",
         "black-200": "#04181C",
@@ -31,7 +29,6 @@ export default {
     },
   },
   plugins: [
-    require('flowbite/plugin'),
   ],
 }
 
