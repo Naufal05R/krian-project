@@ -2,6 +2,10 @@ import logo from "./logo.svg";
 import jsan from "./jsan.svg";
 import close from "./close.svg";
 import menu from "./menu.svg";
+import lightMenu from "./lightMenu.svg";
+import lightClose from "./lightClose.svg";
+import darkMenu from "./darkMenu.svg";
+import darkClose from "./darkClose.svg";
 import ornament from "./ornament.png";
 
 import frame11001 from "./frame/frame-1x1-001.png";
@@ -46,6 +50,10 @@ export {
   jsan,
   close,
   menu,
+  darkClose,
+  darkMenu,
+  lightClose,
+  lightMenu,
   ornament,
   frame11001,
   frame11002,

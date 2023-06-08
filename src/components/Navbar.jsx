@@ -3,7 +3,13 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../js/styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import {
+  logo,
+  darkClose,
+  darkMenu,
+  lightClose,
+  lightMenu,
+} from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -11,16 +17,22 @@ const Navbar = () => {
 
   const [bgNavbar, setBgNavbar] = useState("");
   const [textColor, setTextColor] = useState("");
+  const [menu, setMenu] = useState(lightMenu);
+  const [close, setClose] = useState(lightClose);
 
   useEffect(() => {
     const handleBgNavbarGlossy = () => {
       setBgNavbar("white-glossy border-b border-neutral-100 shadow-card-xs");
       setTextColor("text-black-100");
+      setClose(darkMenu);
+      setMenu(darkClose);
     };
 
     const handleBgNavbarTransparent = () => {
       setBgNavbar("bg-transparent");
       setTextColor("text-white");
+      setClose(lightClose);
+      setMenu(lightMenu);
     };
 
     const handleBgNavbar = () => {
@@ -31,9 +43,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='text-white'>
+    <nav className="text-white">
       <div
-        className={`${styles.paddingX} ${bgNavbar} ${textColor} transition duration-500 fixed z-20 flex w-full items-center py-5`}
+        className={`${styles.paddingX} ${bgNavbar} ${textColor} fixed z-20 flex w-full items-center py-5 transition duration-500`}
       >
         <div className="mx-auto flex w-full items-center justify-between">
           <Link

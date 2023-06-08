@@ -1,14 +1,11 @@
 import { styles } from "../js";
 
-import { heroHeadings, heroImages } from "../constants";
-
-import { shuffle } from "../utils";
-
-const shuffleHeroImage = shuffle(heroImages);
+import { heroHeadings } from "../constants";
+import { hero2 } from '../assets';
 
 const Hero = () => {
   return (
-    <section className={`relative mx-auto h-screen w-full`}>
+    <section className={`relative mx-auto overflow-clip min-h-screen w-full`}>
       <div
         className={`${styles.paddingX} absolute inset-0 top-[84px] z-10 mx-auto flex flex-col items-start xs:top-[120px]`}
       >
@@ -56,8 +53,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="absolute h-full w-full object-cover">
-        <img src={shuffleHeroImage[0].url} />
+      <div className="absolute h-full w-full top-1/2 -translate-y-1/2 object-cover">
+        <img src={hero2} className='w-full h-full object-center object-cover' />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import SwiperCore, { EffectCoverflow, Autoplay, Scrollbar } from "swiper";
+import SwiperCore, { EffectCoverflow, Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { activityCard } from "../constants";
@@ -9,7 +9,7 @@ import { shuffle } from "../utils";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 
-SwiperCore.use([EffectCoverflow, Scrollbar, Autoplay]);
+SwiperCore.use([EffectCoverflow, Autoplay, Pagination]);
 
 const shuffleActivityCard = shuffle(activityCard);
 
@@ -28,7 +28,7 @@ const SwiperAlbum = () => {
         modifier: 1,
         slideShadows: false,
       }}
-      scrollbar={true}
+      pagination={{ clickable: true, dynamicBullets: true, dynamicMainBullets: 5 }}
       autoplay={{ delay: 1800 }}
       className="mySwiper"
     >
