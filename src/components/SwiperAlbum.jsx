@@ -3,7 +3,6 @@ import SwiperCore, { EffectCoverflow, Autoplay, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { activityCard } from "../constants";
-import { styles } from "../js/styles";
 
 import { shuffle } from "../utils";
 
