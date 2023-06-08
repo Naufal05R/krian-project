@@ -25,6 +25,35 @@ import {
 import { frame23001 } from "../assets";
 import { frame43001 } from "../assets";
 
+import { hero1, hero2, hero3, hero4, hero5, hero6 } from '../assets';
+
+export const heroImages = [
+  {
+    title: "Image-1",
+    url: hero1,
+  },
+  {
+    title: "Image-2",
+    url: hero2,
+  },
+  {
+    title: "Image-3",
+    url: hero3,
+  },
+  {
+    title: "Image-4",
+    url: hero4,
+  },
+  {
+    title: "Image-5",
+    url: hero5,
+  },
+  {
+    title: "Image-6",
+    url: hero6,
+  },
+]
+
 export const navLinks = [
   {
     id: "about",

@@ -13,7 +13,7 @@ const Footer = () => {
       className="relative mx-auto mt-20 w-full bg-blue-950 pt-3"
       id="contact"
     >
-      <div className={`${styles.padding} mx-auto max-w-7xl`}>
+      <div className={`${styles.padding} mx-auto`}>
         <article className="flex flex-col pb-12">
           <div>
             <Link

@@ -1,26 +1,55 @@
 /* eslint-disable react-refresh/only-export-components */
 import { motion } from "framer-motion";
-import { fadeIn, zoomIn, shuffle } from "../utils";
+import { fadeIn, zoomIn, shuffle, textVariant } from "../utils";
 
 import { styles } from "../js/styles";
 import { aboutImages } from "../constants";
 
 import { SectionWrapper } from "../hoc";
+import { Tilt } from "react-tilt";
 
 const shuffleAboutImages = shuffle(aboutImages);
+
+const AboutCard = ({ index, title, url }) => {
+  return (
+    <Tilt
+      className="w-full xs:w-[250px]"
+      options={{
+        max: 60,
+        scale: 1,
+        speed: 450,
+      }}
+    >
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full h-full rounded-2xl"
+      >
+        <div
+          options={{
+            max: 45,
+            scale: 1,
+            speed: 450,
+          }}
+          className="h-full w-full flex-col items-center justify-evenly rounded-2xl border-2 border-slate-800 object-cover overflow-clip"
+        >
+          <img src={url} alt={title} className="h-full w-full object-contain" />
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 const About = () => {
   return (
     <div className="mx-auto w-full">
       <div className="relative flex flex-wrap">
-        <div className="mt-4 flex flex-col items-start sm:w-1/2">
+        <div className="mt-4 flex flex-col items-start">
           <div>
-            <h1 className={`${styles.sectionHeadText} w-full`}>Tentang Kami</h1>
+            <h2 className={`${styles.sectionHeadText} w-full`}>Tentang Kami</h2>
           </div>
-          <div className="mr-10">
+          <blockquote className="mr-10 lg:w-2/3">
             <motion.p
               className={`${styles.sectionParagraphText} mt-3`}
-              variants={fadeIn("right", "spring", 0.5 * 1, 1)}
             >
               SMP Alam Al-Izzah memadukan tiga kurikulum, yaitu Kurikulum
               Sekolah Alam, Kurikulum Kemendikbud, dan Kurikulum Pesantren.
@@ -28,30 +57,11 @@ const About = () => {
               berpikir, kepemimpinan, kewirausahaan, serta tahfidz dan tahsin
               bersyahadah.
             </motion.p>
-            <motion.p
-              className={`${styles.sectionParagraphText} mt-3`}
-              variants={fadeIn("right", "spring", 0.5 * 2, 1)}
-            >
-              Dengan kelulusan standar yang mencakup hafalan Al-Quran
-              bersyahadah, kemampuan berbahasa Arab dan Inggris yang aktif,
-              serta jiwa mandiri, kepemimpinan, dan kewirausahaan, siswa juga
-              berkesempatan mendapatkan beasiswa.
-            </motion.p>
-          </div>
-        </div>
-        <div className="w-full sm:w-1/2">
-          <div className="mx-auto mt-6">
-            <motion.div className="grid w-full grid-cols-2 gap-2">
-              {shuffleAboutImages.map((image, index) => (
-                <motion.div
-                  className="overflow-clip rounded-2xl border-2 border-tertiary"
-                  key={index}
-                  variants={zoomIn(0.5 * (index + 1), 1)}
-                >
-                  <motion.img src={image.url} alt={image.title} />
-                </motion.div>
-              ))}
-            </motion.div>
+          </blockquote>
+          <div className="mt-20 flex flex-wrap gap-4">
+            {shuffleAboutImages.map((img, index) => (
+              <AboutCard key={img.title} index={index} {...img} />
+            ))}
           </div>
         </div>
       </div>

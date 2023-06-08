@@ -21,7 +21,7 @@ const Shared = () => {
           <div className="flex w-full flex-1 grow flex-wrap justify-between gap-4 sm:gap-8">
             {sharedImgTop.map((img, index) => (
               <motion.div
-                className="h-52 grow basis-1/3 sm:basis-1/5"
+                className="h-28 xs:h-36 sm:h-44 grow basis-1/3 sm:basis-1/5"
                 variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
                 key={index}
               >
@@ -51,10 +51,10 @@ const Shared = () => {
         >
           <div className="grid w-full place-items-center">
             <div className="mx-auto flex w-full flex-col items-center gap-y-3 text-center text-[14px] font-bold">
-              <h1 className={`${styles.sectionHeadText} w-full`}>
+              <h2 className={`${styles.sectionHeadText} w-full`}>
                 Daftar <span className="hidden md:inline">Al-Izzah</span>{" "}
                 Sekarang
-              </h1>
+              </h2>
               <Button
                 variant="contained"
                 href="https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz,%20mohon%20info%20PPDB%202023/2024%20👋"
@@ -68,7 +68,7 @@ const Shared = () => {
           <div className="flex w-full flex-1 grow flex-wrap justify-between gap-4 sm:gap-8">
             {sharedImgBottom.map((img, index) => (
               <motion.div
-                className="h-52 grow basis-1/3 sm:basis-1/5"
+                className="h-28 xs:h-36 sm:h-44 grow basis-1/3 sm:basis-1/5"
                 variants={fadeIn("up", "spring", 0.5 * (index + 4), 0.75)}
                 key={index}
               >

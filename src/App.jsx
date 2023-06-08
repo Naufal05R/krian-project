@@ -1,5 +1,7 @@
 import { createTheme, ThemeProvider } from "@mui/material";
 import { Navbar, Hero, About, Activity, Shared, Footer } from "./components";
+import { HomePage, DocumentationPage } from "./pages";
+import { Route, Routes } from "react-router";
 
 const theme = createTheme({
   palette: {
@@ -34,15 +36,10 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="relative z-0 overflow-hidden bg-white">
-        <div className="blue-gradient bg-cover bg-no-repeat bg-center text-black-200">
-          <Navbar />
-          <Hero />
-        </div>
-        <div className="absolute right-[-147.5px] top-[1069.96px] -z-30 h-60 w-60 bg-about-ornament" />
-        <div className="absolute left-[-152.5px] top-[1310.04px] -z-30 h-60 w-60 bg-about-ornament" />
-        <About />
-        <Activity />
-        <Shared />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/documentation" element={<DocumentationPage />} />
+        </Routes>
         <Footer />
       </div>
     </ThemeProvider>

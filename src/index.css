@@ -78,9 +78,15 @@
 }
 
 .sky-gradient {
-  background: #3B82F6;
-  background: linear-gradient(90deg, #BAE6FD 50%, #7DD3FC 66.67%, #60A5FA 83.33%, #3B82F6 100%);
-  background: -webkit-linear-gradient(90deg, #BAE6FD 50%, #7DD3FC 66.67%, #60A5FA 83.33%, #3B82F6 100%);
+  background: #3b82f6;
+  background: linear-gradient(90deg, #bae6fd 50%, #7dd3fc 66.67%, #60a5fa 83.33%, #3b82f6 100%);
+  background: -webkit-linear-gradient(90deg, #bae6fd 50%, #7dd3fc 66.67%, #60a5fa 83.33%, #3b82f6 100%);
+}
+
+.cloud-gradient {
+  background: #5899e2;
+  background: linear-gradient(90deg, #fefefe 20%, #f5feff 40%, #deebf9 60%, #bcd6f3 80%, #5899e2 100%);
+  background: -webkit-linear-gradient(90deg, #fefefe 20%, #f5feff 40%, #deebf9 60%, #bcd6f3 80%, #5899e2 100%);
 }
 
 .violet-gradient {
@@ -137,61 +143,61 @@
   .text-animate-base {
     animation: base infinite 10s ease-in-out;
   }
-  
+
   .animate-line-base {
     background-position: 0 calc(100% - 4px);
     background-size: 100% calc(4px * 2);
   }
-  
+
   .text-animate-xs {
     animation: xs infinite 10s ease-in-out;
   }
-  
+
   .animate-line-xs {
     background-position: 0 calc(100% - 5px);
     background-size: 100% calc(5px * 2);
   }
-  
+
   .text-animate-sm {
     animation: sm infinite 10s ease-in-out;
   }
-  
+
   .animate-line-sm {
     background-position: 0 calc(100% - 6px);
     background-size: 100% calc(6px * 2);
   }
-  
+
   .text-animate-md {
     animation: md infinite 10s ease-in-out;
   }
-  
+
   .animate-line-md {
     background-position: 0 calc(100% - 7px);
     background-size: 100% calc(7px * 2);
   }
-  
+
   .text-animate-lg {
     animation: lg infinite 10s ease-in-out;
   }
-  
+
   .animate-line-lg {
     background-position: 0 calc(100% - 8px);
     background-size: 100% calc(8px * 2);
   }
-  
+
   .text-animate-xl {
     animation: xl infinite 10s ease-in-out;
   }
-  
+
   .animate-line-xl {
     background-position: 0 calc(100% - 9px);
     background-size: 100% calc(9px * 2);
   }
-  
+
   .text-animate-2xl {
     animation: xxl infinite 10s ease-in-out;
   }
-  
+
   .animate-line-2xl {
     background-position: 0 calc(100% - 10px);
     background-size: 100% calc(10px * 2);

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from '../js/styles';
+import { styles } from "../js/styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
@@ -10,27 +10,30 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const [bgNavbar, setBgNavbar] = useState("");
+  const [textColor, setTextColor] = useState("");
 
   useEffect(() => {
     const handleBgNavbarGlossy = () => {
       setBgNavbar("white-glossy border-b border-neutral-100 shadow-card-xs");
+      setTextColor("text-black-100");
     };
 
     const handleBgNavbarTransparent = () => {
       setBgNavbar("bg-transparent");
-    }
+      setTextColor("text-white");
+    };
 
     const handleBgNavbar = () => {
-      window.scrollY > 0 ? handleBgNavbarGlossy() : handleBgNavbarTransparent();
-    }
+      window.scrollY > 1 ? handleBgNavbarGlossy() : handleBgNavbarTransparent();
+    };
 
     window.addEventListener("scroll", handleBgNavbar);
   }, []);
 
   return (
-    <nav>
+    <nav className='text-white'>
       <div
-        className={`${styles.paddingX} ${bgNavbar} fixed z-20 flex w-full items-center py-5`}
+        className={`${styles.paddingX} ${bgNavbar} ${textColor} transition duration-500 fixed z-20 flex w-full items-center py-5`}
       >
         <div className="mx-auto flex w-full items-center justify-between">
           <Link
@@ -51,8 +54,8 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-blue-500" : "text-tertiary"
-                } cursor-pointer text-[18px] font-medium hover:text-blue-500 transition-colors duration-500`}
+                  active === link.title ? "text-blue-500" : `${textColor}`
+                } cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{`${link.title}`}</a>

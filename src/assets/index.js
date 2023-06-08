@@ -35,6 +35,11 @@ import activity10 from "./slider/activity/activity10.png";
 import activity11 from "./slider/activity/activity11.png";
 
 import hero1 from "./hero/hero01.jpg";
+import hero2 from "./hero/hero02.jpg";
+import hero3 from "./hero/hero03.jpg";
+import hero4 from "./hero/hero04.jpg";
+import hero5 from "./hero/hero05.jpg";
+import hero6 from "./hero/hero06.jpg";
 
 export {
   logo,
@@ -68,4 +73,9 @@ export {
   activity10,
   activity11,
   hero1,
+  hero2,
+  hero3,
+  hero4,
+  hero5,
+  hero6,
 };
