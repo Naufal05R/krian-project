@@ -2,7 +2,7 @@
 import { styles } from '../js/styles';
 
 import { SectionWrapper } from "../hoc";
-import SwiperAlbum from "./swiperAlbum";
+import SwiperAlbum from "./SwiperAlbum";
 
 const Activity = () => {
   return (
