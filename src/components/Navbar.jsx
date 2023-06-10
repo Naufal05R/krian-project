@@ -3,13 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../js/styles";
 import { navLinks } from "../constants";
-import {
-  logo,
-  darkClose,
-  darkMenu,
-  lightClose,
-  lightMenu,
-} from "../assets";
+import { logo, darkClose, darkMenu, lightClose, lightMenu } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -19,6 +13,7 @@ const Navbar = () => {
   const [textColor, setTextColor] = useState("");
   const [menu, setMenu] = useState(lightMenu);
   const [close, setClose] = useState(lightClose);
+  const [absoluteBackground, setAbsoluteBackground] = useState("");
 
   useEffect(() => {
     const handleBgNavbarGlossy = () => {
@@ -26,6 +21,7 @@ const Navbar = () => {
       setTextColor("text-black-100");
       setClose(darkMenu);
       setMenu(darkClose);
+      setAbsoluteBackground("opacity-0");
     };
 
     const handleBgNavbarTransparent = () => {
@@ -33,6 +29,7 @@ const Navbar = () => {
       setTextColor("text-white");
       setClose(lightClose);
       setMenu(lightMenu);
+      setAbsoluteBackground("opacity-100");
     };
 
     const handleBgNavbar = () => {
@@ -43,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="text-white">
+    <nav className="relative text-white">
       <div
         className={`${styles.paddingX} ${bgNavbar} ${textColor} fixed z-20 flex w-full items-center py-5 transition duration-500`}
       >
@@ -61,21 +58,33 @@ const Navbar = () => {
               <span className="block uppercase">Al-Izzah</span>
             </p>
           </Link>
-          <ul className="hidden list-none flex-row gap-10 md:flex">
-            {navLinks.map((link) => (
+          <ul className="hidden list-none flex-row gap-10 lg:flex">
+            <Link
+              to={`/${navLinks[0].id}`}
+              className={`${
+                active === navLinks[0].title ? "text-blue-500" : `${textColor}`
+              } cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
+              onClick={() => setActive(navLinks[0].title)}
+            >
+              {navLinks[0].title}
+            </Link>
+            {navLinks.slice(1, 5).map((link) => (
               <li
                 key={link.id}
                 className={`${
                   active === link.title ? "text-blue-500" : `${textColor}`
                 } cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
-                onClick={() => setActive(link.title)}
+                onClick={() => {
+                  setActive(link.title);
+                  window.scroll(0, 0);
+                }}
               >
                 <a href={`#${link.id}`}>{`${link.title}`}</a>
               </li>
             ))}
           </ul>
 
-          <div className="flex flex-1 items-center justify-end md:hidden">
+          <div className="flex flex-1 items-center justify-end lg:hidden">
             <img
               src={toggle ? close : menu}
               alt="menu"
@@ -107,6 +116,9 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
+      <div
+        className={`${absoluteBackground} fixed top-0 z-10 w-full bg-black pb-[76px] transition-opacity duration-500`}
+      />
     </nav>
   );
 };

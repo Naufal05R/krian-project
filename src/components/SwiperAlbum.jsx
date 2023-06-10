@@ -38,7 +38,7 @@ const SwiperAlbum = () => {
             <img
               src={index.img}
               alt=""
-              className="h-auto overflow-clip rounded-3xl border-2 border-tertiary object-cover shadow-inner"
+              className="h-auto overflow-clip rounded-3xl object-cover shadow-inner"
             />
           </SwiperSlide>
         );

@@ -31,7 +31,7 @@ const Shared = () => {
                   <motion.div
                     className={`absolute ${random(
                       arrayAbsolutes
-                    )} max-h-full w-2/3 overflow-clip rounded-2xl border-2 border-tertiary object-cover sm:w-2/3`}
+                    )} max-h-full w-2/3 overflow-clip rounded-2xl object-cover sm:w-2/3`}
                     variants={zoomIn(0.5 * index, 0.75)}
                   >
                     <motion.img
@@ -78,7 +78,7 @@ const Shared = () => {
                   <motion.div
                     className={`absolute ${random(
                       arrayAbsolutes
-                    )} max-h-full w-2/3 overflow-clip rounded-2xl border-2 border-tertiary sm:w-2/3`}
+                    )} max-h-full w-2/3 overflow-clip rounded-2xl sm:w-2/3`}
                     variants={zoomIn(0.5 * (index + 4), 0.75)}
                   >
                     <motion.img

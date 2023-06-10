@@ -37,13 +37,13 @@ const Footer = () => {
           </div>
           <ul className="mt-4 flex w-full list-none flex-wrap gap-4 max-xs:justify-between">
             {navLinks.map((link) => (
-              <li
+              <Link
                 key={link.id}
                 className="cursor-pointer text-[14px] font-medium text-white underline hover:text-white/75"
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{`${link.title}`}</a>
-              </li>
+              </Link>
             ))}
           </ul>
         </article>

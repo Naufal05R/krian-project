@@ -1,4 +1,5 @@
 import { facebook, instagram, tiktok, youtube } from "../assets";
+
 import {
   activity01,
   activity02,
@@ -56,6 +57,10 @@ export const heroImages = [
 
 export const navLinks = [
   {
+    id: "documentation",
+    title: "Dokumentasi",
+  },
+  {
     id: "about",
     title: "Tentang",
   },
@@ -98,6 +103,39 @@ export const aboutImages = [
     url: frame11004,
   },
 ];
+
+export const aboutCards = [
+  {
+    title: "Future Program Assistant",
+    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    icon: ""
+  },
+  {
+    title: "Future Program Assistant",
+    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    icon: ""
+  },
+  {
+    title: "Future Program Assistant",
+    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    icon: ""
+  },
+  {
+    title: "Future Program Assistant",
+    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    icon: ""
+  },
+  {
+    title: "Future Program Assistant",
+    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    icon: ""
+  },
+  {
+    title: "Future Program Assistant",
+    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    icon: ""
+  },
+]
 
 export const image = {
   img11: [
