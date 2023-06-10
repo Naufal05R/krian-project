@@ -106,33 +106,52 @@ export const aboutImages = [
 
 export const aboutCards = [
   {
-    title: "Future Program Assistant",
-    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    title: "Senior Identity Architect",
+    text: "Exercitationem cum dolores."
+  },
+  {
+    title: "Senior Identity Architect",
+    text: "Exercitationem cum dolores."
+  },
+  {
+    title: "Senior Identity Architect",
+    text: "Exercitationem cum dolores."
+  },
+  {
+    title: "Senior Identity Architect",
+    text: "Exercitationem cum dolores."
+  },
+]
+
+export const primeCards = [
+  {
+    title: "Akhlaqul Karimah",
+    text: "Memahami Cara tunduk manusia kepada Sang Pencipta",
     icon: ""
   },
   {
-    title: "Future Program Assistant",
-    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    title: "Pengembangan Logika",
+    text: "Memahami cara tunduk alam semesta kepada Sang Pencipta",
     icon: ""
   },
   {
-    title: "Future Program Assistant",
-    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    title: "Pelatihan Kepemimpinan",
+    text: "Memahami cara manusia menjadi Khalifatullah di muka bumi",
     icon: ""
   },
   {
-    title: "Future Program Assistant",
-    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    title: "Training Enterpreneurship",
+    text: "Mengajari cara mencari rezeki yang halal",
     icon: ""
   },
   {
-    title: "Future Program Assistant",
-    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    title: "Back to nature",
+    text: "Mengenali dan memanfaatkan lingkungan alam sekitar",
     icon: ""
   },
   {
-    title: "Future Program Assistant",
-    text: "Repudiandae at et dolore. Hic est nostrum voluptatem.",
+    title: "Pengembangan Logika",
+    text: "Memahami at et dolore. Hic est nostrum voluptatem.",
     icon: ""
   },
 ]

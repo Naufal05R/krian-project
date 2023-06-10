@@ -101,6 +101,13 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
+.cyan-blue-gradient {
+  background: '#0ea5e9';
+  background: linear-gradient(90.13deg, #0ea5e9 1.9%, #06b6d4 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #0ea5e9 1.9%, #06b6d4 97.5%);
+
+}
+
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */

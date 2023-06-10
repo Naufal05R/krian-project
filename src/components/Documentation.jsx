@@ -1,21 +1,20 @@
+import { SectionWrapper } from '../hoc';
 import { styles } from '../js/styles';
+import Gallery from './Gallery';
 
 import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
 
 const Documentation = () => {
   return (
-    <section className="relative mx-auto mt-5 w-full">
-      <div
-        className="mx-auto mt-6 flex flex-col items-start"
-      >
-        <div className="mb-5">
-          <h1 className={`${styles.heroHeadText} w-full`}>Dokumentasi Kami</h1>
+    <>
+      <div className='mt-24'>
+        <div className='mt-4'>
+          <h2 className={`${styles.sectionHeadText} mb-4 w-full`}>Dokumentasi Kami</h2>
         </div>
-
-        <SwipeableTextMobileStepper />
+        <Gallery />
       </div>
-    </section>
+    </>
   );
 };
 
-export default Documentation;
+export default SectionWrapper(Documentation, 'documentation');

@@ -1,29 +1,30 @@
 /* eslint-disable react-refresh/only-export-components */
-import { motion } from "framer-motion";
-import { fadeIn, zoomIn, shuffle, textVariant } from "../utils";
+import { motion } from 'framer-motion';
+import { HiColorSwatch } from 'react-icons/hi';
+import { fadeIn, zoomIn, shuffle, textVariant } from '../utils';
 
-import { styles } from "../js/styles";
-import { aboutImages } from "../constants";
+import { styles } from '../js/styles';
+import { aboutImages, aboutCards } from '../constants';
 
-import { SectionWrapper } from "../hoc";
-import { Tilt } from "react-tilt";
+import { SectionWrapper } from '../hoc';
+import { Tilt } from 'react-tilt';
 import Gallery from './Gallery';
 
-const shuffleAboutImages = shuffle(aboutImages);
+const shuffleAboutCards = shuffle(aboutCards);
 
-const AboutCard = ({ index, title, url }) => {
+const AboutCard = ({ index, title, text }) => {
   return (
     <Tilt
-      className="w-full xs:w-1/3"
+      className='w-full xs:w-[250px] xs:grow'
       options={{
         max: 60,
-        scale: 1,
+        scale: 1.15,
         speed: 450,
       }}
     >
       <motion.div
-        variants={fadeIn("right", "spring", .5 * index, .75)}
-        className="h-full w-full rounded-2xl"
+        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+        className='cyan-blue-gradient w-full rounded-2xl p-[1px]'
       >
         <div
           options={{
@@ -31,9 +32,15 @@ const AboutCard = ({ index, title, url }) => {
             scale: 1,
             speed: 450,
           }}
-          className="h-full w-full flex-col items-center justify-evenly overflow-clip rounded-2xl object-cover"
+          className='flex min-h-[280px] flex-col items-center rounded-2xl justify-evenly bg-white px-12 py-5'
         >
-          <img src={url} alt={title} className="h-full w-full object-contain" />
+          <div className='mb-6 w-full'>
+            <HiColorSwatch size={64} />
+          </div>
+          <motion.blockquote className='w-full space-y-4'>
+            <h3 className={`${styles.sectionSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h3>
+            <p className={`${styles.sectionParagraphText} text-slate-500`}>{text}</p>
+          </motion.blockquote>
         </div>
       </motion.div>
     </Tilt>
@@ -42,51 +49,37 @@ const AboutCard = ({ index, title, url }) => {
 
 const About = () => {
   return (
-    <div className="mx-auto w-full">
-      <div className="relative flex flex-wrap">
-        <div className="mt-4 flex flex-col items-start">
+    <div className='mx-auto w-full'>
+      <div className='relative flex flex-wrap'>
+        <div className='mt-4 flex flex-col items-start'>
           <motion.div variants={textVariant(0.25)}>
             <h2 className={`${styles.sectionHeadText} w-full`}>Tentang Kami</h2>
           </motion.div>
           <motion.blockquote
-            className="mr-10 lg:w-2/3"
+            className='mr-10 lg:w-2/3'
             variants={textVariant(0.5 * 1)}
           >
             <motion.p
               className={`${styles.sectionParagraphText} mt-3`}
-              variants={fadeIn("right", "spring", 0.5 * 1, 1)}
+              variants={fadeIn('right', 'spring', 0.5 * 1, 1)}
             >
-              SMP Alam Al-Izzah memadukan tiga kurikulum, yaitu Kurikulum
-              Sekolah Alam, Kurikulum Kemendikbud, dan Kurikulum Pesantren.
-              Program unggulan kami mencakup pembelajaran akhlak, logika
-              berpikir, kepemimpinan, kewirausahaan, serta tahfidz dan tahsin
-              bersyahadah.
-            </motion.p>
-          </motion.blockquote>
-          <motion.blockquote
-            className="mr-10 lg:w-2/3"
-            variants={textVariant(0.5 * 2)}
-          >
-            <motion.p
-              className={`${styles.sectionParagraphText} mt-3`}
-              variants={fadeIn("right", "spring", 0.5 * 2, 1)}
-            >
-              Dengan kelulusan standar yang mencakup hafalan Al-Quran
-              bersyahadah, kemampuan berbahasa Arab dan Inggris yang aktif,
-              serta jiwa mandiri, kepemimpinan, dan kewirausahaan, siswa juga
-              berkesempatan mendapatkan beasiswa.
+              SMP Alam Al-Izzah memadukan tiga kurikulum, yaitu Kurikulum Sekolah Alam, Kurikulum Kemendikbud, dan Kurikulum Pesantren. Program unggulan kami mencakup pembelajaran akhlak, logika berpikir, kepemimpinan, kewirausahaan, serta tahfidz dan tahsin bersyahadah.
             </motion.p>
           </motion.blockquote>
           <Gallery />
-          {/* <div className="mt-20 flex flex-wrap gap-8">
-            {shuffleAboutImages.map((img, index) => (
-              <AboutCard key={img.title} index={index} {...img} />
+          <div className='mb-10 mt-20 flex flex-wrap gap-8'>
+            {shuffleAboutCards.map((card, index) => (
+              <AboutCard
+                key={card.title}
+                index={index}
+                {...card}
+              />
             ))}
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, 'about');

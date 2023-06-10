@@ -34,4 +34,4 @@ const Gallery = () => {
   );
 };
 
-export default SectionWrapper(Gallery, 'gallery');
+export default Gallery;
