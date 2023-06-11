@@ -16,7 +16,7 @@ const PrimeCard = ({ index, title, text, url }) => {
   return (
     <motion.div
       variants={fadeIn('right', 'spring', 0.5 * index + 1.5, 0.75)}
-      className='md:max-w-[300px] xl:max-w-[360px] grow'
+      className='grow md:max-w-[300px] xl:max-w-[360px]'
     >
       <div className='grow py-6'>
         <div className={`flex items-center gap-4 rounded-2xl object-cover md:flex-col md:justify-between`}>
@@ -26,7 +26,7 @@ const PrimeCard = ({ index, title, text, url }) => {
               scale: 1,
             }}
           >
-            <motion.div className={`${index % 2 === 0 ? 'bg-sky-200' : 'bg-cyan-200'} flex h-[56px] min-w-[56px] overflow-clip rounded-full p-2`}>
+            <motion.div className={`${index % 2 === 0 ? 'bg-sky-200' : 'bg-cyan-200'} ${index % 3 === 0 ? 'order-4' : ''} flex h-[56px] min-w-[56px] overflow-clip rounded-full p-2`}>
               <motion.div className='m-auto h-full w-full rounded-full bg-white shadow-icon'>
                 <div className='flex h-full w-full items-center justify-center'>
                   <AiFillCodeSandboxCircle
@@ -38,9 +38,9 @@ const PrimeCard = ({ index, title, text, url }) => {
               </motion.div>
             </motion.div>
           </Tilt>
-          <motion.blockquote className='w-full md:text-center'>
-            <h4 className={`${styles.sectionSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h4>
-            <p className={`${styles.sectionParagraphText} text-slate-500`}>{text}</p>
+          <motion.blockquote className='w-full md:text-center space-y-2'>
+            <h4 className={`${styles.groupSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h4>
+            <p className={`${styles.groupParagraphText} text-slate-500`}>{text}</p>
           </motion.blockquote>
         </div>
       </div>
@@ -67,11 +67,11 @@ const Prime = () => {
           </motion.p>
         </motion.blockquote>
         <div className='mx-auto mt-20 flex flex-wrap gap-8 md:justify-around '>
-          {primeCards.map((card, index) => (
+          {primeCards.map((group, index) => (
             <PrimeCard
-              key={card.title}
+              key={group.title}
               index={index}
-              {...card}
+              {...group}
             />
           ))}
         </div>

@@ -12,6 +12,7 @@ export default {
         tertiary: "#052026",
         "black-100": "#031013",
         "black-200": "#04181C",
+        "black-300": "#171719",
         "white-100": "#EEFAFD",
       },
       boxShadow: {

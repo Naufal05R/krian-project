@@ -15,16 +15,16 @@ const shuffleAboutCards = shuffle(aboutCards);
 const AboutCard = ({ index, title, text }) => {
   return (
     <Tilt
-      className='w-full xs:w-[250px] xs:grow'
+      className='w-full xl:max-w-[25%] 2xl:w-1/5 xl:grow'
       options={{
         max: 60,
-        scale: 1.15,
+        scale: 1,
         speed: 450,
       }}
     >
       <motion.div
         variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className='cyan-blue-gradient w-full rounded-2xl p-[1px]'
+        className={`${index % 2 === 0 ? 'bg-sky-500' : 'bg-cyan-500 md:ml-auto md:text-right xl:text-left xl:ml-0'} w-full md:max-w-2xl rounded-2xl p-[1px]`}
       >
         <div
           options={{
@@ -32,14 +32,14 @@ const AboutCard = ({ index, title, text }) => {
             scale: 1,
             speed: 450,
           }}
-          className='flex min-h-[280px] flex-col items-center rounded-2xl justify-evenly bg-white px-12 py-5'
+          className='flex min-h-[280px] flex-col items-center rounded-2xl justify-between bg-white p-10'
         >
-          <div className='mb-6 w-full'>
-            <HiColorSwatch size={64} />
+          <div className='w-full'>
+            <HiColorSwatch size={64} className={`${index % 2 !== 0 && 'md:ml-auto xl:ml-0'}`} />
           </div>
           <motion.blockquote className='w-full space-y-4'>
-            <h3 className={`${styles.sectionSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h3>
-            <p className={`${styles.sectionParagraphText} text-slate-500`}>{text}</p>
+            <h3 className={`${styles.cardSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h3>
+            <p className={`${styles.cardParagraphText}`}>{text}</p>
           </motion.blockquote>
         </div>
       </motion.div>

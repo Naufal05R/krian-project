@@ -10,17 +10,31 @@ const styles = {
     "md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]",
 
   heroHeadText:
-    "text-[#171719] font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] xl:text-[50px] 2xl:text-[56px]",
+    "text-white font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] xl:text-[50px] 2xl:text-[56px]",
   heroSubText:
-    "text-[#171719] font-medium text-[18px] xs:text-[24px] sm:text-[28px] lg:text-[32px] leading-[150%] lg:leading-[150%]",
+    "text-white font-medium text-[18px] xs:text-[24px] sm:text-[28px] lg:text-[32px] leading-[150%] lg:leading-[150%]",
   heroParagraphText:
-    "text-[#171719] font-normal text-[14px] xs:text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] lg:leading-[150%]",
+    "text-white font-normal text-[14px] xs:text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] lg:leading-[150%]",
 
   sectionHeadText:
-    "text-sky-500 font-bold md:text-[40px] sm:text-[34px] xs:text-[28px] text-[22px]",
+    "text-sky-500 font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",
   sectionSubText: "font-bold text-[14px] sm:text-[18px] text-sky-500",
   sectionParagraphText:
     "sm:text-[16px] text-[14px] text-black-200 leading-[200%]",
+
+  groupHeadText:
+    "font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",
+  groupSubText: 
+    "font-bold text-[16px] sm:text-[18px] leading-[150%]",
+  groupParagraphText:
+    "text-slate-400 font-light text-[14px] sm:text-[16px] leading-[150%]",
+
+  cardHeadText:
+    "font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",
+  cardSubText:
+    "font-medium text-[16px] md:text-[24px] leading-[150%]",
+  cardParagraphText:
+    "text-slate-400 font-extralight text-[14px] sm:text-[20px] leading-[150%]",
 
   footerSubText: "text-white font-bold text-[14px]",
   footerParagraph: "text-white text-[14px]",

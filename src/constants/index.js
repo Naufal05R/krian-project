@@ -26,34 +26,41 @@ import {
 import { frame23001 } from "../assets";
 import { frame43001 } from "../assets";
 
-import { hero1, hero2, hero3, hero4, hero5, hero6 } from '../assets';
+// import { 
+  // hero1, 
+  // hero2, 
+  // hero3, 
+  // hero4, 
+  // hero5, 
+  // hero6, 
+// } from "../assets";
 
-export const heroImages = [
-  {
-    title: "Image-1",
-    url: hero1,
-  },
-  {
-    title: "Image-2",
-    url: hero2,
-  },
-  {
-    title: "Image-3",
-    url: hero3,
-  },
-  {
-    title: "Image-4",
-    url: hero4,
-  },
-  {
-    title: "Image-5",
-    url: hero5,
-  },
-  {
-    title: "Image-6",
-    url: hero6,
-  },
-]
+// export const heroImages = [
+//   {
+//     title: "Image-1",
+//     url: hero1,
+//   },
+//   {
+//     title: "Image-2",
+//     url: hero2,
+//   },
+//   {
+//     title: "Image-3",
+//     url: hero3,
+//   },
+//   {
+//     title: "Image-4",
+//     url: hero4,
+//   },
+//   {
+//     title: "Image-5",
+//     url: hero5,
+//   },
+//   {
+//     title: "Image-6",
+//     url: hero6,
+//   },
+// ]
 
 export const navLinks = [
   {
@@ -107,54 +114,54 @@ export const aboutImages = [
 export const aboutCards = [
   {
     title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores."
+    text: "Exercitationem cum dolores.",
   },
   {
     title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores."
+    text: "Exercitationem cum dolores.",
   },
   {
     title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores."
+    text: "Exercitationem cum dolores.",
   },
   {
     title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores."
+    text: "Exercitationem cum dolores.",
   },
-]
+];
 
 export const primeCards = [
   {
     title: "Akhlaqul Karimah",
     text: "Memahami Cara tunduk manusia kepada Sang Pencipta",
-    icon: ""
+    icon: "",
   },
   {
     title: "Pengembangan Logika",
     text: "Memahami cara tunduk alam semesta kepada Sang Pencipta",
-    icon: ""
+    icon: "",
   },
   {
     title: "Pelatihan Kepemimpinan",
     text: "Memahami cara manusia menjadi Khalifatullah di muka bumi",
-    icon: ""
+    icon: "",
   },
   {
     title: "Training Enterpreneurship",
-    text: "Mengajari cara mencari rezeki yang halal",
-    icon: ""
+    text: "Belajar mengenai cara mencari rezeki yang halal",
+    icon: "",
   },
   {
     title: "Back to nature",
     text: "Mengenali dan memanfaatkan lingkungan alam sekitar",
-    icon: ""
+    icon: "",
   },
   {
-    title: "Pengembangan Logika",
-    text: "Memahami at et dolore. Hic est nostrum voluptatem.",
-    icon: ""
+    title: "Teamwork",
+    text: "Belajar kemampuan bekerja sama untuk menyelesaikan masalah",
+    icon: "",
   },
-]
+];
 
 export const image = {
   img11: [
