@@ -4,7 +4,7 @@ import { HiColorSwatch } from 'react-icons/hi';
 import { fadeIn, zoomIn, shuffle, textVariant } from '../utils';
 
 import { styles } from '../js/styles';
-import { aboutImages, aboutCards } from '../constants';
+import { aboutCards } from '../constants';
 
 import { SectionWrapper } from '../hoc';
 import { Tilt } from 'react-tilt';
@@ -14,36 +14,34 @@ const shuffleAboutCards = shuffle(aboutCards);
 
 const AboutCard = ({ index, title, text }) => {
   return (
-    <Tilt
-      className='w-full xl:max-w-[25%] 2xl:w-1/5 xl:grow'
-      options={{
-        max: 60,
-        scale: 1,
-        speed: 450,
-      }}
-    >
-      <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
-        className={`${index % 2 === 0 ? 'bg-sky-500' : 'bg-cyan-500 md:ml-auto md:text-right xl:text-left xl:ml-0'} w-full md:max-w-2xl rounded-2xl p-[1px]`}
+    <article className={`w-full lg:w-1/3 lg:max-w-md lg:grow xl:flex-1 2xl:w-1/5`}>
+      <Tilt
+        options={{
+          max: 60,
+          scale: 1,
+          speed: 450,
+        }}
       >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className='flex min-h-[280px] flex-col items-center rounded-2xl justify-between bg-white p-10'
+        <motion.div
+          variants={fadeIn('right', 'spring', 0.5 * index + 1, 0.75)}
+          className={`${index % 2 === 0 ? 'bg-sky-500' : 'bg-cyan-500 md:ml-auto md:text-right lg:ml-0 lg:text-left'} w-full rounded-2xl p-[1px]`}
         >
-          <div className='w-full'>
-            <HiColorSwatch size={64} className={`${index % 2 !== 0 && 'md:ml-auto xl:ml-0'}`} />
+          <div className='flex min-h-[240px] flex-col items-center justify-between gap-y-4 rounded-2xl bg-white p-10 xl:min-h-[320px]'>
+            <div className='w-full'>
+              <HiColorSwatch
+                size={64}
+                color={`${index % 2 === 0 ? '#0ea5e9' : '#06b6d4'}`}
+                className={`${index % 2 !== 0 && 'md:ml-auto lg:ml-0'}`}
+              />
+            </div>
+            <motion.blockquote className='w-full space-y-4'>
+              <h3 className={`${styles.cardSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h3>
+              <p className={`${styles.cardParagraphText}`}>{text}</p>
+            </motion.blockquote>
           </div>
-          <motion.blockquote className='w-full space-y-4'>
-            <h3 className={`${styles.cardSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h3>
-            <p className={`${styles.cardParagraphText}`}>{text}</p>
-          </motion.blockquote>
-        </div>
-      </motion.div>
-    </Tilt>
+        </motion.div>
+      </Tilt>
+    </article>
   );
 };
 
@@ -70,7 +68,7 @@ const About = () => {
           <div className='mb-10 mt-20 flex flex-wrap gap-8'>
             {shuffleAboutCards.map((card, index) => (
               <AboutCard
-                key={card.title}
+                key={index}
                 index={index}
                 {...card}
               />

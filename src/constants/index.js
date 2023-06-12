@@ -1,18 +1,3 @@
-import { facebook, instagram, tiktok, youtube } from "../assets";
-
-import {
-  activity01,
-  activity02,
-  activity03,
-  activity04,
-  activity05,
-  activity06,
-  activity07,
-  activity08,
-  activity09,
-  activity10,
-  activity11,
-} from "../assets";
 import {
   frame11001,
   frame11002,
@@ -22,45 +7,32 @@ import {
   frame11006,
   frame11007,
   frame11008,
+  frame23001,
+  frame23002,
+  frame23003,
+  frame23004,
+  frame23005,
+  frame23006,
+  frame23007,
+  frame23008,
+  frame23009,
+  frame23010,
+  frame23011,
 } from "../assets";
-import { frame23001 } from "../assets";
-import { frame43001 } from "../assets";
 
-// import { 
-  // hero1, 
-  // hero2, 
-  // hero3, 
-  // hero4, 
-  // hero5, 
-  // hero6, 
-// } from "../assets";
-
-// export const heroImages = [
-//   {
-//     title: "Image-1",
-//     url: hero1,
-//   },
-//   {
-//     title: "Image-2",
-//     url: hero2,
-//   },
-//   {
-//     title: "Image-3",
-//     url: hero3,
-//   },
-//   {
-//     title: "Image-4",
-//     url: hero4,
-//   },
-//   {
-//     title: "Image-5",
-//     url: hero5,
-//   },
-//   {
-//     title: "Image-6",
-//     url: hero6,
-//   },
-// ]
+import {
+  facebook,
+  instagram,
+  tiktok,
+  youtube,
+  akhlak,
+  leadership,
+  internship,
+  logic,
+  nature,
+  teamwork,
+} from "../assets";
+import Akhlak from '../assets/icons/prime/Akhlak';
 
 export const navLinks = [
   {
@@ -92,25 +64,6 @@ export const heroHeadings = [
   "Membangun Peradaban",
 ];
 
-export const aboutImages = [
-  {
-    title: "frame1",
-    url: frame11001,
-  },
-  {
-    title: "frame2",
-    url: frame11002,
-  },
-  {
-    title: "frame3",
-    url: frame11003,
-  },
-  {
-    title: "frame4",
-    url: frame11004,
-  },
-];
-
 export const aboutCards = [
   {
     title: "Senior Identity Architect",
@@ -134,83 +87,58 @@ export const primeCards = [
   {
     title: "Akhlaqul Karimah",
     text: "Memahami Cara tunduk manusia kepada Sang Pencipta",
-    icon: "",
+    icon: akhlak,
   },
   {
     title: "Pengembangan Logika",
     text: "Memahami cara tunduk alam semesta kepada Sang Pencipta",
-    icon: "",
+    icon: logic,
   },
   {
     title: "Pelatihan Kepemimpinan",
     text: "Memahami cara manusia menjadi Khalifatullah di muka bumi",
-    icon: "",
+    icon: leadership,
   },
   {
     title: "Training Enterpreneurship",
     text: "Belajar mengenai cara mencari rezeki yang halal",
-    icon: "",
+    icon: internship,
   },
   {
     title: "Back to nature",
     text: "Mengenali dan memanfaatkan lingkungan alam sekitar",
-    icon: "",
+    icon: nature,
   },
   {
     title: "Teamwork",
     text: "Belajar kemampuan bekerja sama untuk menyelesaikan masalah",
-    icon: "",
+    icon: teamwork,
   },
 ];
 
 export const image = {
   img11: [
-    {
-      title: "frame-1",
-      url: frame11001,
-    },
-    {
-      title: "frame-2",
-      url: frame11002,
-    },
-    {
-      title: "frame-3",
-      url: frame11003,
-    },
-    {
-      title: "frame-4",
-      url: frame11004,
-    },
-    {
-      title: "frame-5",
-      url: frame11005,
-    },
-    {
-      title: "frame-6",
-      url: frame11006,
-    },
-    {
-      title: "frame-7",
-      url: frame11007,
-    },
-    {
-      title: "frame-8",
-      url: frame11008,
-    },
+    { title: "frame-2x3-1", url: frame11001 },
+    { title: "frame-2x3-2", url: frame11002 },
+    { title: "frame-2x3-3", url: frame11003 },
+    { title: "frame-2x3-4", url: frame11004 },
+    { title: "frame-2x3-5", url: frame11005 },
+    { title: "frame-2x3-6", url: frame11006 },
+    { title: "frame-2x3-7", url: frame11007 },
+    { title: "frame-2x3-8", url: frame11008 },
   ],
-
   img23: [
-    {
-      title: "frame-1",
-      url: frame23001,
-    },
-  ],
-
-  img43: [
-    {
-      title: "frame-1",
-      url: frame43001,
-    },
+    { title: "frame-1x1-1", url: frame23001 },
+    { title: "frame-1x1-2", url: frame23002 },
+    { title: "frame-1x1-3", url: frame23003 },
+    { title: "frame-1x1-4", url: frame23004 },
+    { title: "frame-1x1-5", url: frame23005 },
+    { title: "frame-1x1-6", url: frame23006 },
+    { title: "frame-1x1-7", url: frame23007 },
+    { title: "frame-1x1-8", url: frame23008 },
+    { title: "frame-1x1-9", url: frame23009 },
+    { title: "frame-1x1-10", url: frame23010 },
+    { title: "frame-1x1-11", url: frame23011 },
   ],
 };
 
@@ -218,57 +146,57 @@ export const activityCard = [
   {
     title: "Backpacker",
     text: "Hanya ditemani tas ransel, siswa diajak untuk berpetualang bersama menggunakan transportasi umum.",
-    img: activity01,
+    img: frame23001,
   },
   {
     title: "Cooking Class",
     text: "Siswa berkreasi memasak bersama, diharapkan dapat meningkatkan kemandirian dan kreatifitas.",
-    img: activity02,
+    img: frame23002,
   },
   {
     title: "Ekstrakurikuler",
     text: "Kami memiliki berbagai ekstrakurikuler yang dapat menggali minat siswa, mulai dari bela diri sampai panahan.",
-    img: activity03,
+    img: frame23003,
   },
   {
     title: "Family Camp",
     text: "Kegiatan di alam yang melibatkan keluarga siswa dalam pembelajaran yang dikemas dalam keseruan camping.",
-    img: activity04,
+    img: frame23004,
   },
   {
     title: "Karantina Tahfidz",
     text: "Menghafal ayat-ayat suci Al-Qur’an bersama-sama, lengkap dengan cerita indah dan keseruan para siswa.",
-    img: activity05,
+    img: frame23005,
   },
   {
     title: "LIVE in Bondowoso",
     text: "Kegiatan berbaur dengar warga Bondowoso, siswa mengikuti keseharian warga dalam rangka pembelajaran.",
-    img: activity06,
+    img: frame23006,
   },
   {
     title: "Internship (Magang)",
     text: "Intership atau magang diajarkan kepada siswa agar mereka dapat mengetahui bagaimana kehidupan",
-    img: activity07,
+    img: frame23007,
   },
   {
     title: "Proyek Berkebun",
     text: "Mengenalkan siswa untuk merawat alam sekitarnya dan peka terhadap lingkungan yang ditinggalinya.",
-    img: activity08,
+    img: frame23008,
   },
   {
     title: "Sosialisasi ECO Enzym",
     text: "Menunjukkan salah satu hasil karya para siswa dan menjelaskan manfaat serta kegunaannya kepada warga.",
-    img: activity09,
+    img: frame23009,
   },
   {
     title: "Survival Training",
     text: "Disini siswa diajarkan ilmu-ilmu dasar bertahan hidup di alam dan cara pemanfaatannya.",
-    img: activity10,
+    img: frame23010,
   },
   {
     title: "Upacara Kemerdekaan",
     text: "Para siswa ikut andil dalam meperingati kemerdekaan Indonesia dengan diadakannya upacara bendera.",
-    img: activity11,
+    img: frame23011,
   },
 ];
 
@@ -331,21 +259,21 @@ export const footerIcons = [
   {
     title: "facebook",
     url: "https://www.facebook.com/profile.php?id=100085312314586&mibextid=ZbWKwL",
-    img: facebook,
+    icon: facebook,
   },
   {
     title: "instagram",
     url: "https://instagram.com/smpalamalizzah?igshid=Yzg5MTU1MDY=",
-    img: instagram,
+    icon: instagram,
   },
   {
     title: "tiktok",
     url: "https://www.tiktok.com/@smpalamalizzah1?_t=8Z24myJlIxt&_r=1",
-    img: tiktok,
+    icon: tiktok,
   },
   {
     title: "youtube",
     url: "https://youtube.com/@sekolahsmpterbaikdikrian6885",
-    img: youtube,
+    icon: youtube,
   },
 ];

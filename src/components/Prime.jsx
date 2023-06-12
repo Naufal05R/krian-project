@@ -5,18 +5,23 @@ import { AiFillCodeSandboxCircle } from 'react-icons/ai';
 import { fadeIn, zoomIn, shuffle, textVariant } from '../utils';
 
 import { styles } from '../js/styles';
-import { aboutImages, primeCards } from '../constants';
+import { primeCards } from '../constants';
 
 import { SectionWrapper } from '../hoc';
 import { Tilt } from 'react-tilt';
 
-const shuffleAboutImages = shuffle(aboutImages);
+import Akhlak from '../assets/icons/prime/Akhlak';
+import Internship from '../assets/icons/prime/Internship';
+import Leadership from '../assets/icons/prime/Leadership';
+import Logic from '../assets/icons/prime/Logic';
+import Nature from '../assets/icons/prime/Nature';
+import Teamwork from '../assets/icons/prime/Teamwork';
 
 const PrimeCard = ({ index, title, text, url }) => {
   return (
     <motion.div
-      variants={fadeIn('right', 'spring', 0.5 * index + 1.5, 0.75)}
-      className='grow md:max-w-[300px] xl:max-w-[360px]'
+      variants={fadeIn('right', 'spring', 0.5 * index + 1, 0.75)}
+      className={`grow md:max-w-[300px] xl:max-w-[360px] ${index % 3 === 0 ? `md:order-[${index + 1}]` : `md:order-[${index + 9}]`}`}
     >
       <div className='grow py-6'>
         <div className={`flex items-center gap-4 rounded-2xl object-cover md:flex-col md:justify-between`}>
@@ -29,16 +34,17 @@ const PrimeCard = ({ index, title, text, url }) => {
             <motion.div className={`${index % 2 === 0 ? 'bg-sky-200' : 'bg-cyan-200'} ${index % 3 === 0 ? 'order-4' : ''} flex h-[56px] min-w-[56px] overflow-clip rounded-full p-2`}>
               <motion.div className='m-auto h-full w-full rounded-full bg-white shadow-icon'>
                 <div className='flex h-full w-full items-center justify-center'>
-                  <AiFillCodeSandboxCircle
-                    className=''
-                    size={24}
+                  <img
+                    src={url}
+                    width={24}
                     color={`${index % 2 === 0 ? '#0ea5e9' : '#06b6d4'}`}
+                    alt=''
                   />
                 </div>
               </motion.div>
             </motion.div>
           </Tilt>
-          <motion.blockquote className='w-full md:text-center space-y-2'>
+          <motion.blockquote className='w-full space-y-2 md:text-center'>
             <h4 className={`${styles.groupSubText} ${index % 2 === 0 ? 'text-sky-500' : 'text-cyan-500'}`}>{title}</h4>
             <p className={`${styles.groupParagraphText} text-slate-500`}>{text}</p>
           </motion.blockquote>
@@ -71,6 +77,7 @@ const Prime = () => {
             <PrimeCard
               key={group.title}
               index={index}
+              url={group.icon}
               {...group}
             />
           ))}

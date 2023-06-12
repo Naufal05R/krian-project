@@ -1,7 +1,7 @@
 import { styles } from '../js';
 
 import { heroHeadings } from '../constants';
-import { hero2 } from '../assets';
+import { herobg } from '../assets';
 
 const Hero = () => {
   return (
@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
       <div className='absolute top-1/2 h-full w-full -translate-y-1/2 object-cover'>
         <img
-          src={hero2}
+          src={herobg}
           className='h-full w-full object-cover object-center'
         />
       </div>

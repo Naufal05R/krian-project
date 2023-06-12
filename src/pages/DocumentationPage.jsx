@@ -1,13 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
-import { Documentation, Gallery, Navbar } from '../components';
-import { fadeIn, slideIn, zoomIn } from '../utils';
-
-import { SectionWrapper } from '../hoc';
-
-import { image } from '../constants';
-import { styles } from '../js';
+import { Documentation, Navbar } from '../components';
 
 const DocumentationPage = () => {
   return (
