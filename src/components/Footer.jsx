@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { styles } from '../js/styles';
 import { Link } from 'react-router-dom';
 
-import { jsan, logo } from '../assets';
+import { jsan } from '../assets';
 import { navLinks, footerLinks, footerIcons } from '../constants';
 
 const Footer = () => {
@@ -24,7 +24,7 @@ const Footer = () => {
               }}
             >
               <img
-                src={logo}
+                src='/favicon.png'
                 alt='logo'
                 className='h-9 w-9 object-contain '
               />
@@ -91,7 +91,7 @@ const Footer = () => {
                     target='_blank'
                   >
                     <img
-                      src={`${link.img}`}
+                      src={`${link.icon}`}
                       alt=''
                       height='18'
                       width='18'

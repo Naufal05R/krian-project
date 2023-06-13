@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import jsan from "./jsan.svg";
 import lightMenu from "./lightMenu.svg";
 import lightClose from "./lightClose.svg";
@@ -7,6 +6,8 @@ import darkClose from "./darkClose.svg";
 import ornament from "./ornament.png";
 
 import herobg from "./herobg.jpg";
+import heroPortrait from "./heroPortrait.jpg";
+import heroLandscape from "./heroLandscape.jpg";
 
 import {
   facebook,
@@ -47,7 +48,6 @@ import {
 } from "./images";
 
 export {
-  logo,
   jsan,
   darkClose,
   darkMenu,
@@ -55,6 +55,8 @@ export {
   lightMenu,
   ornament,
   herobg,
+  heroPortrait,
+  heroLandscape,
   facebook,
   instagram,
   tiktok,

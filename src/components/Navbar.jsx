@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../js/styles';
 import { navLinks } from '../constants';
-import { logo, darkClose, darkMenu, lightClose, lightMenu } from '../assets';
+import { darkClose, darkMenu, lightClose, lightMenu } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -40,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='relative text-white'>
+    <nav className='relative text-white z-30'>
       <div className={`${styles.paddingX} ${bgNavbar} ${textColor} fixed z-20 flex w-full items-center py-5 transition duration-500`}>
         <div className='mx-auto flex w-full items-center justify-between'>
           <Link
@@ -52,7 +52,7 @@ const Navbar = () => {
             }}
           >
             <img
-              src={logo}
+              src='/favicon.png'
               alt='logo'
               className='h-9 w-9 object-contain'
             />

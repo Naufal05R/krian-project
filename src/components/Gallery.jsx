@@ -11,11 +11,17 @@ const Gallery = () => {
         <motion.article
           className='overflow-hidden'
           variants={slideIn('up', 'spring', 0.1 * index, 0.75)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
           key={index}
         >
           <motion.div
             className='relative h-full w-full overflow-clip rounded-2xl'
             variants={zoomIn(0.1 * index, 0.75)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
           >
             <motion.div className={`w-full bg-neutral-400 pb-[100%]`} />
             <motion.img

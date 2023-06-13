@@ -32,7 +32,6 @@ import {
   nature,
   teamwork,
 } from "../assets";
-import Akhlak from '../assets/icons/prime/Akhlak';
 
 export const navLinks = [
   {
@@ -200,6 +199,33 @@ export const activityCard = [
   },
 ];
 
+export const testimonials = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but NR proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like NR does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "After NR optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
+  },
+];
+
 export const footerLinks = [
   {
     title: "Tentang Kami",
@@ -252,6 +278,27 @@ export const footerLinks = [
         url: "#",
       },
     ],
+  },
+];
+
+export const startingFeatures = [
+  'Find a world that suits you and you want to enter',
+  'Enter the world by reading basmalah to be safe',
+  'No need to beat around the bush, just stay on the gas and have fun',
+];
+
+export const newFeatures = [
+  {
+    imgUrl: teamwork,
+    title: 'A new world',
+    subtitle:
+        'we have the latest update with new world for you to try never mind',
+  },
+  {
+    imgUrl: teamwork,
+    title: 'More realistic',
+    subtitle:
+        'In the latest update, your eyes are narrow, making the world more realistic than ever',
   },
 ];
 

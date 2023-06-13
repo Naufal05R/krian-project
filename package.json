@@ -7,12 +7,12 @@
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview --host"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@fontsource/poppins": "^5.0.2",
+    "@fontsource/poppins": "^5.0.3",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.3",
     "@mui/styled-engine-sc": "^5.12.0",

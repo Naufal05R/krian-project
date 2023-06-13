@@ -1,12 +1,12 @@
 import { styles } from '../js';
 
 import { heroHeadings } from '../constants';
-import { herobg } from '../assets';
+import { herobg, heroPortrait } from '../assets';
 
 const Hero = () => {
   return (
     <section className={`relative mx-auto min-h-screen w-full overflow-clip`}>
-      <div className={`${styles.paddingX} absolute inset-0 top-[124px] z-10 mx-auto flex h-fit flex-col items-start xs:top-[120px]`}>
+      <div className={`${styles.paddingX} absolute inset-0 top-[124px] z-20 mx-auto flex h-fit flex-col items-start xs:top-[120px]`}>
         <div className='mx-auto w-full text-center'>
           <h2 className={`${styles.heroHeadText} text-center `}>
             Sekolah Al-Izzah
@@ -42,11 +42,16 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className='absolute top-1/2 h-full w-full -translate-y-1/2 object-cover'>
-        <img
-          src={herobg}
-          className='h-full w-full object-cover object-center'
-        />
+      <div className="absolute h-full w-full top-1/2 -translate-y-1/2 bg-white/5 z-10 backdrop-blur-[4px]" />
+      <div className='absolute top-1/2 h-full w-full -translate-y-1/2 object-contain brightness-50'>
+        <picture>
+          <source media="(max-width:450px)" srcSet={heroPortrait} />
+          <source media="(max-width:1440px)" srcSet={heroPortrait} />
+          <img
+            src={herobg}
+            className='h-full w-full object-cover object-center'
+          />
+        </picture>
       </div>
     </section>
   );

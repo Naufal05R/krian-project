@@ -1,21 +1,12 @@
 /* eslint-disable react-refresh/only-export-components */
 import { motion } from 'framer-motion';
-import { HiAdjustments } from 'react-icons/hi';
-import { AiFillCodeSandboxCircle } from 'react-icons/ai';
-import { fadeIn, zoomIn, shuffle, textVariant } from '../utils';
+import { fadeIn, textVariant } from '../utils';
 
 import { styles } from '../js/styles';
 import { primeCards } from '../constants';
 
 import { SectionWrapper } from '../hoc';
 import { Tilt } from 'react-tilt';
-
-import Akhlak from '../assets/icons/prime/Akhlak';
-import Internship from '../assets/icons/prime/Internship';
-import Leadership from '../assets/icons/prime/Leadership';
-import Logic from '../assets/icons/prime/Logic';
-import Nature from '../assets/icons/prime/Nature';
-import Teamwork from '../assets/icons/prime/Teamwork';
 
 const PrimeCard = ({ index, title, text, url }) => {
   return (
@@ -58,21 +49,37 @@ const Prime = () => {
   return (
     <div className='mx-auto w-full'>
       <div className='relative mt-4 flex flex-col items-start'>
-        <motion.div variants={textVariant(0.25)}>
-          <h2 className={`${styles.sectionHeadText} w-full`}>Keunggulan Al-Izzah</h2>
+        <motion.div
+          variants={textVariant(0.25)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
+        >
+          <h2 className={`${styles.sectionHeadText} w-full`}>Keunggulan Kami</h2>
         </motion.div>
         <motion.blockquote
           className='mr-10 lg:w-2/3'
           variants={textVariant(0.5 * 1)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
         >
           <motion.p
             className={`${styles.sectionParagraphText} mt-3`}
             variants={fadeIn('right', 'spring', 0.5 * 1, 1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
           >
             Dengan kelulusan standar yang mencakup hafalan Al-Quran bersyahadah, kemampuan berbahasa Arab dan Inggris yang aktif, serta jiwa mandiri, kepemimpinan, dan kewirausahaan, siswa juga berkesempatan mendapatkan beasiswa.
           </motion.p>
         </motion.blockquote>
-        <div className='mx-auto mt-20 flex flex-wrap gap-8 md:justify-around '>
+        <motion.div
+          className='mx-auto mt-20 flex flex-wrap gap-8 md:justify-around'
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
+        >
           {primeCards.map((group, index) => (
             <PrimeCard
               key={group.title}
@@ -81,7 +88,7 @@ const Prime = () => {
               {...group}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

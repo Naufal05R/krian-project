@@ -3,7 +3,13 @@ const styles = {
   paddingY: "sm:py-16 py-3",
   padding: "sm:px-16 px-5 sm:py-16 py-3",
 
-  // hero section
+  innerWidth: "2xl:max-w-[1280px] w-full",
+  interWidth: "lg:w-[80%] w-[100%]",
+
+  flexCenter: "flex justify-center items-center",
+  flexStart: "flex justify-start items-start",
+  flexEnd: "flex justify-end",
+
   heroHeading:
     "font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase",
   heroDText:
@@ -24,15 +30,13 @@ const styles = {
 
   groupHeadText:
     "font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",
-  groupSubText: 
-    "font-bold text-[16px] sm:text-[18px] leading-[150%]",
+  groupSubText: "font-bold text-[16px] sm:text-[18px] leading-[150%]",
   groupParagraphText:
     "text-slate-400 font-light text-[14px] sm:text-[16px] leading-[150%]",
 
   cardHeadText:
     "font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",
-  cardSubText:
-    "font-medium text-[16px] md:text-[24px] leading-[150%]",
+  cardSubText: "font-medium text-[16px] md:text-[24px] leading-[150%]",
   cardParagraphText:
     "text-slate-400 font-extralight text-[14px] sm:text-[20px] leading-[150%]",
 
