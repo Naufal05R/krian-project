@@ -2,7 +2,7 @@ import { SectionWrapper } from '../hoc';
 import { styles } from '../js/styles';
 import Gallery from './Gallery';
 
-import SwipeableTextMobileStepper from './SwipeableTextMobileStepper';
+import SwipeableTextMobileStepper from '../../backup/SwipeableTextMobileStepper';
 
 const Documentation = () => {
   return (

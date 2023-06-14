@@ -69,16 +69,16 @@ const Shared = () => {
           >            {sharedImgBottom.map((img, index) => (
               <motion.div
                 className='h-28 grow basis-1/3 xs:h-36 sm:h-44 sm:basis-1/5'
-                variants={fadeIn('up', 'spring', 0.5 * index + 4, 0.75)}
+                variants={fadeIn('up', 'spring', 0.5 * index + 2, 0.75)}
                 key={index}
               >
                 <motion.div
                   className={`relative h-full w-full overflow-hidden`}
-                  variants={slideIn('down', 'spring', 0.5 * index + 4, 0.75)}
+                  variants={slideIn('down', 'spring', 0.5 * index + 2, 0.75)}
                 >
                   <motion.div
                     className={`absolute ${random(arrayAbsolutes)} max-h-full w-2/3 overflow-clip rounded-2xl sm:w-2/3`}
-                    variants={zoomIn(0.5 * index, 0.75)}
+                    variants={zoomIn(0.5 * index + 2, 0.75)}
                   >
                     <motion.img
                       src={img.url}

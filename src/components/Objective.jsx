@@ -17,11 +17,11 @@ const ObjectiveCard = ({ objective, index }) => {
 
   useEffect(() => {
     if (index % 2 === 0) {
-      setShadow('shadow-[0px_0px_0px_4px_#BAE6FD,0px_3px_6px_rgba(30,30,30,0.2),0px_3px_8px_4px_rgba(30,30,30,0.15)]');
+      setShadow('shadow-[0px_0px_0px_4px_#BAE6FD,0px_3px_4px_0px_rgba(30,30,30,0.2),0px_3px_8px_2px_rgba(30,30,30,0.15)]');
       setTextColor('text-sky-500');
       setColor('#f0f9ff');
     } else {
-      setShadow('shadow-[0px_0px_0px_4px_#A5f3FC,0px_3px_6px_rgba(30,30,30,0.2),0px_3px_8px_2px_rgba(30,30,30,0.15)]');
+      setShadow('shadow-[0px_0px_0px_4px_#A5f3FC,0px_3px_4px_0px_rgba(30,30,30,0.2),0px_3px_8px_2px_rgba(30,30,30,0.15)]');
       setTextColor('text-cyan-500');
       setColor('#ecfeff');
     }
@@ -29,11 +29,10 @@ const ObjectiveCard = ({ objective, index }) => {
 
   return (
     <VerticalTimelineElement
-      className='drop-shadow-[0_4px_0px_#E5E5E5]'
-      contentStyle={{ backgroundColor: `${color}`, color: '#1e1e1e', boxShadow: 'none' }}
+      contentStyle={{ backgroundColor: `${color}`, color: '#1e1e1e', boxShadow: 'none', WebkitBoxShadow: 'none' }}
       contentArrowStyle={{ borderRight: '7px solid #1e1e1e' }}
       date={objective.date}
-      iconStyle={{ background: objective.iconBg, boxShadow: 'none' }}
+      iconStyle={{ background: objective.iconBg, boxShadow: 'none', WebkitBoxShadow: 'none' }}
       icon={
         <div className={`flex h-full w-full items-center justify-center rounded-full ${shadow}`}>
           <img

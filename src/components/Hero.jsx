@@ -42,7 +42,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="absolute h-full w-full top-1/2 -translate-y-1/2 bg-white/5 z-10 backdrop-blur-[4px]" />
+      {/* <div className="absolute h-full w-full top-1/2 -translate-y-1/2 bg-white/5 z-10 backdrop-blur-[4px]" /> */}
       <div className='absolute top-1/2 h-full w-full -translate-y-1/2 object-contain brightness-50'>
         <picture>
           <source media="(max-width:450px)" srcSet={heroPortrait} />

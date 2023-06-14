@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Prime, Activity, Hero, Navbar, Shared, GetStarted, WhatsNew, Objective } from '../components';
+import { About, Prime, Hero, Navbar, Shared, GetStarted, WhatsNew, Objective } from '../components';
 import Feedback from '../components/Feedback';
 
 const HomePage = () => {
@@ -26,12 +26,9 @@ const HomePage = () => {
       <Objective />
       <div className='absolute right-[-147.5px] top-[6069.96px] -z-30 h-60 w-60 bg-about-ornament' />
       <div className='absolute left-[-152.5px] top-[6310.04px] -z-30 h-60 w-60 bg-about-ornament' />
-      <Activity />
+      <Feedback />
       <div className='absolute right-[-147.5px] top-[7069.96px] -z-30 h-60 w-60 bg-about-ornament' />
       <div className='absolute left-[-152.5px] top-[7310.04px] -z-30 h-60 w-60 bg-about-ornament' />
-      <Feedback />
-      <div className='absolute right-[-147.5px] top-[8069.96px] -z-30 h-60 w-60 bg-about-ornament' />
-      <div className='absolute left-[-152.5px] top-[8310.04px] -z-30 h-60 w-60 bg-about-ornament' />
       <Shared />
     </>
   );
