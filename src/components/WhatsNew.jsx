@@ -12,9 +12,6 @@ import { frame23002 } from '../assets';
 const WhatsNew = () => (
   <motion.div
     variants={staggerContainer()}
-    initial='hidden'
-    whileInView='show'
-    viewport={{ once: false, amount: 0.5 }}
     className={`${styles.innerWidth} mx-auto flex flex-col gap-8 lg:flex-row`}
   >
     <motion.div

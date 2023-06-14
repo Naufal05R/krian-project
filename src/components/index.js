@@ -9,6 +9,7 @@ import Documentation from "./Documentation";
 import Shared from "./Shared";
 import GetStarted from "./GetStarted";
 import WhatsNew from "./WhatsNew";
+import Objective from './Objective';
 
 import Gallery from "./Gallery";
 import StartSteps from "./StartSteps";
@@ -27,6 +28,7 @@ export {
   Shared,
   GetStarted,
   WhatsNew,
+  Objective,
   NewFeatures,
   Gallery,
   StartSteps,

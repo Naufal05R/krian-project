@@ -202,27 +202,83 @@ export const activityCard = [
 export const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but NR proved me wrong.",
-    name: "Sara Lee",
+      "Saya sangat beruntung dapat memiliki guru seperti ustadz dan ustadzah, karena telah mengajarkankan saya bukan hanya ilmu, tetapi juga moral dan etika yang penting dalam kehidupan.",
+    name: "Agustina Setya H",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like NR does.",
-    name: "Chris Brown",
+      "Sekolah ini memberikan pengalaman yang belum pernah saya rasakan sebelumnya, terima kasih atas pengalaman-pengalaman baru, semoga sekolah ini dapat terus berkembang kedepannya.",
+    name: "Wisnu Muhammad dzikry",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After NR optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "Terima kasih Ustadz, Ustadzah, teman-teman, dan SMP Alam Al'Izzah. Saya mendapat banyak ilmu dan pengalaman berharga selama belajar di sini. Saya yakin SMP Alam Al'Izzah akan semakin maju dan berprestasi.",
+    name: "Rizky Yazid Putra Negara",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/men/6.jpg",
+  },
+];
+
+export const objectives = [
+  {
+    title: "Berkshire convergence",
+    company_name: "Moen - Graham",
+    icon: logic,
+    iconBg: "#ffffff",
+    date: "Jan 27, 2023 - Jan 27, 2026",
+    points: [
+      "Mempelajari penerapan BOM dan DOM pada halaman website. Selain itu, modul ini mengajarkan teknik pemanipulasian DOM menggunakan JavaScript.",
+      "Mempelajari penerapan event dalam menciptakan interaktifitas pada HTML element.",
+      "Mempelajari API browser yang berguna untuk penyimpanan data melalui Web Storage. Dalam modul ini mengajarkan mengenai tipe-tipe storage beserta penerapannya.",
+    ],
+  },
+  {
+    title: "Sit dignissimos animi",
+    company_name: "Raynor - Roob",
+    icon: logic,
+    iconBg: "#ffffff",
+    date: "Mar 27, 2023 - Mar 27, 2026",
+    points: [
+      "Berkenalan dengan React, mengetahui alasan mempelajari React, dan mengenal ekosistem yang ada di React.",
+      "Belajar tentang konsep dasar React seperti composition, declarative code, unidirectional data flow, dan menyadari bahwa React hanyalah JavaScript.",
+      "Belajar tentang membangun UI di React seperti mengenal element dan component. Serta, belajar juga konsep component properti yang membuat UI aplikasi bersifat reusable.",
+      "Belajar tentang class component, menggunakan state di dalam component, memahami dan mempraktikkan controlled component.",
+    ],
+  },
+  {
+    title: "Quo reprehenderit quasi",
+    company_name: "Johnson Inc",
+    icon: logic,
+    iconBg: "#ffffff",
+    date: "Mar 13, 2023 - Mar 13, 2026",
+    points: [
+      "Belajar menerapkan sintaks terbaru pada JavaScript seperti block scope variable, template literals, destructuring object and array, spread operator dan rest parameters, arrow function, classes, promise hingga JavaScript module.",
+      "Belajar membangun component UI website yang bersifat reusable dan encapsulated dengan custom element dan shadow DOM.",
+      "Belajar menambahkan, menghapus, dan menggunakan package JavaScript yang tersedia di NPM, serta membedakan peranan dari development dependencies dan production dependencies.",
+      "Belajar penerapan module bundler sebagai build tools bagi aplikasi web untuk membundel berkas-berkas JavaScript menjadi satu berkas statis yang siap rilis dan optimal.",
+      "Belajar transaksi data melalui protokol HTTP/HTTPS menggunakan Fetch API, baik menggunakan method GET, POST, PUT, maupun DELETE.",
+    ],
+  },
+  {
+    title: "Molestiae molestias et",
+    company_name: "Crona Group",
+    icon: logic,
+    iconBg: "#ffffff",
+    date: "May 3, 2023 - May 3, 2026",
+    points: [
+      "Belajar cara memvalidasi komponen props menggunakan PropTypes.",
+      "Belajar cara membuat routing di sisi client yang mudah dengan menggunakan ekosistem React Router.",
+      "Belajar cara memanfaatkan lifecycle method untuk menangani proses asynchronous seperti mendapatkan data dari API di dalam komponen.",
+      "Belajar cara menyimpan state global yang dapat diakses tanpa praktik props drilling dengan menggunakan React Context.",
+      "Belajar cara menuliskan kode React yang lebih baik dengan memaksimalkan penggunaan functional component melalui Hooks.",
+    ],
   },
 ];
 
@@ -282,23 +338,23 @@ export const footerLinks = [
 ];
 
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  "Find a world that suits you and you want to enter",
+  "Enter the world by reading basmalah to be safe",
+  "No need to beat around the bush, just stay on the gas and have fun",
 ];
 
 export const newFeatures = [
   {
     imgUrl: teamwork,
-    title: 'A new world',
+    title: "A new world",
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+      "we have the latest update with new world for you to try never mind",
   },
   {
     imgUrl: teamwork,
-    title: 'More realistic',
+    title: "More realistic",
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+      "In the latest update, your eyes are narrow, making the world more realistic than ever",
   },
 ];
 

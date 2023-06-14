@@ -13,9 +13,6 @@ const GetStarted = () => {
   return (
     <motion.div
       variants={staggerContainer()}
-      initial='hidden'
-      whileInView='show'
-      viewport={{ once: false, amount: 0.5 }}
       className={`${styles.innerWidth} mx-auto flex flex-col gap-8 lg:flex-row`}
     >
       <motion.div

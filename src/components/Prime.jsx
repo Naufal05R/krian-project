@@ -49,37 +49,21 @@ const Prime = () => {
   return (
     <div className='mx-auto w-full'>
       <div className='relative mt-4 flex flex-col items-start'>
-        <motion.div
-          variants={textVariant(0.25)}
-          initial='hidden'
-          whileInView='show'
-          viewport={{ once: false, amount: 0.25 }}
-        >
+        <motion.div variants={textVariant(0.25)}>
           <h2 className={`${styles.sectionHeadText} w-full`}>Keunggulan Kami</h2>
         </motion.div>
         <motion.blockquote
           className='mr-10 lg:w-2/3'
           variants={textVariant(0.5 * 1)}
-          initial='hidden'
-          whileInView='show'
-          viewport={{ once: false, amount: 0.25 }}
         >
           <motion.p
             className={`${styles.sectionParagraphText} mt-3`}
             variants={fadeIn('right', 'spring', 0.5 * 1, 1)}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: false, amount: 0.25 }}
           >
             Dengan kelulusan standar yang mencakup hafalan Al-Quran bersyahadah, kemampuan berbahasa Arab dan Inggris yang aktif, serta jiwa mandiri, kepemimpinan, dan kewirausahaan, siswa juga berkesempatan mendapatkan beasiswa.
           </motion.p>
         </motion.blockquote>
-        <motion.div
-          className='mx-auto mt-20 flex flex-wrap gap-8 md:justify-around'
-          initial='hidden'
-          whileInView='show'
-          viewport={{ once: false, amount: 0.25 }}
-        >
+        <motion.div className='mx-auto mt-20 flex flex-wrap gap-8 md:justify-around'>
           {primeCards.map((group, index) => (
             <PrimeCard
               key={group.title}

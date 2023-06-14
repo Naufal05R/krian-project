@@ -1,14 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 import { motion } from 'framer-motion';
 import { HiColorSwatch } from 'react-icons/hi';
-import { fadeIn, zoomIn, shuffle, textVariant, staggerContainer } from '../utils';
+import { fadeIn, shuffle, textVariant } from '../utils';
 
 import { styles } from '../js/styles';
 import { aboutCards } from '../constants';
 
 import { SectionWrapper } from '../hoc';
 import { Tilt } from 'react-tilt';
-import Gallery from './Gallery';
 
 const shuffleAboutCards = shuffle(aboutCards);
 
@@ -24,9 +23,9 @@ const AboutCard = ({ index, title, text }) => {
       >
         <motion.div
           variants={fadeIn('right', 'spring', 0.5 * index + 1, 0.75)}
-          className={`${index % 2 === 0 ? 'bg-sky-500' : 'bg-cyan-500 md:ml-auto md:text-right lg:ml-0 lg:text-left'} w-full rounded-2xl p-[1px]`}
+          className={`${index % 2 === 0 ? 'border-sky-500' : 'border-cyan-500 md:ml-auto md:text-right lg:ml-0 lg:text-left'} w-full rounded-2xl border`}
         >
-          <div className='flex min-h-[240px] flex-col items-center justify-between gap-y-4 rounded-2xl bg-white p-10 xl:min-h-[320px]'>
+          <div className='flex min-h-[240px] flex-col items-center justify-between gap-y-2 rounded-2xl bg-white p-10 xl:min-h-[320px]'>
             <div className='w-full'>
               <HiColorSwatch
                 size={64}
@@ -47,12 +46,7 @@ const AboutCard = ({ index, title, text }) => {
 
 const About = () => {
   return (
-    <motion.div
-      className='relative mx-auto w-full'
-      initial='hidden'
-      whileInView='show'
-      viewport={{ once: false, amount: 0.5 }}
-    >
+    <motion.div className='relative mx-auto w-full'>
       <div className='mt-4 flex flex-col items-start'>
         <motion.div variants={textVariant(0.25)}>
           <h2 className={`${styles.sectionHeadText} w-full`}>Tentang Kami</h2>

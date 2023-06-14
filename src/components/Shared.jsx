@@ -20,9 +20,6 @@ const Shared = () => {
           <motion.div
             className='flex w-full flex-1 grow flex-wrap justify-between gap-4 sm:gap-8'
             variants={staggerContainer(4, 4)}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: false, amount: 0.1 }}
           >
             {sharedImgTop.map((img, index) => (
               <motion.article
@@ -68,19 +65,16 @@ const Shared = () => {
           <motion.div
             className='flex w-full flex-1 grow flex-wrap justify-between gap-4 sm:gap-8'
             variants={staggerContainer(4, 4)}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: false, amount: 0.1 }}
-          >
-            {sharedImgBottom.map((img, index) => (
+
+          >            {sharedImgBottom.map((img, index) => (
               <motion.div
                 className='h-28 grow basis-1/3 xs:h-36 sm:h-44 sm:basis-1/5'
-                variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}
+                variants={fadeIn('up', 'spring', 0.5 * index + 4, 0.75)}
                 key={index}
               >
                 <motion.div
                   className={`relative h-full w-full overflow-hidden`}
-                  variants={slideIn('down', 'spring', 0.5 * index, 0.75)}
+                  variants={slideIn('down', 'spring', 0.5 * index + 4, 0.75)}
                 >
                   <motion.div
                     className={`absolute ${random(arrayAbsolutes)} max-h-full w-2/3 overflow-clip rounded-2xl sm:w-2/3`}
