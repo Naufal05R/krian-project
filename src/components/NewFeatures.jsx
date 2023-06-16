@@ -12,7 +12,7 @@ const NewFeatures = ({ imgUrl, title, subtitle, index }) => {
           />
         </div>
       </div>
-      <h1 className='mt-[26px] text-[24px] font-bold leading-[30px] text-white'>{title}</h1>
+      <h1 className={`mt-[26px] text-[24px] font-bold leading-[30px] ${index % 2 ? 'text-cyan-500' : 'text-sky-500'}`}>{title}</h1>
       <p className={`mt-4 flex-1 ${styles.groupParagraphText}`}>{subtitle}</p>
     </div>
   );

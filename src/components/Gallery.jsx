@@ -1,25 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { image } from '../constants';
-import { slideIn, zoomIn } from '../utils';
+import { shuffle, zoomIn } from '../utils';
+import { useEffect } from 'react';
+
+const shuffleImg11 = shuffle(image.img11);
+const shuffleImg23 = shuffle(image.img23);
 
 const Gallery = () => {
+  const [randomImage, setImage] = useState(shuffleImg23);
+  const [index, setIndex] = useState(0);
+
+  const handleReloadBrowser = () => {
+    index ? setImage(shuffleImg23) : setImage(shuffleImg11);
+    setIndex(!index);
+  };
+
+  useEffect(() => {
+    window.addEventListener('load', handleReloadBrowser);
+  }, []);
+
   return (
     <div className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:gap-4 lg:grid-cols-4 2xl:grid-cols-5'>
-      {image.img11.map((img, index) => (
+      {randomImage.map((img, index) => (
         <motion.article
-          className='overflow-hidden'
-          variants={slideIn('up', 'spring', 0.1 * index, 0.75)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: true, amount: 0.5 }}
           key={index}
         >
           <motion.div
             className='relative h-full w-full overflow-clip rounded-2xl'
-            variants={zoomIn(0.1 * index, 0.75)}
+            variants={zoomIn(0.5 * (Math.random() * 2 * (Math.random() * 2)), 0.75)}
           >
             <motion.div className={`w-full bg-neutral-400 pb-[100%]`} />
             <motion.img
-              className='absolute top-0 z-10 h-full w-full'
+              className='absolute top-0 z-10 h-full w-full object-cover'
               src={img.url}
             />
           </motion.div>

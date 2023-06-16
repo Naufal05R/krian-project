@@ -10,7 +10,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
   return (
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5 + 1, 0.75)}
-      className={`w-full rounded-3xl bg-blue-50 p-10 shadow-sm xs:w-[75%] md:w-[300px] lg:w-[360px]`}
+      className={`w-full rounded-3xl bg-blue-50 p-10 shadow-sm xs:w-full md:w-[80%] lg:w-[360px]`}
     >
       <p className='text-[48px] font-black text-black-200'>"</p>
 
@@ -43,7 +43,7 @@ const Feedbacks = () => {
     <div className='mt-12 w-full rounded-[20px]'>
       <div className={`rounded-2xl`}>
         <motion.div variants={textVariant(0.25)}>
-          <h2 className={`${styles.sectionHeadText} w-full`}>Testmonial Santri</h2>
+          <h2 className={`${styles.sectionHeadText} w-fit`}>Testmonial Santri</h2>
         </motion.div>
       </div>
 

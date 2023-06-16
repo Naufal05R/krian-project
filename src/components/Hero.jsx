@@ -1,7 +1,7 @@
 import { styles } from '../js';
 
 import { heroHeadings } from '../constants';
-import { herobg, heroPortrait } from '../assets';
+import { heroPortrait, heroLandscape } from '../assets';
 
 const Hero = () => {
   return (
@@ -46,9 +46,8 @@ const Hero = () => {
       <div className='absolute top-1/2 h-full w-full -translate-y-1/2 object-contain brightness-50'>
         <picture>
           <source media="(max-width:450px)" srcSet={heroPortrait} />
-          <source media="(max-width:1440px)" srcSet={heroPortrait} />
           <img
-            src={herobg}
+            src={heroLandscape}
             className='h-full w-full object-cover object-center'
           />
         </picture>

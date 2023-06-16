@@ -1,4 +1,4 @@
-import { Navbar, Hero, About, Activity, Shared, Footer } from "./components";
+import { Footer, Shared } from "./components";
 import { HomePage, DocumentationPage } from "./pages";
 import { Route, Routes } from "react-router";
 
@@ -9,6 +9,7 @@ const App = () => {
         <Route path="/*" element={<HomePage />} />
         <Route path="/documentation" element={<DocumentationPage />} />
       </Routes>
+      <Shared />
       <Footer />
     </div>
   );

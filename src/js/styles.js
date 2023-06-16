@@ -23,7 +23,7 @@ const styles = {
     "text-white font-normal text-[14px] xs:text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] lg:leading-[150%]",
 
   sectionHeadText:
-    "text-sky-500 font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",
+    "bg-clip-text text-transparent bg-gradient-to-br from-sky-500 to-cyan-500 to-75% font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",
   sectionSubText: "font-bold text-[14px] sm:text-[18px] text-sky-500",
   sectionParagraphText:
     "sm:text-[16px] text-[14px] text-black-200 leading-[200%]",

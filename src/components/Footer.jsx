@@ -36,8 +36,8 @@ const Footer = () => {
             </Link>
           </div>
           <div className='mt-3'>
-            <h4 className={`${styles.sectionHeadText} w-full text-white`}>Sekolah Alam</h4>
-            <h4 className={`${styles.sectionHeadText} w-full text-white`}>Boarding School</h4>
+            <h4 className={`${styles.groupHeadText} w-full text-white`}>Sekolah Alam</h4>
+            <h4 className={`${styles.groupHeadText} w-full text-white`}>Boarding School</h4>
           </div>
           <ul className='mt-4 flex w-full list-none flex-wrap gap-4 max-xs:justify-between'>
             {navLinks.map((link, index) => (

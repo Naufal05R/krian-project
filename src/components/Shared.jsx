@@ -7,7 +7,7 @@ import { SectionWrapper } from '../hoc';
 
 import { image } from '../constants';
 
-const shuffleImg11 = shuffle(image.img11);
+const shuffleImg11 = shuffle(image.img11.slice(0, 8));
 const sharedImgTop = shuffleImg11.slice(0, 4);
 const sharedImgBottom = shuffleImg11.slice(4, 8);
 const arrayAbsolutes = Object.values(absolutes);
@@ -49,7 +49,7 @@ const Shared = () => {
         <div className={`${styles.paddingX} top-1/2 z-20 mx-auto my-6 flex w-full flex-col items-start bg-transparent`}>
           <div className='grid w-full place-items-center'>
             <div className='mx-auto flex w-full flex-col items-center gap-y-3 text-center text-[14px] font-bold'>
-              <h2 className={`${styles.sectionHeadText} w-full`}>
+              <h2 className={`${styles.groupHeadText} text-sky-500 w-full`}>
                 Daftar <span className='hidden md:inline'>Al-Izzah</span> Sekarang
               </h2>
               <a

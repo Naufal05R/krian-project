@@ -19,7 +19,7 @@ const WhatsNew = () => (
       className='flex flex-[0.75] flex-col justify-center'
     >
       <motion.div variants={textVariant(0.25)}>
-        <h2 className={`${styles.sectionHeadText} w-full`}>Kegiatan Kedua</h2>
+        <h2 className={`${styles.sectionHeadText} w-fit`}>Kegiatan Kedua</h2>
       </motion.div>
       <div className='mt-[48px] flex flex-wrap justify-between gap-[24px]'>
         {newFeatures.map((feature, index) => (
@@ -35,7 +35,7 @@ const WhatsNew = () => (
       variants={objectVariants('right')}
       className={`flex-1 ${styles.flexCenter} relative flex items-center justify-center`}
     >
-      <div className='relative h-[75%] w-[90%] overflow-clip rounded-2xl'>
+      <div className='relative h-[90%] w-[90%] overflow-clip rounded-2xl'>
         <div className='absolute -z-10 h-full w-full bg-neutral-400' />
         <img
           src={frame23002}

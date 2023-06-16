@@ -49,7 +49,7 @@ const About = () => {
     <motion.div className='relative mx-auto w-full'>
       <div className='mt-4 flex flex-col items-start'>
         <motion.div variants={textVariant(0.25)}>
-          <h2 className={`${styles.sectionHeadText} w-full`}>Tentang Kami</h2>
+          <h2 className={`${styles.sectionHeadText}`}>Tentang Kami</h2>
         </motion.div>
         <motion.blockquote
           className='mr-10 lg:w-2/3'

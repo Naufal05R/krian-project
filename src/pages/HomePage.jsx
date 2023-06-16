@@ -29,7 +29,6 @@ const HomePage = () => {
       <Feedback />
       <div className='absolute right-[-147.5px] top-[7069.96px] -z-30 h-60 w-60 bg-about-ornament' />
       <div className='absolute left-[-152.5px] top-[7310.04px] -z-30 h-60 w-60 bg-about-ornament' />
-      <Shared />
     </>
   );
 };

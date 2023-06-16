@@ -19,7 +19,7 @@ const GetStarted = () => {
         variants={objectVariants('left')}
         className={`flex-1 ${styles.flexCenter} relative flex items-center justify-center`}
       >
-        <div className='relative h-[75%] w-[90%] overflow-clip rounded-2xl'>
+        <div className='relative h-[90%] w-[90%] overflow-clip rounded-2xl'>
           <div className='absolute -z-10 h-full w-full bg-neutral-400' />
           <img
             src={frame23001}
@@ -33,7 +33,7 @@ const GetStarted = () => {
         className='flex flex-[0.75] flex-col justify-center'
       >
         <motion.div variants={textVariant(0.25)}>
-          <h2 className={`${styles.sectionHeadText} w-full`}>Kegiatan Pertama</h2>
+          <h2 className={`${styles.sectionHeadText} w-fit`}>Kegiatan Pertama</h2>
         </motion.div>
         <div className='mt-[31px] flex max-w-[370px] flex-col gap-[24px]'>
           {startingFeatures.map((feature, index) => (

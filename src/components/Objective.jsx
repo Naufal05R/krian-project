@@ -70,8 +70,8 @@ const ObjectiveCard = ({ objective, index }) => {
 const Objective = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText}`}>Visi & Misi Kami</h2>
+      <motion.div variants={textVariant(0.25)}>
+        <h2 className={`${styles.sectionHeadText} w-fit`}>Visi & Misi Kami</h2>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
