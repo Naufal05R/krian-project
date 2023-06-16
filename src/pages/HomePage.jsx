@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Prime, Hero, Navbar, Shared, GetStarted, WhatsNew, Objective } from '../components';
+import { About, Prime, Hero, Navbar, GetStarted, WhatsNew, Objective } from '../components';
 import Feedback from '../components/Feedback';
 
 const HomePage = () => {

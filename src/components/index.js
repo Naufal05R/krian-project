@@ -3,8 +3,6 @@ import Hero from "./Hero";
 
 import About from "./About";
 import Prime from "./Prime";
-import Partner from "./Partner";
-import Documentation from "./Documentation";
 import Shared from "./Shared";
 import GetStarted from "./GetStarted";
 import WhatsNew from "./WhatsNew";
@@ -21,8 +19,6 @@ export {
   Hero,
   About,
   Prime,
-  Partner,
-  Documentation,
   Shared,
   GetStarted,
   WhatsNew,
