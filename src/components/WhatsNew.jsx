@@ -40,11 +40,11 @@ const WhatsNew = () => (
         <img
           src={frame23002}
           alt='Kegiatan pertama'
-          className='h-full w-full object-cover'
+          className='h-full w-full  object-cover'
         />
       </div>
     </motion.div>
   </motion.div>
 );
 
-export default SectionWrapper(WhatsNew, '');
+export default SectionWrapper(WhatsNew, { idName: '' });

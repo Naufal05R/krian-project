@@ -40,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='relative text-white z-30'>
+    <nav className='relative z-30 text-white'>
       <div className={`${styles.paddingX} ${bgNavbar} ${textColor} fixed z-20 flex w-full items-center py-5 transition duration-500`}>
         <div className='mx-auto flex w-full items-center justify-between'>
           <Link
@@ -61,24 +61,18 @@ const Navbar = () => {
             </p>
           </Link>
           <ul className='hidden list-none flex-row gap-10 lg:flex'>
-            <Link
-              to={`/${navLinks[0].id}`}
-              className={`${active === navLinks[0].title ? 'text-blue-500' : `${textColor}`} cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
-              onClick={() => setActive(navLinks[0].title)}
-            >
-              {navLinks[0].title}
-            </Link>
-            {navLinks.slice(1, 4).map((link) => (
-              <li
+            {navLinks.slice(0, 3).map((link) => (
+              <Link
                 key={link.id}
+                to={`/${link.id}`}
                 className={`${active === link.title ? 'text-blue-500' : `${textColor}`} cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
                 onClick={() => {
                   setActive(link.title);
                   window.scroll(0, 0);
                 }}
               >
-                <a href={`#${link.id}`}>{`${link.title}`}</a>
-              </li>
+                {`${link.title}`}
+              </Link>
             ))}
           </ul>
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('swiper.css');
 @import url('keyframe.css');
 
 @tailwind base;
@@ -17,23 +18,6 @@
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
-}
-
-.swiper {
-  width: 100%;
-  padding-bottom: 30px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
 }
 
 .hero-gradient {
@@ -55,6 +39,12 @@
 .filter-gradient {
   background: linear-gradient(180deg, #333333 0%, rgba(51, 51, 51, 0.9) 50%, rgba(51, 51, 51, 0) 100%);
   transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.rainbow-gradient {
+  background: #fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e11d48, #ea580c, #ca8a04, #16a34a, #0284c7, #2563eb, #9333ea); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e11d48, #ea580c, #ca8a04, #16a34a, #0284c7, #2563eb, #9333ea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .white-gradient {

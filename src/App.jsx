@@ -1,5 +1,5 @@
-import { Footer, Shared } from "./components";
-import { HomePage, DocumentationPage } from "./pages";
+import { Footer } from "./components";
+import { HomePage, DocumentationPage, NewsPage } from "./pages";
 import { Route, Routes } from "react-router";
 
 const App = () => {
@@ -8,8 +8,8 @@ const App = () => {
       <Routes>
         <Route path="/*" element={<HomePage />} />
         <Route path="/documentation" element={<DocumentationPage />} />
+        <Route path="/news" element={<NewsPage />} />
       </Routes>
-      <Shared />
       <Footer />
     </div>
   );

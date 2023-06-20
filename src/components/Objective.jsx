@@ -38,7 +38,7 @@ const ObjectiveCard = ({ objective, index }) => {
           <img
             src={objective.icon}
             alt={objective.company_name}
-            className='h-3/5 w-3/5 object-contain'
+            className='h-1/2 w-1/2 object-contain'
           />
         </div>
       }
@@ -89,4 +89,4 @@ const Objective = () => {
   );
 };
 
-export default SectionWrapper(Objective, '');
+export default SectionWrapper(Objective, { idName: '' });

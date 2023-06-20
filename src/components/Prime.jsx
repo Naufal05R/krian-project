@@ -78,4 +78,4 @@ const Prime = () => {
   );
 };
 
-export default SectionWrapper(Prime, 'prime');
+export default SectionWrapper(Prime, { idName: 'prime' });

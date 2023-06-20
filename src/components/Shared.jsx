@@ -96,4 +96,4 @@ const Shared = () => {
   );
 };
 
-export default SectionWrapper(Shared, 'shared');
+export default SectionWrapper(Shared, { idName: 'shared' });

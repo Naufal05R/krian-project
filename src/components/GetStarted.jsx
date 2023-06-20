@@ -17,7 +17,7 @@ const GetStarted = () => {
     >
       <motion.div
         variants={objectVariants('left')}
-        className={`flex-1 ${styles.flexCenter} relative flex items-center justify-center`}
+        className={`flex-1 relative flex items-center justify-center`}
       >
         <div className='relative h-[90%] w-[90%] overflow-clip rounded-2xl'>
           <div className='absolute -z-10 h-full w-full bg-neutral-400' />
@@ -49,4 +49,4 @@ const GetStarted = () => {
   );
 };
 
-export default SectionWrapper(GetStarted, '');
+export default SectionWrapper(GetStarted, { idName: '' });

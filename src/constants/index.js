@@ -18,9 +18,6 @@ import {
   frame23009,
   frame23010,
   frame23011,
-} from "../assets";
-
-import {
   facebook,
   instagram,
   tiktok,
@@ -31,6 +28,11 @@ import {
   logic,
   nature,
   teamwork,
+  quran,
+  people,
+  character,
+  champion,
+  forest,
 } from "../assets";
 
 export const navLinks = [
@@ -39,16 +41,8 @@ export const navLinks = [
     title: "Dokumentasi",
   },
   {
-    id: "about",
-    title: "Tentang",
-  },
-  {
-    id: "activity",
-    title: "Kegiatan",
-  },
-  {
-    id: "shared",
-    title: "Bergabung",
+    id: "news",
+    title: "Berita",
   },
   {
     id: "contact",
@@ -65,20 +59,20 @@ export const heroHeadings = [
 
 export const aboutCards = [
   {
-    title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores.",
+    title: "Sekolah Alam",
+    text: "Memiliki konsep belajar dekat dengan alam",
   },
   {
-    title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores.",
+    title: "Guru Kompeten",
+    text: "Memiliki guru-guru yang siap dan kompeten",
   },
   {
-    title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores.",
+    title: "Bangunan Luas",
+    text: "Memiliki bangunan yang luas untuk belajar",
   },
   {
-    title: "Senior Identity Architect",
-    text: "Exercitationem cum dolores.",
+    title: "Siswa Berkarakter",
+    text: "Membentuk siswa menjadi pribadi berkarakter",
   },
 ];
 
@@ -287,7 +281,7 @@ export const objectives = [
   {
     title: "Menanamkan Al Qur'an dan tauhid serta akhlaq Qur'ani",
     company_name: "Visi & Misi Kami",
-    icon: logic,
+    icon: quran,
     iconBg: "#ffffff",
     date: "",
     points: [
@@ -298,7 +292,7 @@ export const objectives = [
   {
     title: "Membiasakan anak melaksanakan kegiatan yang bermanfaat bagi diri dan lingkungannya",
     company_name: "Visi & Misi Kami",
-    icon: logic,
+    icon: people,
     iconBg: "#ffffff",
     date: "",
     points: [
@@ -310,18 +304,18 @@ export const objectives = [
   {
     title: "Membimbing dan mengarahkan anak untuk menemukan minat dan bakatnya",
     company_name: "Visi & Misi Kami",
-    icon: logic,
+    icon: character,
     iconBg: "#ffffff",
     date: "",
     points: [
-      "Menajak anak untuk mencoba berbagai kegiatan dan minat yang berbeda, seperti seni, musik, olahraga, sains, atau bahasa asing. Bersama-sama, identifikasi minat yang paling menarik bagi mereka.",
-      "Kenalkan anak pada berbagai kegiatan ekstrakurikuler yang relevan dengan minat dan bakat yang ingin mereka eksplorasi.",      
+      "Mengajak anak untuk mencoba berbagai kegiatan dan minat yang berbeda, seperti seni, musik, olahraga, sains, atau bahasa asing. Bersama-sama, identifikasi minat yang paling menarik bagi mereka.",
+      "Mengenalkan anak pada berbagai kegiatan ekstrakurikuler yang relevan dengan minat dan bakat yang ingin mereka eksplorasi.",      
     ],
   },
   {
     title: "Mendorong anak untuk berprestasi sesuai minat dan bakatnya",
     company_name: "Visi & Misi Kami",
-    icon: logic,
+    icon: champion,
     iconBg: "#ffffff",
     date: "",
     points: [
@@ -332,7 +326,7 @@ export const objectives = [
   {
     title: "Mengoptimalkan pendayagunaan alam sekitar sebagai sarana pembelajaran dan meningkatkan literasi",
     company_name: "Visi & Misi Kami",
-    icon: logic,
+    icon: forest,
     iconBg: "#ffffff",
     date: "",
     points: [
@@ -417,6 +411,149 @@ export const newFeatures = [
       "In the latest update, your eyes are narrow, making the world more realistic than ever",
   },
 ];
+
+export const newsList = [
+  {
+    id: `Artikel-1`,
+    title: 'Program Pembiasaan Dua Bahasa (Bilingual Program)',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'SMP Alam Al-Izzah',
+    duration: '5 mins',
+    date: 'Feb 13, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-2`,
+    title: 'Aku Muda, Aku Bisa',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'KB TK Alam Al Izzah',
+    duration: '5 mins',
+    date: 'Jan 20, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-3`,
+    title: 'Program Internship Smp Alam Al Izzah',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'SMP Viral',
+    duration: '5 mins',
+    date: 'Sep 23, 2022',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-4`,
+    title: 'Guru Adalah Teladan Dan Panutan, Siswa Adalah Perjalanan Dan Sekolah Adalah Pengabdian',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'Hari Guru Nasional',
+    duration: '5 mins',
+    date: 'Jun 16, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-5`,
+    title: 'Quam nesciunt dicta numquam dolorem quaerat porro commodi.',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'Operations optical Radial',
+    duration: '5 mins',
+    date: 'Jun 16, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-6`,
+    title: 'Quam nesciunt dicta numquam dolorem quaerat porro commodi.',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'Operations optical Radial',
+    duration: '5 mins',
+    date: 'Jun 16, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-7`,
+    title: 'Quam nesciunt dicta numquam dolorem quaerat porro commodi.',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'Operations optical Radial',
+    duration: '5 mins',
+    date: 'Jun 16, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-8`,
+    title: 'Quam nesciunt dicta numquam dolorem quaerat porro commodi.',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'Operations optical Radial',
+    duration: '5 mins',
+    date: 'Jun 16, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-9`,
+    title: 'Quam nesciunt dicta numquam dolorem quaerat porro commodi.',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'Operations optical Radial',
+    duration: '5 mins',
+    date: 'Jun 16, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+  {
+    id: `Artikel-10`,
+    title: 'Quam nesciunt dicta numquam dolorem quaerat porro commodi.',
+    thumbnail: {
+      title: 'Dynamic Image',
+      url: 'https://picsum.photos/seed/picsum/384/240',
+      alt: 'Grocery',
+      type: 'image/png',
+    },
+    kind: 'Operations optical Radial',
+    duration: '5 mins',
+    date: 'Jun 16, 2023',
+    author: 'Sekolah Alam Al-Izzah',
+  },
+]
 
 export const footerIcons = [
   {

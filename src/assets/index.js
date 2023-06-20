@@ -9,6 +9,12 @@ import herobg from "./herobg.jpg";
 import heroPortrait from "./heroPortrait.jpg";
 import heroLandscape from "./heroLandscape.jpg";
 
+import champion from "./icons/objective/champion.svg";
+import character from "./icons/objective/character.svg";
+import forest from "./icons/objective/forest.svg";
+import people from "./icons/objective/people.svg";
+import quran from "./icons/objective/quran.svg";
+
 import {
   facebook,
   instagram,
@@ -67,6 +73,11 @@ export {
   logic,
   nature,
   teamwork,
+  champion,
+  character,
+  forest,
+  people,
+  quran,
   frame11001,
   frame11002,
   frame11003,

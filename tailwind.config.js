@@ -16,8 +16,11 @@ export default {
         "white-100": "#EEFAFD",
       },
       boxShadow: {
-        card: "0px 35px 120px -15px #1D1D1F",
-        "card-xs": "0px 1px 16px 1px rgba(51, 51, 51, 0.1)",
+        card: {
+          base: "0px 35px 120px -15px #1D1D1F",
+          xs: "0px 1px 16px 1px rgba(51, 51, 51, 0.1)",
+          sm: "0px 2px 16px 2px rgba(51, 51, 51, 0.1)",
+        },
         icon: "0px 10px 20px rgba(28, 44, 64, 0.08)",
       },
       screens: {
@@ -33,4 +36,3 @@ export default {
   plugins: [
   ],
 }
-
