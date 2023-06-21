@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -16,23 +13,20 @@ export default {
         "white-100": "#EEFAFD",
       },
       boxShadow: {
-        card: {
-          base: "0px 35px 120px -15px #1D1D1F",
-          xs: "0px 1px 16px 1px rgba(51, 51, 51, 0.1)",
-          sm: "0px 2px 16px 2px rgba(51, 51, 51, 0.1)",
-        },
+        "card-xs": "0px 1px 16px 1px rgba(51, 51, 51, 0.1)",
+        "card-sm": "0px 2px 20px 4px rgba(51, 51, 51, 0.1)",
+        card: "0px 35px 120px -15px #1D1D1F",
         icon: "0px 10px 20px rgba(28, 44, 64, 0.08)",
       },
       screens: {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "home-pattern": "url('/src/assets/homebg.png')",
         "about-ornament": "url('/src/assets/ornament.png')",
         "card-placeholder": "url('/src/assets/placeholder.png')",
       },
     },
   },
-  plugins: [
-  ],
-}
+  plugins: [],
+};

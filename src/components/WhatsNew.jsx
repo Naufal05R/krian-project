@@ -36,11 +36,11 @@ const WhatsNew = () => (
       className={`flex-1 ${styles.flexCenter} relative flex items-center justify-center`}
     >
       <div className='relative h-[90%] w-[90%] overflow-clip rounded-2xl'>
-        <div className='absolute -z-10 h-full w-full bg-neutral-400' />
+        <div className='absolute -z-10 h-full shadow-card-sm w-full bg-neutral-400' />
         <img
           src={frame23002}
           alt='Kegiatan pertama'
-          className='h-full w-full  object-cover'
+          className='h-full w-full object-cover'
         />
       </div>
     </motion.div>

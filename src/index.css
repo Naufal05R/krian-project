@@ -54,11 +54,9 @@
 }
 
 .white-glossy {
-  background: #e6e6e8; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom right, #f0f4ffaa, #f0faffaa); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom right, #f0f4ffaa, #f0faffaa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: rgba(230, 230, 232, 0.4); /* fallback for old browsers */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 .blue-gradient {

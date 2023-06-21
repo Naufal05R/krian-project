@@ -5,7 +5,7 @@ import { styles } from '../js/styles';
 import { navLinks } from '../constants';
 import { darkClose, darkMenu, lightClose, lightMenu } from '../assets';
 
-const Navbar = () => {
+const Navbar = ({ absoluteBg = true }) => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleBgNavbarGlossy = () => {
-      setBgNavbar('white-glossy border-b border-neutral-100 shadow-card-xs');
+      setBgNavbar('white-glossy border-b border-neutral-100/40 shadow-card-xs');
       setTextColor('text-black-100');
       setClose(darkMenu);
       setMenu(darkClose);
@@ -29,7 +29,7 @@ const Navbar = () => {
       setTextColor('text-white');
       setClose(lightClose);
       setMenu(lightMenu);
-      setAbsoluteBackground('opacity-100');
+      setAbsoluteBackground('opacity-70');
     };
 
     const handleBgNavbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <nav className='relative z-30 text-white'>
-      <div className={`${styles.paddingX} ${bgNavbar} ${textColor} fixed z-20 flex w-full items-center py-5 transition duration-500`}>
+      <div className={`${styles.paddingX} ${bgNavbar} ${absoluteBg ? textColor : 'text-black-100 backdrop-blur-xl'} fixed z-20 flex w-full items-center py-5 transition-all duration-500`}>
         <div className='mx-auto flex w-full items-center justify-between'>
           <Link
             to='/'
@@ -65,7 +65,7 @@ const Navbar = () => {
               <Link
                 key={link.id}
                 to={`/${link.id}`}
-                className={`${active === link.title ? 'text-blue-500' : `${textColor}`} cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
+                className={`${active === link.title ? 'text-blue-500' : `${absoluteBg ? textColor : 'text-black-100'}`} cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
                 onClick={() => {
                   setActive(link.title);
                   window.scroll(0, 0);
@@ -109,7 +109,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <div className={`${absoluteBackground} fixed top-0 z-10 w-full bg-black pb-[76px] transition-opacity duration-500`} />
+      {absoluteBg && <div className={`${absoluteBackground} fixed top-0 z-10 w-full bg-black pb-[76px] transition-opacity duration-500`} />}
     </nav>
   );
 };

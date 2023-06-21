@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Prime, Hero, Navbar, GetStarted, WhatsNew, Objective, Shared } from '../components';
+import { About, Prime, Hero, Navbar, GetStarted, WhatsNew, Objective, Shared, Home } from '../components';
 import Feedback from '../components/Feedback';
 
 const HomePage = () => {
@@ -7,7 +7,7 @@ const HomePage = () => {
     <>
       <div className='cloud-gradient bg-cover bg-center bg-no-repeat text-black-200'>
         <Navbar />
-        <Hero />
+        <Hero Component={Home} />
       </div>
       <div className='absolute right-[-147.5px] top-[1069.96px] -z-30 h-60 w-60 bg-about-ornament' />
       <div className='absolute left-[-152.5px] top-[1310.04px] -z-30 h-60 w-60 bg-about-ornament' />

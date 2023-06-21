@@ -16,11 +16,11 @@ const styles = {
     "md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]",
 
   heroHeadText:
-    "text-white font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] xl:text-[50px] 2xl:text-[56px]",
+    "font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px] lg:text-[44px] xl:text-[50px] 2xl:text-[56px]",
   heroSubText:
-    "text-white font-medium text-[18px] xs:text-[24px] sm:text-[28px] lg:text-[32px] leading-[150%] lg:leading-[150%]",
+    "font-medium text-[18px] xs:text-[24px] sm:text-[28px] lg:text-[32px] leading-[150%] lg:leading-[150%]",
   heroParagraphText:
-    "text-white font-normal text-[14px] xs:text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] lg:leading-[150%]",
+    "font-light text-[14px] xs:text-[14px] sm:text-[16px] lg:text-[18px] leading-[150%] lg:leading-[150%]",
 
   sectionHeadText:
     "bg-clip-text text-transparent bg-gradient-to-br from-sky-500 to-cyan-500 to-75% font-bold text-[22px] xs:text-[28px] sm:text-[34px] md:text-[40px]",

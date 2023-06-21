@@ -10,12 +10,14 @@ import Objective from './Objective';
 import SwiperContainer from './SwiperContainer';
 import Blogs from './Blogs';
 
+import Home from './Home';
 import Gallery from "./Gallery";
 import StartSteps from "./StartSteps";
 import NewFeatures from './NewFeatures';
 import Documentation from './Documentation';
 import Article from './Article';
 import Detail from './Detail';
+import News from './News';
 
 import Footer from "./Footer";
 
@@ -31,8 +33,10 @@ export {
   Blogs,
   Documentation,
   Detail,
-  NewFeatures,
+  Home,
+  News,
   Gallery,
+  NewFeatures,
   StartSteps,
   Article,
   SwiperContainer,

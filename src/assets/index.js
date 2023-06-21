@@ -5,9 +5,11 @@ import darkMenu from "./darkMenu.svg";
 import darkClose from "./darkClose.svg";
 import ornament from "./ornament.png";
 
-import herobg from "./herobg.jpg";
-import heroPortrait from "./heroPortrait.jpg";
-import heroLandscape from "./heroLandscape.jpg";
+import homebg from "./homebg.jpg";
+import homePortrait from "./homePortrait.jpg";
+import homeLandscape from "./homeLandscape.jpg";
+
+import newsbg from "./newsbg.svg"
 
 import champion from "./icons/objective/champion.svg";
 import character from "./icons/objective/character.svg";
@@ -60,9 +62,9 @@ export {
   lightClose,
   lightMenu,
   ornament,
-  herobg,
-  heroPortrait,
-  heroLandscape,
+  homebg,
+  homePortrait,
+  homeLandscape,
   facebook,
   instagram,
   tiktok,
