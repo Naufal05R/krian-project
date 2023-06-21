@@ -7,7 +7,7 @@ const Documentation = () => {
     <>
       <div className='mt-24'>
         <div className='mt-4'>
-          <h2 className={`${styles.sectionHeadText} mb-4 w-full`}>Dokumentasi Kami</h2>
+          <h2 className={`${styles.sectionHeadText} mb-4 w-fit`}>Dokumentasi Kami</h2>
         </div>
         <Gallery />
       </div>

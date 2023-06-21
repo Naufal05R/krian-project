@@ -10,13 +10,19 @@ import { styles } from '../js';
 
 const BlogCard = ({ id, title, thumbnail, kind, duration, date, author, index }) => {
   return (
-    <motion.article className='w-11/12 xs:w-full mx-auto h-full grow hover:shadow-card-sm transition duration-150 hover:bg-white bg-transparent rounded-sm my-4' variants={fadeIn('left', 'spring', 0.5 * index, 0)}>
+    <motion.article
+      className='mx-auto my-4 h-full w-11/12 grow rounded-sm bg-transparent transition duration-150 hover:bg-white hover:shadow-card-sm xs:w-full'
+      variants={fadeIn('left', 'spring', 0.5 * index, 0.5)}
+      transition={{
+        times: [0, 0.25, 0.5, 0.75, 1],
+      }}
+    >
       <Link
         className='w-full'
         to={`/${id}`}
       >
         <div className='h-full space-y-4 p-2 md:p-4'>
-          <figure className='relative w-full aspect-video overflow-hidden'>
+          <figure className='relative aspect-video w-full overflow-hidden'>
             <img
               src={thumbnail.url}
               title={thumbnail.title}
@@ -33,7 +39,7 @@ const BlogCard = ({ id, title, thumbnail, kind, duration, date, author, index })
           <h4 className={`${styles.cardSubText}`}>{title}</h4>
         </div>
       </Link>
-      <div className='flex grow text-[9px] xs:text-xs p-2 md:p-4'>
+      <div className='flex grow p-2 text-[9px] xs:text-xs md:p-4'>
         {date}
         <Dot />
         By
@@ -52,7 +58,7 @@ const Blogs = () => {
   return (
     <div className='relative mx-auto w-full'>
       <div className={`${styles.paddingX}`}>
-        <h2 className=''>From the Blogs:</h2>
+        <h2 className={`${styles.sectionHeadText} w-fit`}>Blog kami</h2>
       </div>
       <div>
         <SwiperContainer Component={BlogCard} />

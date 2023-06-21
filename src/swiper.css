@@ -1,3 +1,14 @@
+/* :root {
+  --swiper-pagination-color: #1e1e1e
+  --swiper-pagination-bullet-inactive-color: #999999
+  --swiper-pagination-bullet-inactive-opacity: 1
+  --swiper-pagination-bullet-size: 16px
+  --swiper-pagination-bullet-horizontal-gap: 0px
+  --swiper-pagination-bullet-border-radius: none
+  --swiper-pagination-bullet-width: var(--swiper-pagination-bullet-size)
+  --swiper-pagination-bullet-height: 2px
+} */
+
 .swiper {
   width: 100%;
   padding-bottom: 30px;
@@ -23,6 +34,7 @@
 .swiper-pagination-bullet-active {
   padding: 40px 0;
   background-color: transparent;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap);
 }
 
 .swiper-pagination-bullet::after,
@@ -44,4 +56,39 @@
 
 .swiper-scrollbar-drag {
   background: #94a3b8;
+}
+
+@media screen and (min-width: 450px) {
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: calc(var(--swiper-pagination-bullet-width) * 2);
+  }  
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: calc(var(--swiper-pagination-bullet-width) * 3);
+  }  
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: calc(var(--swiper-pagination-bullet-width) * 4);
+  }  
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: calc(var(--swiper-pagination-bullet-width) * 5);
+  }  
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    width: calc(var(--swiper-pagination-bullet-width) * 6);
+  }  
 }
