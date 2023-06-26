@@ -9,13 +9,15 @@ import homebg from "./homebg.jpg";
 import homePortrait from "./homePortrait.jpg";
 import homeLandscape from "./homeLandscape.jpg";
 
-import newsbg from "./newsbg.svg"
+import newsbg from "./newsbg.svg";
 
 import champion from "./icons/objective/champion.svg";
 import character from "./icons/objective/character.svg";
 import forest from "./icons/objective/forest.svg";
 import people from "./icons/objective/people.svg";
 import quran from "./icons/objective/quran.svg";
+
+import alizzah from "./icons/badge/alizzah.svg";
 
 import {
   facebook,
@@ -80,6 +82,7 @@ export {
   forest,
   people,
   quran,
+  alizzah,
   frame11001,
   frame11002,
   frame11003,

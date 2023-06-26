@@ -6,18 +6,20 @@ import Prime from "./Prime";
 import Shared from "./Shared";
 import GetStarted from "./GetStarted";
 import WhatsNew from "./WhatsNew";
-import Objective from './Objective';
-import SwiperContainer from './SwiperContainer';
-import Blogs from './Blogs';
+import Objective from "./Objective";
+import BlogsSwiper from "./BlogsSwiper";
+import Highlight from "./Highlight";
+import Blogs from "./Blogs";
+import DetailNews from './DetailNews';
 
-import Home from './Home';
+import Home from "./Home";
 import Gallery from "./Gallery";
 import StartSteps from "./StartSteps";
-import NewFeatures from './NewFeatures';
-import Documentation from './Documentation';
-import Article from './Article';
-import Detail from './Detail';
-import News from './News';
+import NewFeatures from "./NewFeatures";
+import Documentation from "./Documentation";
+import Article from "./Article";
+import Detail from "./Detail";
+import News from "./News";
 
 import Footer from "./Footer";
 
@@ -31,14 +33,16 @@ export {
   WhatsNew,
   Objective,
   Blogs,
+  DetailNews,
   Documentation,
   Detail,
+  Highlight,
   Home,
   News,
   Gallery,
   NewFeatures,
   StartSteps,
   Article,
-  SwiperContainer,
+  BlogsSwiper,
   Footer,
 };

@@ -1,18 +1,15 @@
 import React from 'react';
-import SwiperCore, { EffectCoverflow, Autoplay, Pagination, Scrollbar, EffectFade } from 'swiper';
+import SwiperCore, { Autoplay, Pagination, Scrollbar, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { newsList } from '../constants';
 
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css';
-import { Dot } from '../svg';
-import { Link } from 'react-router-dom';
-import { styles } from '../js';
 
-SwiperCore.use([EffectCoverflow, Autoplay, Pagination, Scrollbar, EffectFade]);
+SwiperCore.use([Autoplay, Pagination, Scrollbar, EffectFade]);
 
-const SwiperContainer = ({ Component }) => {
+const BlogsSwiper = ({ Component }) => {
   return (
     <Swiper
       style={{
@@ -21,9 +18,9 @@ const SwiperContainer = ({ Component }) => {
         '--swiper-pagination-bullet-inactive-opacity': '1',
         '--swiper-pagination-bullet-size': '16px',
         '--swiper-pagination-bullet-horizontal-gap': '0px',
-        '--swiper-pagination-bullet-border-radius': 'none',
+        '--swiper-pagination-bullet-border-radius': '50%',
         '--swiper-pagination-bullet-width': 'var(--swiper-pagination-bullet-size)',
-        '--swiper-pagination-bullet-height': '2px',
+        '--swiper-pagination-bullet-height': 'var(--swiper-pagination-bullet-size)',
       }}
       speed={300}
       grabCursor={true}
@@ -35,25 +32,18 @@ const SwiperContainer = ({ Component }) => {
         1280: { slidesPerView: 3 },
         1440: { slidesPerView: 4 },
       }}
-      coverflowEffect={{
-        rotate: 0,
-        stretch: 0,
-        depth: 0,
-        modifier: 0,
-        slideShadows: false,
-      }}
-      pagination={{ clickable: true, type: 'bullets', bulletClass: 'swiper-pagination-bullet', bulletActiveClass: 'swiper-pagination-bullet-active' }}
-      autoplay={{ delay: 1800 }}
-      className={`mySwiper mx-auto pb-16 xs:pb-20 xs:px-3 sm:px-14 sm:pb-24 md:px-12`}
+      pagination={{ clickable: true, type: 'bullets', bulletClass: 'swiper-pagination-bullet swiper-pagination-bullet-blogs', bulletActiveClass: 'swiper-pagination-bullet-active swiper-pagination-bullet-blogs-active' }}
+      autoplay={{ delay: 2400 }}
+      className={`mx-auto pb-16 xs:px-3 xs:pb-20 sm:px-14 sm:pb-24 md:px-12`}
     >
-      {newsList.map((news, index) => {
+      {newsList.map((items, index) => {
         return (
           <SwiperSlide
             key={index}
-            className='flex h-full lg:min-h-[530px] w-full max-w-full flex-col xs:w-[75vw] sm:w-[50vw] md:w-96'
+            className='flex h-full w-full max-w-full flex-col xs:w-[75vw] sm:w-[50vw] md:w-96 lg:min-h-[530px]'
           >
             <Component
-              {...news}
+              {...items}
               index={index}
             />
           </SwiperSlide>
@@ -63,4 +53,4 @@ const SwiperContainer = ({ Component }) => {
   );
 };
 
-export default SwiperContainer;
+export default BlogsSwiper;

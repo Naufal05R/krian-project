@@ -13,7 +13,7 @@ const News = ({ className }) => {
             <div className=''>
               <h2 className={`${styles.heroHeadText} cursor-hover text-left primary-text-gradient lg:whitespace-pre-wrap`}>Jelajahi berita terbaru Sekolah Alam Al-Izzah</h2>
             </div>
-          </div>
+        </div>
           <div className={`self-stretch lg:ml-5 -mb-14`}>
             <div className='w-full h-full'>
               <img src="https://picsum.photos/seed/picsum/384/240" alt="" className='h-full w-full object-cover' />

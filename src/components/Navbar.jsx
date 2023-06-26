@@ -10,26 +10,23 @@ const Navbar = ({ absoluteBg = true }) => {
   const [toggle, setToggle] = useState(false);
 
   const [bgNavbar, setBgNavbar] = useState('');
+  const [bgToggle, setBgToggle] = useState('bg-white-100');
   const [textColor, setTextColor] = useState('');
-  const [menu, setMenu] = useState(lightMenu);
-  const [close, setClose] = useState(lightClose);
   const [absoluteBackground, setAbsoluteBackground] = useState('');
 
   useEffect(() => {
     const handleBgNavbarGlossy = () => {
-      setBgNavbar('white-glossy border-b border-neutral-100/40 shadow-card-xs');
+      setBgNavbar('white-glossy border-b border-neutral-100 shadow-card-xs');
       setTextColor('text-black-100');
-      setClose(darkMenu);
-      setMenu(darkClose);
+      setBgToggle('bg-black-100');
       setAbsoluteBackground('opacity-0');
     };
 
     const handleBgNavbarTransparent = () => {
       setBgNavbar('bg-transparent');
       setTextColor('text-white');
-      setClose(lightClose);
-      setMenu(lightMenu);
-      setAbsoluteBackground('opacity-70');
+      setBgToggle('bg-white-100');
+      setAbsoluteBackground('opacity-100');
     };
 
     const handleBgNavbar = () => {
@@ -61,7 +58,7 @@ const Navbar = ({ absoluteBg = true }) => {
             </p>
           </Link>
           <ul className='hidden list-none flex-row gap-10 lg:flex'>
-            {navLinks.slice(0, 3).map((link) => (
+            {navLinks.slice(0, navLinks.length - 1).map((link) => (
               <Link
                 key={link.id}
                 to={`/${link.id}`}
@@ -74,39 +71,50 @@ const Navbar = ({ absoluteBg = true }) => {
                 {`${link.title}`}
               </Link>
             ))}
+            <li
+              className={`${active === navLinks[navLinks.length - 1].title ? 'text-blue-500' : `${absoluteBg ? textColor : 'text-black-100'}`} cursor-pointer text-[18px] font-medium transition duration-500 hover:text-blue-500`}
+              onClick={() => {
+                setActive(navLinks[navLinks.length - 1].id);
+              }}
+            >
+              <a href={`#${navLinks[navLinks.length - 1].id}`}>{`${navLinks[navLinks.length - 1].title}`}</a>
+            </li>
           </ul>
 
-          <div className='flex flex-1 items-center justify-end lg:hidden'>
-            <img
-              src={toggle ? close : menu}
-              alt='menu'
-              className='h-7 w-7 cursor-pointer object-contain'
-              onClick={() => setToggle(!toggle)}
-            />
+          <div
+            className='flex h-8 w-8 select-none flex-col items-center justify-between py-px lg:hidden'
+            onClick={() => setToggle(!toggle)}
+          >
+            <span className={`h-1 ${absoluteBg ? bgToggle : 'bg-black-100'} w-full origin-left rounded-full transition duration-300 ${toggle ? 'rotate-45 scale-x-[1.15]' : ''}`} />
+            <span className={`h-1 ${absoluteBg ? bgToggle : 'bg-black-100'} w-full origin-center rounded-full transition duration-300 ${toggle ? 'scale-0' : ''}`} />
+            <span className={`h-1 ${absoluteBg ? bgToggle : 'bg-black-100'} w-full origin-left rounded-full transition duration-300 ${toggle ? '-rotate-45 scale-x-[1.15]' : ''}`} />
           </div>
         </div>
       </div>
-      <div className={`${toggle ? 'flex' : 'hidden'} white-glossy fixed right-0 top-20 z-20 mx-4 my-2 min-w-[140px] rounded-xl border-b border-l border-neutral-100 p-6 shadow-card-xs`}>
+      <div className={`${toggle ? 'flex' : 'hidden'} white-glossy fixed right-1 top-20 z-20 mx-4 my-2 min-w-[140px] rounded-xl border-b border-l border-neutral-100 p-6 shadow-card-xs sm:right-12`}>
         <ul className='flex list-none flex-col items-start justify-end gap-4'>
-          <Link
-            to={`/${navLinks[0].id}`}
-            className={`${active === navLinks[0].title ? 'text-black' : 'text-tertiary'} cursor-pointer text-[16px] font-medium`}
-            onClick={() => setActive(navLinks[0].title)}
-          >
-            {navLinks[0].title}
-          </Link>
-          {navLinks.slice(1, 5).map((link) => (
+          {navLinks.slice(0, navLinks.length - 1).map((link) => (
             <li
               key={link.id}
               className={`${active === link.title ? 'text-black' : 'text-tertiary'} cursor-pointer text-[16px] font-medium`}
               onClick={() => {
                 setToggle(!toggle);
                 setActive(link.title);
+                window.scroll(0, 0);
               }}
             >
-              <a href={`#${link.id}`}>{`${link.title}`}</a>
+              <Link to={`/${link.id}`}>{`${link.title}`}</Link>
             </li>
           ))}
+          <li
+            className={`${active === navLinks[navLinks.length - 1].title ? 'text-black' : 'text-tertiary'} cursor-pointer text-[16px] font-medium`}
+            onClick={() => {
+              setToggle(!toggle);
+              setActive(navLinks[navLinks.length - 1].id);
+            }}
+          >
+            <a href={`#${navLinks[navLinks.length - 1].id}`}>{`${navLinks[navLinks.length - 1].title}`}</a>
+          </li>
         </ul>
       </div>
       {absoluteBg && <div className={`${absoluteBackground} fixed top-0 z-10 w-full bg-black pb-[76px] transition-opacity duration-500`} />}

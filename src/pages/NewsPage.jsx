@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Blogs, Hero, News } from '../components';
+import { Navbar, Blogs, Hero, News, Highlight, Shared } from '../components';
 
 const NewsPage = () => {
   return (
@@ -10,6 +10,8 @@ const NewsPage = () => {
       </div>
 
       <Blogs />
+      <Highlight />
+      <Shared />
     </>
   );
 };

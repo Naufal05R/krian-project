@@ -3,34 +3,28 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { Dot } from '../svg';
 
-import { SwiperContainer } from '.';
+import { BlogsSwiper } from '.';
 import { Link } from 'react-router-dom';
 import { fadeIn, slideIn } from '../utils';
 import { styles } from '../js';
 
-const BlogCard = ({ id, title, thumbnail, kind, duration, date, author, index }) => {
+const BlogsCard = ({ id, title, thumbnail, kind, duration, date, author, index }) => {
   return (
-    <motion.article
-      className='mx-auto my-4 h-full w-11/12 grow rounded-sm bg-transparent transition duration-150 hover:bg-white hover:shadow-card-sm xs:w-full'
-      variants={fadeIn('left', 'spring', 0.5 * index, 0.5)}
-      transition={{
-        times: [0, 0.25, 0.5, 0.75, 1],
-      }}
-    >
+    <motion.article className='group mx-auto my-4 h-full w-11/12 grow overflow-hidden rounded-xl bg-transparent transition duration-150 hover:bg-white hover:shadow-card-sm xs:w-full'>
       <Link
         className='w-full'
-        to={`/${id}`}
+        to={`/news/${id}`}
       >
         <div className='h-full space-y-4 p-2 md:p-4'>
-          <figure className='relative aspect-video w-full overflow-hidden'>
+          <figure className='relative aspect-video w-full overflow-hidden rounded-[10px]'>
             <img
               src={thumbnail.url}
               title={thumbnail.title}
               typeof={thumbnail.type}
               alt={thumbnail.alt}
-              className='absolute z-20 h-full w-full object-cover'
+              className='absolute top-0 z-20 h-full w-full object-cover transition duration-500 group-hover:scale-125'
             />
-            <div className='absolute h-full w-full bg-gray-400' />
+            <div className='absolute top-0 h-full w-full bg-gray-400' />
           </figure>
           <blockquote className='items-between flex w-full justify-between text-[9px] xs:text-xs'>
             <p className='uppercase text-gray-600'>{kind}</p>
@@ -61,7 +55,7 @@ const Blogs = () => {
         <h2 className={`${styles.sectionHeadText} w-fit`}>Blog kami</h2>
       </div>
       <div>
-        <SwiperContainer Component={BlogCard} />
+        <BlogsSwiper Component={BlogsCard} />
       </div>
     </div>
   );

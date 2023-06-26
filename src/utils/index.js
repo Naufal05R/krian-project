@@ -5,6 +5,9 @@ import {
   slideIn,
   staggerContainer,
 } from "./motion.js";
+
 import { shuffle, random } from "./math.js";
 
-export { textVariant, fadeIn, zoomIn, slideIn, staggerContainer, shuffle, random };
+import { getItem } from './method.js';
+
+export { textVariant, fadeIn, zoomIn, slideIn, staggerContainer, shuffle, random, getItem };
