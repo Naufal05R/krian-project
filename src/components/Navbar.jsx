@@ -42,7 +42,7 @@ const Navbar = ({ absoluteBg = true }) => {
         <div className='mx-auto flex w-full items-center justify-between'>
           <Link
             to='/'
-            className='flex items-center gap-2'
+            className='group flex items-center gap-2'
             onClick={() => {
               setActive('');
               window.scroll(0, 0);
@@ -54,7 +54,7 @@ const Navbar = ({ absoluteBg = true }) => {
               className='h-9 w-9 object-contain'
             />
             <p className='flex cursor-pointer text-[18px] font-bold'>
-              <span className='block uppercase'>Al-Izzah</span>
+              <span className='group-hover:text-blue-500 transition duration-500 block uppercase'>Al-Izzah</span>
             </p>
           </Link>
           <ul className='hidden list-none flex-row gap-10 lg:flex'>
