@@ -10,22 +10,24 @@ import Objective from "./Objective";
 import BlogsSwiper from "./BlogsSwiper";
 import Highlight from "./Highlight";
 import Blogs from "./Blogs";
-import DetailNews from './DetailNews';
+import DetailNews from "./DetailNews";
 
 import Home from "./Home";
-import Gallery from "./Gallery";
+import Album from "./Album";
 import StartSteps from "./StartSteps";
 import NewFeatures from "./NewFeatures";
-import Documentation from "./Documentation";
+import Gallery from "./Gallery";
 import Article from "./Article";
 import Detail from "./Detail";
 import News from "./News";
+import Documentation from './Documentation';
 
 import Footer from "./Footer";
 
 export {
   Navbar,
   Hero,
+  DetailNews,
   About,
   Prime,
   Shared,
@@ -33,13 +35,13 @@ export {
   WhatsNew,
   Objective,
   Blogs,
-  DetailNews,
-  Documentation,
+  Gallery,
   Detail,
   Highlight,
   Home,
   News,
-  Gallery,
+  Documentation,
+  Album,
   NewFeatures,
   StartSteps,
   Article,

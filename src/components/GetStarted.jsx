@@ -33,7 +33,7 @@ const GetStarted = () => {
         className='flex flex-[0.75] flex-col justify-center'
       >
         <motion.div variants={textVariant(0.25)}>
-          <h2 className={`${styles.sectionHeadText} w-fit`}>Kegiatan Pertama</h2>
+          <h2 className={`${styles.sectionHeadText} w-fit`}>Sekolah Alam Al-Izzah</h2>
         </motion.div>
         <div className='mt-[31px] flex max-w-[370px] flex-col gap-[24px]'>
           {startingFeatures.map((feature, index) => (

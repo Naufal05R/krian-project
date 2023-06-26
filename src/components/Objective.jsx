@@ -44,7 +44,7 @@ const ObjectiveCard = ({ objective, index }) => {
       }
     >
       <div>
-        <h3 className={`${styles.groupSubText} ${textColor}`}>{objective.title}</h3>
+        <h3 className={`${styles.groupSubText} ${textColor} mb-4`}>{objective.title}</h3>
         <p
           className='text-[16px] font-semibold text-black-200'
           style={{ margin: 0 }}

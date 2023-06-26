@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router';
 
 const App = () => {
   return (
-    <div className='relative z-0 overflow-hidden select-none bg-white'>
+    <div className='relative z-0 overflow-hidden bg-white'>
       <Routes>
         <Route
           path='/'

@@ -19,7 +19,7 @@ const WhatsNew = () => (
       className='flex flex-[0.75] flex-col justify-center'
     >
       <motion.div variants={textVariant(0.25)}>
-        <h2 className={`${styles.sectionHeadText} w-fit`}>Kegiatan Kedua</h2>
+        <h2 className={`${styles.sectionHeadText} w-fit`}>Kegiatan Outdoor</h2>
       </motion.div>
       <div className='mt-[48px] flex flex-wrap justify-between gap-[24px]'>
         {newFeatures.map((feature, index) => (

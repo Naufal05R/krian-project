@@ -11,6 +11,17 @@ import homeLandscape from "./homeLandscape.jpg";
 
 import newsbg from "./newsbg.svg";
 
+import artikel1 from "./content/thumbnail/artikel01.png";
+import artikel2 from "./content/thumbnail/artikel02.png";
+import artikel3 from "./content/thumbnail/artikel03.png";
+import artikel4 from "./content/thumbnail/artikel04.png";
+import artikel5 from "./content/thumbnail/artikel05.png";
+import artikel6 from "./content/thumbnail/artikel06.png";
+import artikel7 from "./content/thumbnail/artikel07.png";
+import artikel8 from "./content/thumbnail/artikel08.png";
+import artikel9 from "./content/thumbnail/artikel09.png";
+import artikel10 from "./content/thumbnail/artikel10.png";
+
 import champion from "./icons/objective/champion.svg";
 import character from "./icons/objective/character.svg";
 import forest from "./icons/objective/forest.svg";
@@ -86,6 +97,16 @@ export {
   quran,
   alizzah,
   bilingual,
+  artikel1,
+  artikel2,
+  artikel3,
+  artikel4,
+  artikel5,
+  artikel6,
+  artikel7,
+  artikel8,
+  artikel9,
+  artikel10,
   frame11001,
   frame11002,
   frame11003,

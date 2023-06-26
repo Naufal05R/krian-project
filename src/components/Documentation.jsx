@@ -1,18 +1,16 @@
-import { SectionWrapper } from '../hoc';
-import { styles } from '../js/styles';
-import Gallery from './Gallery';
+import React from 'react';
+import { styles } from '../js';
 
 const Documentation = () => {
   return (
-    <>
-      <div className='mt-24'>
-        <div className='mt-4'>
-          <h2 className={`${styles.sectionHeadText} mb-4 w-fit`}>Dokumentasi Kami</h2>
+    <div className='min-h-screen'>
+      <div className={`${styles.paddingX} mx-auto`}>
+        <div className='pb-12 pt-24 lg:pb-20 lg:pt-40'>
+          
         </div>
-        <Gallery />
       </div>
-    </>
+    </div>
   );
 };
 
-export default SectionWrapper(Documentation, { idName: 'documentation' });
+export default Documentation;
