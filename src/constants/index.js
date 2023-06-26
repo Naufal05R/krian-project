@@ -34,6 +34,7 @@ import {
   champion,
   forest,
   alizzah,
+  bilingual,
 } from "../assets";
 
 export const navLinks = [
@@ -375,7 +376,8 @@ export const newsList = [
   },
   {
     id: `Artikel-2`,
-    title: "HARI GURU NASIONAL: GURU ADALAH TELADAN DAN PANUTAN, SISWA ADALAH PERJALANAN DAN SEKOLAH ADALAH PENGABDIAN",
+    title:
+      "HARI GURU NASIONAL: GURU ADALAH TELADAN DAN PANUTAN, SISWA ADALAH PERJALANAN DAN SEKOLAH ADALAH PENGABDIAN",
     thumbnail: {
       title: "Dynamic Image",
       url: "https://picsum.photos/seed/picsum/384/240",
@@ -389,7 +391,8 @@ export const newsList = [
   },
   {
     id: `Artikel-3`,
-    title: "[KAJIAN PARENTING VIRAL] MENGAMBIL HATI ANAK DENGAN IMAN DAN ADAB Oleh: Ust. Akbar Muzakki",
+    title:
+      "[KAJIAN PARENTING VIRAL] MENGAMBIL HATI ANAK DENGAN IMAN DAN ADAB Oleh: Ust. Akbar Muzakki",
     thumbnail: {
       title: "Dynamic Image",
       url: "https://picsum.photos/seed/picsum/384/240",
@@ -417,7 +420,8 @@ export const newsList = [
   },
   {
     id: `Artikel-5`,
-    title: "KAK FATKHUR, PERAIH JUARA 2 DALAM KEJUARAAN KARATE SPALISKA OPEN 2022",
+    title:
+      "KAK FATKHUR, PERAIH JUARA 2 DALAM KEJUARAAN KARATE SPALISKA OPEN 2022",
     thumbnail: {
       title: "Dynamic Image",
       url: "https://picsum.photos/seed/picsum/384/240",
@@ -503,66 +507,64 @@ export const newsList = [
 
 export const highlightsList = [
   {
-    id: `Highlight-1`,
+    id: `Artikel-1`,
     title:
-      "Reprehenderit doloremque voluptas architecto enim. Saepe fugiat fuga et aut non dolor dolorem quos numquam.",
+      "Program Pembiasaan Dua Bahasa (Bilingual Program)",
     badge: {
       title: "Dynamic Image",
       url: alizzah,
       alt: "Grocery",
       type: "image/png",
     },
-    author: "Bernard O'Connell",
-    date: "Nov 12, 2022",
+    author: "Sekolah Alam Al-Izzah",
+    date: "February 13, 2023",
   },
   {
-    id: `Highlight-2`,
+    id: `Artikel-2`,
     title:
-      "Reprehenderit doloremque voluptas architecto enim. Saepe fugiat fuga et aut non dolor dolorem quos numquam.",
+      "HARI GURU NASIONAL: GURU ADALAH TELADAN DAN PANUTAN, SISWA ADALAH PERJALANAN DAN SEKOLAH ADALAH PENGABDIAN",
     badge: {
       title: "Dynamic Image",
       url: alizzah,
       alt: "Grocery",
       type: "image/png",
     },
-    author: "Bernard O'Connell",
-    date: "Nov 12, 2022",
+    author: "Sekolah Alam Al-Izzah",
+    date: "November 25, 2022",
   },
   {
-    id: `Highlight-3`,
+    id: `Artikel-3`,
     title:
-      "Reprehenderit doloremque voluptas architecto enim. Saepe fugiat fuga et aut non dolor dolorem quos numquam.",
+      "[KAJIAN PARENTING VIRAL] MENGAMBIL HATI ANAK DENGAN IMAN DAN ADAB Oleh: Ust. Akbar Muzakki",
     badge: {
       title: "Dynamic Image",
       url: alizzah,
       alt: "Grocery",
       type: "image/png",
     },
-    author: "Bernard O'Connell",
-    date: "Nov 12, 2022",
+    author: "Sekolah Alam Al-Izzah",
+    date: "September 30, 2022",
   },
   {
-    id: `Highlight-4`,
+    id: `Artikel-4`,
     title:
-      "Reprehenderit doloremque voluptas architecto enim. Saepe fugiat fuga et aut non dolor dolorem quos numquam.",
+      "[SMP VIRAL] PROGRAM INTERNSHIP SMP ALAM AL IZZAH",
     badge: {
       title: "Dynamic Image",
       url: alizzah,
       alt: "Grocery",
       type: "image/png",
     },
-    author: "Bernard O'Connell",
-    date: "Nov 12, 2022",
+    author: "Sekolah Alam Al-Izzah",
+    date: "September 23, 2022",
   },
 ];
 
 export const quotesList = [
   {
     id: `quotes-1`,
-    content: `Dolorum optio dolores et laborum aut cupiditate incidunt cupiditate. Commodi rerum totam consequatur aliquid nam doloribus quia. Sint alias qui quaerat asperiores tempore. Molestias porro nobis est nulla qui. Minus non recusandae ullam non ipsam libero. Quae praesentium atque odit.
-              Quaerat ut corporis aliquid molestias voluptatem deleniti neque perspiciatis. Laboriosam rem harum maiores mollitia. Ipsam in omnis et enim et. Ut quam doloremque explicabo sit iste nisi impedit accusamus. Hic id omnis.
-              Omnis distinctio aut et. Unde tempora neque nobis mollitia perspiciatis aut. Architecto officiis beatae fugiat similique aut. Velit delectus iusto. Omnis aspernatur est sit. Incidunt vitae occaecati modi consequatur dolore minus accusantium sit quisquam.`,
-    author: `Hugo Thiel`,
+    content: `GURU ADALAH TELADAN DAN PANUTAN, SISWA ADALAH PERJALANAN DAN SEKOLAH ADALAH PENGABDIAN`,
+    author: `Sekolah Alam Al-Izzah`,
   },
   {
     id: `quotes-2`,
@@ -604,144 +606,740 @@ export const quotesList = [
 export const detailNewsList = [
   {
     id: `Artikel-1`,
-    title: 'Program Pembiasaan Dua Bahasa (Bilingual Program)',
-    level: 'SMP Alam Al Izzah',
-    date: 'February 13, 2023',
-    body: [
-      'Bahasa adalah sebuah sarana untuk berkomunikasi dan mendapatkan informasi. Dua Bahasa penting yang patut dipelajari dan dikuasai pada zaman ini adalah Bahasa Arab dan Bahasa Inggris. Bahasa Arab diperlukan bagi umat muslim untuk memahami agama Islam. Di samping itu, Bahasa Inggris dibutuhkan untuk memahami informasi secara universal. Oleh karena itu, SMP Alam Al Izzah memberlakukan pembiasaan Bahasa Arab dan Bahasa Inggris di lingkungan sekolah.',
+    title: "Program Pembiasaan Dua Bahasa (Bilingual Program)",
+    level: "SMP Alam Al Izzah",
+    date: "February 13, 2023",
+    contents: [
       {
-        subHeading: 'Apa itu Bilingual Program ?',
+        subHeading: "",
+        body: "Bahasa adalah sebuah sarana untuk berkomunikasi dan mendapatkan informasi. Dua Bahasa penting yang patut dipelajari dan dikuasai pada zaman ini adalah Bahasa Arab dan Bahasa Inggris. Bahasa Arab diperlukan bagi umat muslim untuk memahami agama Islam. Di samping itu, Bahasa Inggris dibutuhkan untuk memahami informasi secara universal. Oleh karena itu, SMP Alam Al Izzah memberlakukan pembiasaan Bahasa Arab dan Bahasa Inggris di lingkungan sekolah.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
       },
-      'Bilingual Program adalah sebuah program pembiasaan Bahasa yang diinisiasi oleh SMP Alam Al Izzah untuk memfasilitasi kebutuhan siswa dalam penguasaan Bahasa terutama Bahasa Arab dan Inggris. Siswa dan siswi di SMP Alam Al Izzah dibiasakan untuk berkomunikasi (baik dalam pembelajaran maupun diluar pembelajaran) dengan menggunakan dua bahasa asing, yakni Bahasa Inggris dan Bahasa Arab.',
       {
-        subHeading: 'Lalu seperti apa praktek dari Bilingual Program ?',
+        subHeading: "Apa itu Bilingual Program ?",
+        body: "Bilingual Program adalah sebuah program pembiasaan Bahasa yang diinisiasi oleh SMP Alam Al Izzah untuk memfasilitasi kebutuhan siswa dalam penguasaan Bahasa terutama Bahasa Arab dan Inggris. Siswa dan siswi di SMP Alam Al Izzah dibiasakan untuk berkomunikasi (baik dalam pembelajaran maupun diluar pembelajaran) dengan menggunakan dua bahasa asing, yakni Bahasa Inggris dan Bahasa Arab.",
+        img: {
+          title: "",
+          url: bilingual,
+          alt: "",
+        },
       },
-      'Beberapa kegiatan penunjang yang dilakukan oleh SMP Alam Al Izzah yakni berupa; Pemutaran audio berisi kosakata yang akan di hafal setiap hari pada saat jam BRT, break time dan sebelum pulang sekolah. Prasarana berupa banner/spanduk terkait pembiasaan Bahasa (Bilingual Program) juga dipasang di area-area strategis, hal tersebut bertujuan untuk memotivasi siswa berbicara menggunakan Bahasa yang diberlakukan setiap harinya. Selain itu, setiap fasilitator diharuskan berbicara dan menyampaikan materi dalam bahasa Arab/English secara berulang-ulang dalam setiap pertemuan pembelajaran.',
       {
-        subHeading: 'Apa sih yang harus dilakukan agar Bilingual Program berjalan semestinya ?',
+        subHeading: "Lalu seperti apa praktek dari Bilingual Program ?",
+        body: "Beberapa kegiatan penunjang yang dilakukan oleh SMP Alam Al Izzah yakni berupa; Pemutaran audio berisi kosakata yang akan di hafal setiap hari pada saat jam BRT, break time dan sebelum pulang sekolah. Prasarana berupa banner/spanduk terkait pembiasaan Bahasa (Bilingual Program) juga dipasang di area-area strategis, hal tersebut bertujuan untuk memotivasi siswa berbicara menggunakan Bahasa yang diberlakukan setiap harinya. Selain itu, setiap fasilitator diharuskan berbicara dan menyampaikan materi dalam bahasa Arab/English secara berulang-ulang dalam setiap pertemuan pembelajaran.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
       },
-      'Agar program ini tetap berjalan sesuai prosedur, maka diperlukan adanya target language. Target language yang harus dicapai oleh setiap siswa yaitu, 3 kosakata dan 1 kalimat per hari untuk program Bahasa Inggris, sedangkan untuk program Bahasa Arab target yang harus dicapai per hari adalah 2 kosakata dan 1 kalimat. Selain itu untuk mendukung kemajuan program, bagi siswa yang berani aktif berbicara dengan dua Bahasa asing akan diberikan apresiasi berupa Lencana Bahasa dan Poin dalam rapor. Poin atau reward berupa lencana bahasa akan diberikan dengan perhitungan setiap bulan sekali.',
+      {
+        subHeading:
+          "Apa sih yang harus dilakukan agar Bilingual Program berjalan semestinya ?",
+        body: "Agar program ini tetap berjalan sesuai prosedur, maka diperlukan adanya target language. Target language yang harus dicapai oleh setiap siswa yaitu, 3 kosakata dan 1 kalimat per hari untuk program Bahasa Inggris, sedangkan untuk program Bahasa Arab target yang harus dicapai per hari adalah 2 kosakata dan 1 kalimat. Selain itu untuk mendukung kemajuan program, bagi siswa yang berani aktif berbicara dengan dua Bahasa asing akan diberikan apresiasi berupa Lencana Bahasa dan Poin dalam rapor. Poin atau reward berupa lencana bahasa akan diberikan dengan perhitungan setiap bulan sekali.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-2`,
-    title: 'HARI GURU NASIONAL: GURU ADALAH TELADAN DAN PANUTAN, SISWA ADALAH PERJALANAN DAN SEKOLAH ADALAH PENGABDIAN',
-    level: 'Sekolah Alam Al Izzah',
-    date: 'November 25, 2022',
-    body: [
-      'Selamat Hari Guru Nasional untuk semua guru di Indonesia. Guru merupakan pelita segala zaman, tanpa pendidik dan pendidikan, niscaya manusia akan terjerumus dalam ketidaktahuan, sebab pendidikan adalah upaya mengeluarkan manusia dari sifat ketidaktahuan. Kedudukan guru sangatlah penting dalam pendidikan, tidak adanya guru, maka tak mungkin ada pendidikan.',
-      'Sebaik-baik guru adalah yang memberi contoh, teladan dan panutan bagi siswa-siswinya. Dengan memberikan sikap dan teladan yang baik maka para siswanya pun lambat laun akan mencontoh sikap dan teladan yang telah diajarkan oleh para guru. Maka benarlah apa kata pepatah “buah jatuh tidak jauh dari pohonnya” yang artinya jika guru-guru memiliki sikap dan teladan yang baik maka insyaallah siswa-siswinya pun akan turut memiliki sikap dan teladan yang baik pula.',
-      'Peran guru sebagai model atau contoh bagi anak. Setiap anak mengharapkan guru mereka dapat menjadi contoh atau model baginya. Tingkah laku pendidik harus sesuai dengan norma-norma yang dianut oleh masyarakat, bangsa, dan negara. Guru tidak hanya bicara saja, tetapi juka harus melakukann hal yang diujarkannya sehingga tidak ada istilah OD (omomg doang) atau NATO (no action, talk only). Seorang guru harus bisa berkedudukan sebagai teman bagi peserta didiknya sehingga mereka akan merasa lebih nyaman, tetapi tidak kurang ajar, tetap bisa menempatkan dirinya sebagai murid.',
-      'Siswa / murid adalah perjalanan dan cermin bagi para guru. Siswa akan mengisi perjalanan berdasarkan apa yang telah diajarkan oleh para guru mereka. Jika guru mengajarkan sikap dan keteladanan yang baik maka kemungkinan besar siswanya akan mengikutinya ke jalan kebaikan, begitupula sebaliknya. Sebagaimana dalam hadits berikut:',
-      'عَنْ أَبِي مَسْعُوْدٍ عقبة بْنِ عمرو الأَنْصَارِي رَضِيَ اللّٰهُ عَنْهُ قَالَ : قَالَ رَسُولُ اللّٰهِ صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ : مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ. (رواه مسلم)',
-      `Dari Abu Mas’ud Uqbah bin Amir Al Anshari radhiyallahu ‘anhu, ia berkata, bahwa Rasûlullâh ﷺ bersabda: “Barangsiapa yang menunjuki kepada kebaikan maka dia akan mendapatkan pahala seperti pahala orang yang mengerjakannya.” (HR. Muslim no. 1893)`,
-      'Maasha Allah, betapa mulianya seorang guru dimata islam. Hadits tersebut diperkuat lagi dengan hadits berikut:',
-      'مَنْ سَنَّ فِى الإِسْلاَمِ سُنَّةً حَسَنَةً فَعُمِلَ بِهَا بَعْدَهُ كُتِبَ لَهُ مِثْلُ أَجْرِ مَنْ عَمِلَ بِهَا وَلاَ يَنْقُصُ مِنْ أُجُورِهِمْ شَىْءٌ وَمَنْ سَنَّ فِى الإِسْلاَمِ سُنَّةً سَيِّئَةً فَعُمِلَ بِهَا بَعْدَهُ كُتِبَ عَلَيْهِ مِثْلُ وِزْرِ مَنْ عَمِلَ بِهَا وَلاَ يَنْقُصُ مِنْ أَوْزَارِهِمْ شَىْءٌ .(رواه مسلم)',
-      '“Barangsiapa menjadi pelopor suatu amalan kebaikan lalu diamalkan oleh orang sesudahnya, maka akan dicatat baginya pahala semisal pahala orang yang mengikutinya dan sedikitpun tidak akan mengurangi pahala yang mereka peroleh. Sebaliknya, barangsiapa menjadi pelopor suatu amalan kejelekan lalu diamalkan oleh orang sesudahnya, maka akan dicatat baginya dosa semisal dosa orang yang mengikutinya, tanpa mengurangi dosanya sedikit pun.” (HR. Muslim no. 1017)',
-      'Begitulah sikap Islam yang sangat menghargai seorang guru, maka benarlah jika guru adalah seorang pelita dan pahlawan tanpa tanda jasa. Sebagai seorang murid, murid harus lebih dahulu menghormati dan menjunjung tinggi seseorang yang mampu menjadi sumber ilmu tersebut. Oleh sebab itu, memuliakan guru wajib hukumnya bagi pencari ilmu agar ilmunya berguna dan membawa keberkahan. karena kalau seorang guru ridho dan merasa dimuliakan, maka kita juga akan dimuliakan oleh banyak manusia.',
-      'Jadi keterkaitan antara guru, siswa dan sekolah adalah keterkaitan yang tidak bisa dipisahkan satu sama lain. Mereka saling berkesinambungan dan saling mempengaruhi satu sama lain. Sebagai seorang guru, kita harus memberikan ilmu, teladan dan panutan yang baik kepada siswa agar mereka selalu dalam kebaikan dan kebenaran. Sebagai seorang siswa, kita harus bersikap menghargai, memuliakan dan mencari ridhonya agar ilmu yang kita dapatkan menjadi berkah. Dan sekolah adalah lingkungan yang harus dapat mendukung proses transfer ilmu dari guru dan siswa.',
-      'وَاللّٰهُ اَعْلَمُ بِالصَّواب',
+    title:
+      "HARI GURU NASIONAL: GURU ADALAH TELADAN DAN PANUTAN, SISWA ADALAH PERJALANAN DAN SEKOLAH ADALAH PENGABDIAN",
+    level: "Sekolah Alam Al Izzah",
+    date: "November 25, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "Selamat Hari Guru Nasional untuk semua guru di Indonesia. Guru merupakan pelita segala zaman, tanpa pendidik dan pendidikan, niscaya manusia akan terjerumus dalam ketidaktahuan, sebab pendidikan adalah upaya mengeluarkan manusia dari sifat ketidaktahuan. Kedudukan guru sangatlah penting dalam pendidikan, tidak adanya guru, maka tak mungkin ada pendidikan.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Sebaik-baik guru adalah yang memberi contoh, teladan dan panutan bagi siswa-siswinya. Dengan memberikan sikap dan teladan yang baik maka para siswanya pun lambat laun akan mencontoh sikap dan teladan yang telah diajarkan oleh para guru. Maka benarlah apa kata pepatah “buah jatuh tidak jauh dari pohonnya” yang artinya jika guru-guru memiliki sikap dan teladan yang baik maka insyaallah siswa-siswinya pun akan turut memiliki sikap dan teladan yang baik pula.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Peran guru sebagai model atau contoh bagi anak. Setiap anak mengharapkan guru mereka dapat menjadi contoh atau model baginya. Tingkah laku pendidik harus sesuai dengan norma-norma yang dianut oleh masyarakat, bangsa, dan negara. Guru tidak hanya bicara saja, tetapi juka harus melakukann hal yang diujarkannya sehingga tidak ada istilah OD (omomg doang) atau NATO (no action, talk only). Seorang guru harus bisa berkedudukan sebagai teman bagi peserta didiknya sehingga mereka akan merasa lebih nyaman, tetapi tidak kurang ajar, tetap bisa menempatkan dirinya sebagai murid.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Siswa / murid adalah perjalanan dan cermin bagi para guru. Siswa akan mengisi perjalanan berdasarkan apa yang telah diajarkan oleh para guru mereka. Jika guru mengajarkan sikap dan keteladanan yang baik maka kemungkinan besar siswanya akan mengikutinya ke jalan kebaikan, begitupula sebaliknya. Sebagaimana dalam hadits berikut:",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "عَنْ أَبِي مَسْعُوْدٍ عقبة بْنِ عمرو الأَنْصَارِي رَضِيَ اللّٰهُ عَنْهُ قَالَ : قَالَ رَسُولُ اللّٰهِ صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ : مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ. (رواه مسلم)",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Dari Abu Mas’ud Uqbah bin Amir Al Anshari radhiyallahu ‘anhu, ia berkata, bahwa Rasûlullâh ﷺ bersabda: “Barangsiapa yang menunjuki kepada kebaikan maka dia akan mendapatkan pahala seperti pahala orang yang mengerjakannya.” (HR. Muslim no. 1893)",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Maasha Allah, betapa mulianya seorang guru dimata islam. Hadits tersebut diperkuat lagi dengan hadits berikut:",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "مَنْ سَنَّ فِى الإِسْلاَمِ سُنَّةً حَسَنَةً فَعُمِلَ بِهَا بَعْدَهُ كُتِبَ لَهُ مِثْلُ أَجْرِ مَنْ عَمِلَ بِهَا وَلاَ يَنْقُصُ مِنْ أُجُورِهِمْ شَىْءٌ وَمَنْ سَنَّ فِى الإِسْلاَمِ سُنَّةً سَيِّئَةً فَعُمِلَ بِهَا بَعْدَهُ كُتِبَ عَلَيْهِ مِثْلُ وِزْرِ مَنْ عَمِلَ بِهَا وَلاَ يَنْقُصُ مِنْ أَوْزَارِهِمْ شَىْءٌ .(رواه مسلم)",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "“Barangsiapa menjadi pelopor suatu amalan kebaikan lalu diamalkan oleh orang sesudahnya, maka akan dicatat baginya pahala semisal pahala orang yang mengikutinya dan sedikitpun tidak akan mengurangi pahala yang mereka peroleh. Sebaliknya, barangsiapa menjadi pelopor suatu amalan kejelekan lalu diamalkan oleh orang sesudahnya, maka akan dicatat baginya dosa semisal dosa orang yang mengikutinya, tanpa mengurangi dosanya sedikit pun.” (HR. Muslim no. 1017)",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Begitulah sikap Islam yang sangat menghargai seorang guru, maka benarlah jika guru adalah seorang pelita dan pahlawan tanpa tanda jasa. Sebagai seorang murid, murid harus lebih dahulu menghormati dan menjunjung tinggi seseorang yang mampu menjadi sumber ilmu tersebut. Oleh sebab itu, memuliakan guru wajib hukumnya bagi pencari ilmu agar ilmunya berguna dan membawa keberkahan. karena kalau seorang guru ridho dan merasa dimuliakan, maka kita juga akan dimuliakan oleh banyak manusia.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Jadi keterkaitan antara guru, siswa dan sekolah adalah keterkaitan yang tidak bisa dipisahkan satu sama lain. Mereka saling berkesinambungan dan saling mempengaruhi satu sama lain. Sebagai seorang guru, kita harus memberikan ilmu, teladan dan panutan yang baik kepada siswa agar mereka selalu dalam kebaikan dan kebenaran. Sebagai seorang siswa, kita harus bersikap menghargai, memuliakan dan mencari ridhonya agar ilmu yang kita dapatkan menjadi berkah. Dan sekolah adalah lingkungan yang harus dapat mendukung proses transfer ilmu dari guru dan siswa.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "وَاللّٰهُ اَعْلَمُ بِالصَّواب",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-3`,
-    title: '[KAJIAN PARENTING VIRAL] MENGAMBIL HATI ANAK DENGAN IMAN DAN ADAB Oleh: Ust. Akbar Muzakki',
-    level: 'SMP Alam Al Izzah',
-    date: 'September 30, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title:
+      "[KAJIAN PARENTING VIRAL] MENGAMBIL HATI ANAK DENGAN IMAN DAN ADAB Oleh: Ust. Akbar Muzakki",
+    level: "SMP Alam Al Izzah",
+    date: "September 30, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "Assalamualaikum Ayah/Bunda hebat..",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Bagaimana  kabarnya? Lama kita tidak mengulas kajian yang sering diadakan di Sabtu Pekan ke-4 ini. Seperti biasa marilah kita saling belajar dan berdiskusi tentang Parenting di Sekolah Alam Al Izzah ini. Pada Pekan ke-4 September kali ini kami mendatangkan Maestro Parenting yang tidak kalah bagusnya, yaitu Ust. Akbar Muzakki. Tanpa berlama-lama mari kita mulai menyimak isi kajian beliau.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Mendidik anak dalam Islam harus didasarkan pada petujuk dari Allah, yaitu Al-Quran dan mulai membiasakan diri untuk mendidik anak sesuai dengan ajaran Nabi Muhammad SAW. Pada zamannya, cara Nabi Muhammad mendidik anak-anaknya adalah dengan memberi contoh dan teladan, mengajarkan kesopanan, kesantunan, bertingkah laku dan bertutur kata yang baik. Tanpa adanya adab, perilaku kita sebagai umat Muslim bisa saja tidak terkendali karena bersikap semaunya saja. Dan jika diibaratkan, adab itu bagaikan tombak utama dalam menuntut sebuah ilmu. Tanpa adab, maka rasanya ilmu itu menjadi hal yang tidak dapat kita terapkan dengan baik.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Pada zaman sekarang ini, pengetahuan anak tentang adab dirasa masih kurang. Hal tersebut terbukti dari semakin merebaknya kasus anak dibawah umur yang sudah mulai terjerat dengan bermacam-macam kasus mulai dari kasus pelecehan seksual, pembullyan hingga kasus pembunuhan. Oleh karena itu sebagai orang tua kita harus mendampingi dan menjadi teladan bagi anak-anak agar anak-anak mempunyai role model yang cocok dan sesuai dengan ajaran Islam.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Beberapa adab yang kini mulai ditinggalkan oleh generasi muda saat ini adalah adab menerima tamu, adab menyuguhkan makanan untuk orang tua, adab berbicara terhadap orang tua, lawan jenis, dan teman. Sebaiknya adab-adab tersebut bisa mulai dicontohkan oleh orang tua di rumah tujuannya adalah agar anak-anak mulai terbiasa melihat adab yang baik dan sesuai dengan ajaran Islam.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Selain adab untuk anak, orang tua pun harus mengerti adab-adab yang wajib dilaksanakan orang tua kepada anak. Salah satu adab orang tua yang paling mduah dilakukan adalah adab membersamai anak. Membersamai anak adalah aktivitas yang wajib dilakukan orang tua sebagai rasa tanggung jawab dan bentuk kasih sayang orang tua terhadap anak. Contoh kegiatan membersamai anak adalah ketika anak-anak memasuki jam belajar maka sebisa mungkin orang tua juga ikut membersamai Ananda meskipun tidak ikut belajar atau mengajari Ananda tapi orang tua juga bisa ikut membaca koran atau membaca buku di dekat Ananda yang belajar, dengan begitu Ananda akan merasa jika orang tua mereka ada disamping mereka dan siap ketika mereka membutuhkan.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Sering kali juga orang tua membanding-bandingkan antara anak satu dengan anak lain, tanpa kita sadari itu pun termasuk salah satu adab tercela yang tanpa sengaja kita tularkan ke anak-anak. Naudzubillahi min dzalik. Padahal Nabi Muhammad SAW. mencontohkan untuk berbuat adil ke sesama termasuk ke anak kita juga. Contoh sederhana dalam berbuat adil adalah dengan tidak menyamaratakan kemampuan masing-masing anak. Setiap anak memiliki bakat dan keunikan yang berbeda, termasuk mungkin gaya rambut, fashion style, hobi, dan bahkan benda kesayangan mereka. Bukankah bakat merupakan hal unik dan sudah terlihat ketika anak masih kecil?",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Sebagai orang tua pun kita seyogyanya mulai melek dengan bakat Ananda, mulai mengerti dan mensupport bakat yang Ananda miliki. Dengan menyadari dan mensupport bakat Ananda, kita dapat meluaskan wawasannya dan dapat menjadikan Ananda sebagai seseorang yang nantinya berpeluang besar menjadi expert dibidangnya.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Nah, Ayah/Bunda bagaimana kajiannya menarik bukan? Mengenai bakat yang sempat diulas oleh Ust. Akbar Muzakki diatas perlu kami sampaikan bahwa Sekolah kami termasuk sekolah sadar bakat yang lebih mengutamakan bakat anak daripada ketrampilan dan kemampuan rata-rata. Seperti yang sudah Ayah/Bunda sekalian tahu bahwa Sekolah Alam Al Izzah mempunyai program talent based project, dimana setiap anak akan dibimbing sesuai dengan bakatnya masing-masing. Bagaimana? Pasti seru kan? Kami tunggu kedatangan Ayah/Bunda di sekolah kami dan jadilah bagian dari kami!!",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Wassalamualaikum wr. wb..",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-4`,
-    title: '[SMP VIRAL] PROGRAM INTERNSHIP SMP ALAM AL IZZAH',
-    level: 'SMP Alam Al Izzah',
-    date: 'September 23, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title: "[SMP VIRAL] PROGRAM INTERNSHIP SMP ALAM AL IZZAH",
+    level: "SMP Alam Al Izzah",
+    date: "September 23, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "Program Internship atau magang biasanya ditempuh oleh kakak-kakak yang sudah berada ditingkat SMA, tetapi di SMP Alam Al Izzah kami sudah membiasakan peserta didik untuk magang. Program internship ini bertujuan untuk melatih peserta didik agar dapat mengerti berbagai macam profesi yang ada di lingkungan sekitar. Selain itu tujuan dari program internship ini adalah agar anak-anak peduli, tidak acuh dan menghargai setiap pekerjaan dan profesi yang ada di lingkungan sekitar kita.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Dalam program magang ini tentunya kakak-kakak SMP didampingi oleh para fasilitator SMP Alam Al Izzah dan masih dalam pantauan keluarga/ orang tua. Kegiatan magang ini pun terbagi kedalam 3 tingkatan sesuai dengan jenjang kelas mereka. Untuk kelas 7 ada 3 (tiga) kali kegiatan internship, internship yang pertama adalah magang beragam profesi di sekolah, yang kedua adalah magang pada industry non kreatif dan yang ketiga adalah magang bersama keluarga. Sedangkan untuk kelas 8 tingkat kegiatan internship sudah sedikit berkembang yaitu dengan kegiatan magang pada industry kreatif dan magang sesuai minat. Sedangkan pada tingkat akhir, kegiatan magang hanya ada 1 (satu) kali yaitu magang sesuai dengan minat kakak-kakak SMP.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Gambar pertama adalah foto dimana kakak SMP kelas 9 sedang mengikuti magang di Pabrik Sol Sepatu. Pada gambar kedua adalah foto fasilitator SMP Alam Al Izzah sedang melakukan supervise atau kunjungan ke tempat magang kakak-kakak SMP. Foto ketiga adalah kegiatan salah satu Kakak SMP yang sedang berlatih mengelas aksesoris mobil dan foto yang terakhir adalah foto kakak-kakak SMP kelas 7 yang sedang magang di Izza Garden (Toko Bunga dan Tanaman Sekolah Alam Al Izzah), mereka sedang menanam pohon alpukat yang kemudian diangkut dan dipasarkan di Izza Garden.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-5`,
-    title: 'KAK FATKHUR, PERAIH JUARA 2 DALAM KEJUARAAN KARATE SPALISKA OPEN 2022',
-    level: 'SMP Alam Al Izzah',
-    date: 'September 5, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title:
+      "KAK FATKHUR, PERAIH JUARA 2 DALAM KEJUARAAN KARATE SPALISKA OPEN 2022",
+    level: "SMP Alam Al Izzah",
+    date: "September 5, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "",
+        img: {
+          title:
+            "Gambar pertama adalah foto dimana kakak SMP kelas 9 sedang mengikuti magang di Pabrik Sol Sepatu. Pada gambar kedua adalah foto fasilitator SMP Alam Al Izzah sedang melakukan supervise atau kunjungan ke tempat magang kakak-kakak SMP. Foto ketiga adalah kegiatan salah satu Kakak SMP yang sedang berlatih mengelas aksesoris mobil dan foto yang terakhir adalah foto kakak-kakak SMP kelas 7 yang sedang magang di Izza Garden (Toko Bunga dan Tanaman Sekolah Alam Al Izzah), mereka sedang menanam pohon alpukat yang kemudian diangkut dan dipasarkan di Izza Garden.",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Rasa syukur kami panjatkan kepada ilahi Robbi dan bangga SA AL. Apresiasi kan kepada ananda Fatkhur berkat semangat dan kegigihan nya mampu menjadi juara II dalam event “Kejuaraan Karate Spaliska open tingkat SD/MI dalam perayaan HUT ke 77 RI”",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Semoga prestasi yang di raihnya saat ini adalah awalan untuk prestasi² yang akan datang. Terimakasih Fatkhur atas ketekunan dan keberanian nya untuk berani mencoba, semangat terus yaa Fatkhur ☺️",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-6`,
-    title: 'PELANTIKAN PENGURUS OSIS SMP ALAM AL IZZAH',
-    level: 'SMP Alam Al Izzah',
-    date: 'August 22, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title: "PELANTIKAN PENGURUS OSIS SMP ALAM AL IZZAH",
+    level: "SMP Alam Al Izzah",
+    date: "August 22, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "Organisasi Siswa Intra Sekolah atau yang biasanya disebut OSIS adalah tempat atau wadah yang memfasilitasi siswa-siswi sekolah untuk mengembangkan rasa tanggung jawab dan bakat serta menumbuhkan jiwa kepemimpinan dalam sebuah organisasi. Peran OSIS dalam kegiatan sekolah antara lain:",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Mengoordinir siswa dalam berbagai kegiatan yang diadakan sekolah, menampung aspirasi dari siswa-siswa di sekolah dan menyalurkan kepada guru, memberi contoh atau teladan yang baik bagi siswa lain, dan sebagai penggerak / motivator bagi siswa lain",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Pada Senin, 1 Agustsu 2022 Kepala SMP Alam Al Izzah (Ust. Mahful Hadi, S.Pd) secara resmi melantik pengurus OSIS Periode tahun 2022/2023. Acara pelantikan OSIS bertempat di lapangan Sekolah Alam Al Izzah yang bersamaan dengan upacara apel senin pagi. Proses pelantikan OSIS dihadiri oleh semua fasilitator dan semua siswa SMP Alam AL Izzah.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "yuk kepoin gimana pelantikan OSIS SMP Alam Al Izzah.. Enjoy…  https://s.id/1Nfla",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-7`,
-    title: 'PORTOFOLIO BAKAT: RAPOR UNIK UNTUK ANAK-ANAK ASYIK DAN ENERJIK',
-    level: 'SMP Alam Al Izzah',
-    date: 'July 1, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title: "PORTOFOLIO BAKAT: RAPOR UNIK UNTUK ANAK-ANAK ASYIK DAN ENERJIK",
+    level: "SMP Alam Al Izzah",
+    date: "July 1, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "Assalamualaikum adek-adek Sekolah Alam Al Izzah..",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Bagaimana kabarnya? Sedang beraktivitas apa nih di rumah? Sudah melihat rapor kalian belum?",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Mungkin kalian bertanya-tanya, kenapa di Sekolah Alam Al Izzah rapor nya ada banyak sekali? Nah, ustadzah kasih bocorannya yaa.. di Sekolah Alam Al Izzah ada 4 rapor / laporan pencapaian hasil belajar peserta didik yaitu",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "1. Laporan pencapaian kompetensi peserta didik yang berisi tentang pencapaian peserta didik berdasarkan pengetahuan dan ketrampilan per mata pelajaran yang diajarkan.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "2. Laporan perkembangan peserta didik yang berisi tentang deskripsi pencapaian peserta didik pada 4 pilar sekolah alam",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "3. Laporan belajar tahfidz dan tahsin",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "4. Portofolio bakat peserta didik",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Dari keempat laporan belajar diatas, ada satu laporan unik yang hanya dimiliki Sekolah Alam Al Izzah yaitu portofolio bakat peserta didik. Portofolio bakat peserta didik yang bentuknya seperti dibawah ini nih..",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Portofolio bakat adalah portofolio yang memaparkan tentang 7 area kerja otak atau bisa disebut SWA (seven work area). 7 area kerja otak itu antara lain adalah sifat kepemimpinan (headman), sifat berrelasi (networking), sifat melayani (servicing), sifat berfikir sistematis dan rasional (thingking reasoning), sifat berpikir kreatif dan solutif (generating idea), sifat suka berada di dalam ruangan (elementary) dan sifat suka berada di luar ruangan (technical).",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Nah, para fasilitator adalah observer untuk adek-adek semua. Artinya fasilitator Sekolah Alam Al Izzah mengamati hampir setiap kegiatan adek-adek baik di dalam kelas, di luar kelas maupun sebagian kegiatan yang kalian lakukan dirumah. Dari hasil pengamatan itulah nantinya akan dikumpulkan dan diolah oleh observer sehingga menghasilkan portofolio bakat seperti diatas.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Jika kita cermati portofolio bakat Kak Aurel diatas pada 3 kategori aktifitas, dia mendapatkan skor tertinggi pada headman: 2,34, thingking reasoning: 2,68 dan elementary: 1,18. Dari ketiga kategori tertinggi tersebut kita dapat membuat asumsi bahwa Kak Aurel termasuk seseorang yang pandai memimpin, dapat berpikir sistematis dan lebih suka beraktifitas di dalam ruangan. Jika hobi Kak Aurel adalah bernyanyi, maka kira-kira apa pekerjaan yang paling cocok untuk Kak Aurel? Mungkin Kak Aurel dapat menjadi seorang lead vocal, produser atau apa ya?? Ada yang tau?",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Bagaimana adek-adek? Sudah cukup jelas? Atau belum jelas?",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Kalau belum jelas, yuk kepoin kami di Sekolah Alam Al Izzah yaaa..",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Happy holiday everyone!!",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-8`,
-    title: 'SASS : Manajemen Perjalanan',
-    level: 'SMP Alam Al Izzah',
-    date: 'March 18, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title: "SASS : Manajemen Perjalanan",
+    level: "SMP Alam Al Izzah",
+    date: "March 18, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "SASS (Sekolah Alam Student Scout) adalah salah satu mapel yang diajarkan dalam kurikulum sekolah alam. Salah satu materi SASS yang diajarkan pada semester genap ini adalah manajemen perjalanan antar kota dalam provinsi. Kali ini kakak-kakak kelas 7 SMP Alam Al Izzah sudah merencanakan kegiatan untuk backpacker dengan menggunakan kendaraan umum.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Kegiatan Manajemen Perjalanan kali ini mengambil rute Sidoarjo – Surabaya dengan tujuan destinasinya adalah Jembatan Merah,  Masjid Agung Sunan Ampel dan Basement Alun-Alun Kota Surabaya. Selain jalan-jalan, kakak-kakak juga sekalian belajar loh.. apa saja yang dipelajari? Hal-hal penting yang dipelajari oleh kakak-kakak SMP Alam kali ini adalah:",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "1. Manajemen Perjalanan (belajar merencanakan, mengatur dan mengorganisir kendaraan umum dengan rute yang paling efektif untuk tujuan destinasi)",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "2. Sejarah (belajar tentang sejarah kemerdekaan RI dan perkembangan ekonomi )",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "3. PAI (belajar tentang adab menghormati para pendahulu)",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Nah, gimana?? seru kan? jadi disekolah alam itu pembelajarannya tidak harus dikelas, bahkan jalan-jalan pun bisa sebagai bahan pembelajaran loh. .",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Yuk para petualang hebat, kami tunggu kalian di Sekolah Alam Al Izzah yaaaaa..",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-9`,
-    title: 'FESTIVAL ANAK MUSLIM INDONESIA ’22',
-    level: 'SMP Alam Al Izzah',
-    date: 'January 7, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title: "FESTIVAL ANAK MUSLIM INDONESIA ’22",
+    level: "SMP Alam Al Izzah",
+    date: "January 7, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "Assallamuallaikum Wr.Wb. Anak Sholih Dan Shalihah, Alhamdulillah tak terasa kita sudah berada dlm awal tahun 2022 yg sangat penuh dg keberkahan serta kebarokahan.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Dalam tahun yg baru ini sudah pasti kalian pun juga dapat menunjukkan kemampuan, skill, dan bakat yang sangat menakjubkan. Karena pastinya kalian jauh lebih baik daripada tahun sebelumnya. Maka dari itu, yuk teman-teman, kita ramaikan dan ikutilah ‘’Festival Anak Muslim Indonesia” yang diperuntukkan untuk umum, dan bertempat di Sekolah Alam Al-Izzah Krian, Di dalam Festival ini banyak beragam lomba yg sangat menarik diantaranya Lomba Tahfidz, Lomba Mewarnai dan Pildacil. And So Pasti, dalam perlombaan selalu terdapat berbagai macam hadiah. Diantaranya, Piala, Beasiswa Dan Hadiah Menarik lainnya.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Waaahhhhhh…. Seruuuu….Bukaaaann….. teman-teman…",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Sebagai Salah Satu Ikhtiar Kami untuk Membangun Peradaban Qur’an melalui Keajaiban Spiritual Dan Sains untuk ananda.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Dan Tak lupa dalam acara yg meriah ini turut diramaikan juga, oleh Kajian dari “ Ustad Ahmad Rofiqi. Lc. M.pd.I. “,  serta Cerita Dongeng Kak Zaki Dan juga pastinya ada Bazaar, Scientific Showcase, Stifin Booth, Students Show, Dongeng Kak Zaki, New Student Admission dan Muslim Study, sebagai sumber pendukung keberlangsungan acara ini.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Untuk Informasi Lebih Lanjut dapat menghubungi Ustadzah Mira : 0858-9953-1540, atau Ustadzah Ilvia :0877-5491-0968",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Kami menunggu unjuk bakat dari kalian, Semangaaaat Anak Sholih Dan Shalihah. Bismillah, Semangaaat Teman-Teman….",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "وَلَا تَاْيۡ‍َٔسُواْ مِن رَّوۡحِ ٱللَّهِۖ إِنَّهُۥ لَا يَاْيۡ‍َٔسُ مِن رَّوۡحِ ٱللَّهِ إِلَّا ٱلۡقَوۡمُ ٱلۡكَٰفِرُونَ",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Artinya “… Dan janganlah kamu berputus asa dari rahmat Allah. Sesungguhnya tiada berputus dari rahmat Allah melainkan orang orang yang kufur,” (QS Yusuf: 87)",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
   {
     id: `Artikel-10`,
-    title: 'PANEN JAMUR TIRAM Yuukk..',
-    level: 'SMP Alam Al Izzah',
-    date: 'March 29, 2022',
-    body: [
-      '',
-      '',
-      '',
+    title: "PANEN JAMUR TIRAM Yuukk..",
+    level: "SMP Alam Al Izzah",
+    date: "March 29, 2022",
+    contents: [
+      {
+        subHeading: "",
+        body: "Berwirausaha, apakah hanya untuk orang dewasa???",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "Ah, ga lah…",
+        body: "Berwirausaha itu untuk semua usia, bahkan dari kecilpun bisa melakukannya. Yang terpenting adalah pendampingan, bimbingan, dan keseriusan.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Adik” kelas 7 SMP lagi belajar budidaya jamur tiram. Dari proses perencanaan hingga proses penjualan mereka lakukan secara mandiri dg didampingi oleh fasilitator project. Sehingga pembelajaran lebih terarah sesuai dg tuntutan kurikulum yg terintegrasi.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "Di SMP Alam Al Izzah, siswa/i diajari cara berbisnis sejak dini. Di samping belajar enterpreuner, siswa/i nya jg dibimbing keagamaan. Sehingga kelak diharapkan akan menjadi pebisnis” mandiri dan hebat dalam enterpreuner dan religi.",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
+      {
+        subHeading: "",
+        body: "",
+        img: {
+          title: "",
+          url: "",
+          alt: "",
+        },
+      },
     ],
-    author: 'Sekolah Alam Al-Izzah',
+    author: "Sekolah Alam Al-Izzah",
   },
 ];
+
 
 export const footerIcons = [
   {

@@ -19,6 +19,8 @@ import quran from "./icons/objective/quran.svg";
 
 import alizzah from "./icons/badge/alizzah.svg";
 
+import bilingual from "./content/detail/bilingual.jpg";
+
 import {
   facebook,
   instagram,
@@ -83,6 +85,7 @@ export {
   people,
   quran,
   alizzah,
+  bilingual,
   frame11001,
   frame11002,
   frame11003,

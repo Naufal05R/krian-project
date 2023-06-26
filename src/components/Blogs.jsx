@@ -14,6 +14,9 @@ const BlogsCard = ({ id, title, thumbnail, kind, duration, date, author, index }
       <Link
         className='w-full'
         to={`/news/${id}`}
+        onClick={() => {
+          window.scroll(0, 0);
+        }}
       >
         <div className='h-full space-y-4 p-2 md:p-4'>
           <figure className='relative aspect-video w-full overflow-hidden rounded-[10px]'>
@@ -33,13 +36,13 @@ const BlogsCard = ({ id, title, thumbnail, kind, duration, date, author, index }
           <h4 className={`${styles.cardSubText}`}>{title}</h4>
         </div>
       </Link>
-      <div className='flex grow p-2 text-[9px] xs:text-xs md:p-4'>
+      <div className='flex grow px-2 text-[9px] items-center xs:text-xs md:p-4'>
         {date}
         <Dot />
         By
         <a
           href='#'
-          className='ml-1 underline'
+          className={`-ml-3 px-4 p-2 grow underline ${index % 2 ? 'hover:text-sky-500' : 'hover:text-cyan-500'} transition duration-500`}
         >
           {author}
         </a>

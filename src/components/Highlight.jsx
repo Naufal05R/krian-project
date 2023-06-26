@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { IoMdArrowDropright } from 'react-icons/io';
+import { HiOutlineArrowLongRight } from 'react-icons/hi2';
 
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils';
@@ -8,42 +8,56 @@ import { styles } from '../js';
 import { highlightsList } from '../constants';
 import { Link } from 'react-router-dom';
 
-const HighlightsCard = ({ index, id, title, badge, author, date }) => (
-  <motion.article
-    className='group flex text-black-200'
-    key={index}
-  >
-    <Link
-      className='flex-1'
-      to={`/${id}`}
+const HighlightsCard = ({ index, id, title, badge, author, date }) => {
+  const [color, setColor] = useState('');
+
+  return (
+    <motion.article
+      className='group flex text-black-200'
+      key={index}
+      onMouseEnter={() => {
+        setColor('rgb(14,165,233)');
+      }}
+      onMouseLeave={() => {
+        setColor('');
+      }}
     >
-      <div className='mt-12 border-b border-black/10 group-hover:border-black transition duration-300'>
-        <figure className='mb-6 mt-4 block h-8 w-full'>
-          <span className='h-[30.5px] w-full'>
-            <img
-              className='h-[24px] w-[150px] object-contain object-left brightness-0 group-hover:brightness-100 transition duration-300 group-hover:scale-125 origin-left'
-              src={badge.url}
-              alt=''
-            />
-          </span>
-        </figure>
-        <fieldset className='flex flex-col gap-2'>
-          <div className='flex'>
-            <h4 className={`${styles.cardSubText}`}>{title}</h4>
-            <IoMdArrowDropright
-              className='ml-2 shrink-0 origin-left self-center transition duration-300 group-hover:scale-150'
-              size={36}
-            />
-          </div>
-          <div className='mb-6'>
-            <span className='text-sm font-light text-slate-900'>{author} | </span>
-            <span className='text-sm font-light text-gray-500'>{date}</span>
-          </div>
-        </fieldset>
-      </div>
-    </Link>
-  </motion.article>
-);
+      <Link
+        className='flex-1'
+        to={`/${id}`}
+        onClick={() => {
+          window.scroll(0, 0);
+        }}
+      >
+        <div className='sky500 mt-12 border-b border-black/10 transition duration-300 group-hover:border-black'>
+          <figure className='mb-6 mt-4 block h-8 w-full'>
+            <span className='h-[30.5px] w-full'>
+              <img
+                className='h-[24px] w-[150px] origin-left object-contain object-left brightness-0 transition duration-500 group-hover:brightness-100'
+                src={badge.url}
+                alt=''
+              />
+            </span>
+          </figure>
+          <fieldset className='flex flex-col gap-2'>
+            <div className='flex'>
+              <h4 className={`${styles.cardSubText} ${index % 2 ? 'group-hover:text-sky-500' : 'group-hover:text-cyan-500'} grow transition duration-500`}>{title}</h4>
+              <HiOutlineArrowLongRight
+                className='ml-2 shrink-0 origin-left self-center transition duration-500'
+                size={24}
+                color={color}
+              />
+            </div>
+            <div className='mb-6'>
+              <span className='text-sm font-light text-neutral-800 group-hover:text-neutral-950'>{author} | </span>
+              <span className='text-sm font-light text-neutral-400 group-hover:text-neutral-600'>{date}</span>
+            </div>
+          </fieldset>
+        </div>
+      </Link>
+    </motion.article>
+  );
+};
 
 const Highlight = () => {
   return (

@@ -54,7 +54,7 @@ const Navbar = ({ absoluteBg = true }) => {
               className='h-9 w-9 object-contain'
             />
             <p className='flex cursor-pointer text-[18px] font-bold'>
-              <span className='group-hover:text-blue-500 transition duration-500 block uppercase'>Al-Izzah</span>
+              <span className='group-hover:text-blue-500 group-hover:transition group-hover:duration-500 block uppercase'>Al-Izzah</span>
             </p>
           </Link>
           <ul className='hidden list-none flex-row gap-10 lg:flex'>
