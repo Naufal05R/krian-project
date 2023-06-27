@@ -66,7 +66,7 @@ const Highlight = () => {
         className=''
         variants={textVariant(0.25)}
       >
-        <h2 className={`${styles.sectionHeadText} mx-auto w-fit`}>Berita Unggulan</h2>
+        <h2 className={`${styles.sectionHeadText} mx-auto w-fit`}>Artikel Lainnya</h2>
       </motion.div>
       <div className={`${styles.padding} mx-auto flex max-w-7xl flex-col`}>
         {highlightsList.map((highlight, index) => (

@@ -27,6 +27,9 @@ import character from "./icons/objective/character.svg";
 import forest from "./icons/objective/forest.svg";
 import people from "./icons/objective/people.svg";
 import quran from "./icons/objective/quran.svg";
+import neighbor from "./icons/objective/neighbor.svg";
+import teacher from "./icons/objective/teacher.svg";
+import building from "./icons/objective/building.svg";
 
 import alizzah from "./icons/badge/alizzah.svg";
 
@@ -95,6 +98,9 @@ export {
   forest,
   people,
   quran,
+  neighbor,
+  teacher,
+  building,
   alizzah,
   bilingual,
   artikel1,

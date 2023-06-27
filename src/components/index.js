@@ -20,7 +20,7 @@ import Gallery from "./Gallery";
 import Article from "./Article";
 import Detail from "./Detail";
 import News from "./News";
-import Documentation from './Documentation';
+import Documentation from "./Documentation";
 
 import Footer from "./Footer";
 

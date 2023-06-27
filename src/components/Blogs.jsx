@@ -55,7 +55,7 @@ const Blogs = () => {
   return (
     <div className='relative mx-auto w-full'>
       <div className={`${styles.paddingX}`}>
-        <h2 className={`${styles.sectionHeadText} w-fit`}>Blog kami</h2>
+        <h2 className={`${styles.sectionHeadText} w-fit`}>Artikel Terbaru</h2>
       </div>
       <div>
         <BlogsSwiper Component={BlogsCard} />

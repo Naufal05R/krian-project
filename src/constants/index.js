@@ -45,6 +45,9 @@ import {
   artikel8,
   artikel9,
   artikel10,
+  neighbor,
+  building,
+  teacher,
 } from "../assets";
 
 export const navLinks = [
@@ -73,18 +76,22 @@ export const aboutCards = [
   {
     title: "Sekolah Alam",
     text: "Memiliki konsep belajar dekat dengan alam",
+    icon: forest,
   },
   {
     title: "Guru Kompeten",
     text: "Memiliki guru-guru yang siap dan kompeten",
+    icon: teacher,
   },
   {
     title: "Bangunan Luas",
     text: "Memiliki bangunan yang luas untuk belajar",
+    icon: building,
   },
   {
     title: "Siswa Berkarakter",
     text: "Membentuk siswa menjadi pribadi berkarakter",
+    icon: teamwork,
   },
 ];
 
@@ -362,9 +369,9 @@ export const newFeatures = [
       "Mempelajari cara bekerja sama dengan melakukan kegiatan bersama-sama untuk mencapai tujuan yang sama",
   },
   {
-    imgUrl: teamwork,
+    imgUrl: neighbor,
     title: "Mengenal Lingkungan",
-    subtitle://baru reload
+    subtitle:
       "Mempelajari dan mengenal lingkungan sekitar dengan alam, hewan, tumbuhan, dan cara berinteraksi dengan mereka",
   },
 ];
@@ -1020,7 +1027,7 @@ export const detailNewsList = [
       },
       {
         subHeading: "",
-        body: "yuk kepoin gimana pelantikan OSIS SMP Alam Al Izzah.. Enjoy…  https://s.id/1Nfla",
+        body: "yuk kepoin gimana pelantikan OSIS SMP Alam Al Izzah.. Enjoy… https://s.id/1Nfla",
         align: "text-left",
         img: {
           title: "",
