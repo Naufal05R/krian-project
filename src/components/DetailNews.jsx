@@ -75,7 +75,7 @@ const DetailNews = ({ title, level, date, contents, author, index }) => {
           <section className="flex flex-col items-start lg:flex-row">
             <div className="flex flex-col gap-4 lg:basis-3/12 xl:basis-2/12">
               <span className="text-xs uppercase text-slate-400">
-                Share this Post
+                Our Social Media
               </span>
               <ul className="flex gap-1">
                 {footerIcons.map((icon, index) => (

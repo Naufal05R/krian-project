@@ -1,15 +1,9 @@
 import jsan from "./jsan.svg";
-import lightMenu from "./lightMenu.svg";
-import lightClose from "./lightClose.svg";
-import darkMenu from "./darkMenu.svg";
-import darkClose from "./darkClose.svg";
 import ornament from "./ornament.png";
 
 import homebg from "./homebg.jpg";
 import homePortrait from "./homePortrait.jpg";
 import homeLandscape from "./homeLandscape.jpg";
-
-import newsbg from "./newsbg.svg";
 
 import artikel1 from "./content/thumbnail/artikel01.png";
 import artikel2 from "./content/thumbnail/artikel02.png";
@@ -75,10 +69,6 @@ import {
 
 export {
   jsan,
-  darkClose,
-  darkMenu,
-  lightClose,
-  lightMenu,
   ornament,
   homebg,
   homePortrait,

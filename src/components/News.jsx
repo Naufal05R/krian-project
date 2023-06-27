@@ -20,7 +20,7 @@ const News = ({ className }) => {
                 <h2
                   className={`${styles.heroHeadText} cursor-hover primary-text-gradient text-left lg:whitespace-pre-wrap`}
                 >
-                  Baca artikel terbaru Sekolah Alam Al-Izzah
+                  Baca Artikel Terbaru Sekolah Alam Al-Izzah
                 </h2>
               </div>
             </div>

@@ -89,4 +89,4 @@ const Objective = () => {
   );
 };
 
-export default SectionWrapper(Objective, { idName: '' });
+export default SectionWrapper(Objective, { idName: 'objective' });

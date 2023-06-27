@@ -45,7 +45,7 @@ const Feedbacks = () => {
     <div className='mt-12 w-full rounded-[20px]'>
       <div className={`rounded-2xl`}>
         <motion.div variants={textVariant(0.25)}>
-          <h2 className={`${styles.sectionHeadText} w-fit`}>Testmonial Santri</h2>
+          <h2 className={`${styles.sectionHeadText} w-fit`}>Apa Kata Alumni</h2>
         </motion.div>
       </div>
 

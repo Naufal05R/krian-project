@@ -1,14 +1,11 @@
 import { motion } from "framer-motion";
-import { HiColorSwatch } from "react-icons/hi";
-import { fadeIn, shuffle, textVariant } from "../utils";
+import { fadeIn, textVariant } from "../utils";
 
 import { styles } from "../js/styles";
 import { aboutCards } from "../constants";
 
 import { SectionWrapper } from "../hoc";
 import { Tilt } from "react-tilt";
-
-const shuffleAboutCards = shuffle(aboutCards);
 
 const AboutCard = ({ index, title, text, icon }) => {
   return (
@@ -82,7 +79,7 @@ const About = () => {
           </motion.p>
         </motion.blockquote>
         <motion.div className="mb-10 mt-20 flex flex-wrap gap-8">
-          {shuffleAboutCards.map((card, index) => (
+          {aboutCards.map((card, index) => (
             <AboutCard key={index} index={index} {...card} />
           ))}
         </motion.div>

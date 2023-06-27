@@ -52,6 +52,10 @@ import {
 
 export const navLinks = [
   {
+    id: "",
+    title: "Beranda",
+  },
+  {
     id: "documentation",
     title: "Dokumentasi",
   },
@@ -218,7 +222,7 @@ export const testimonials = [
       "Saya sangat beruntung dapat memiliki guru seperti ustadz dan ustadzah, karena telah mengajarkankan saya bukan hanya ilmu, tetapi juga moral dan etika yang penting dalam kehidupan.",
     name: "Agustina Setya H",
     designation: "Alumni",
-    company: "Angkatan 4",
+    company: "Angkatan 3",
     image: "",
   },
   {
@@ -226,7 +230,7 @@ export const testimonials = [
       "Sekolah ini memberikan pengalaman yang belum pernah saya rasakan sebelumnya, terima kasih atas pengalaman-pengalaman baru, semoga sekolah ini dapat terus berkembang kedepannya.",
     name: "Wisnu Muhammad dzikry",
     designation: "Alumni",
-    company: "Angkatan 4",
+    company: "Angkatan 3",
     image: "",
   },
   {
@@ -234,7 +238,7 @@ export const testimonials = [
       "Terima kasih Ustadz, Ustadzah, teman-teman, dan SMP Alam Al'Izzah. Saya mendapat banyak ilmu dan pengalaman berharga selama belajar di sini. Saya yakin SMP Alam Al'Izzah akan semakin maju dan berprestasi.",
     name: "Rizky Yazid Putra Negara",
     designation: "Alumni",
-    company: "Angkatan 4",
+    company: "Angkatan 3",
     image: "",
   },
 ];
@@ -306,15 +310,18 @@ export const footerLinks = [
     contents: [
       {
         text: "Home",
-        url: "#",
+        url: "",
+        hash: "",
       },
       {
         text: "Visi & Misi",
-        url: "https://api.whatsapp.com/send?phone=628884936122",
+        url: "",
+        hash: "objective",
       },
       {
         text: "Dokumentasi",
-        url: "https://api.whatsapp.com/send?phone=628884936122",
+        url: "documentation",
+        hash: "",
       },
     ],
   },
@@ -324,15 +331,17 @@ export const footerLinks = [
       {
         text: "PPDB 2023/2024",
         url: "https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz,%20mohon%20info%20PPDB%202023/2024%20",
+        hash: "",
       },
       {
         text: "Panduan PPDB",
-
         url: "https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz,%20mohon%20info%20PPDB%202023/2024%20",
+        hash: "",
       },
       {
         text: "Contact Person",
-        url: "https://api.whatsapp.com/send?phone=628884936122&text=Assalamualaikum%20ustadz%20",
+        url: "https://wa.me/628884936122",
+        hash: "",
       },
     ],
   },
@@ -342,14 +351,17 @@ export const footerLinks = [
       {
         text: "Jl. Embong Kali, Kemasan, Kec. Krian, Kabupaten Sidoarjo, Jawa Timur 61262",
         url: "https://www.google.co.id/maps/place/SEKOLAH+ALAM+AL+'IZZAH+KRIAN+SIDOARJO+-TAHFIDZ,+BOARDING,+FULL+DAY+SCHOOL/@-7.4031311,112.5941298,15z/data=!4m5!3m4!1s0x0:0x326621d12b3da577!8m2!3d-7.4031311!4d112.5941298?shorturl=1",
+        hash: "",
       },
       {
         text: "No. Telp: 0888-4936-122",
         url: "https://api.whatsapp.com/send?phone=628884936122",
+        hash: "",
       },
       {
         text: "Email: smpalamalizzah@gmail.com",
-        url: "#",
+        url: "",
+        hash: "",
       },
     ],
   },
@@ -363,16 +375,16 @@ export const startingFeatures = [
 
 export const newFeatures = [
   {
-    imgUrl: teamwork,
-    title: "Melatih Kerja Sama",
-    subtitle:
-      "Mempelajari cara bekerja sama dengan melakukan kegiatan bersama-sama untuk mencapai tujuan yang sama",
-  },
-  {
     imgUrl: neighbor,
     title: "Mengenal Lingkungan",
     subtitle:
       "Mempelajari dan mengenal lingkungan sekitar dengan alam, hewan, tumbuhan, dan cara berinteraksi dengan mereka",
+  },
+  {
+    imgUrl: people,
+    title: "Melatih Kerja Sama",
+    subtitle:
+      "Mempelajari cara bekerja sama dengan melakukan kegiatan bersama-sama untuk mencapai tujuan yang sama",
   },
 ];
 
