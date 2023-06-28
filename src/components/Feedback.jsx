@@ -23,7 +23,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
               <span className='blue-text-gradient'>@</span> {name}
             </p>
             <p className='mt-1 text-[12px] text-black-300'>
-              {designation} of {company}
+              {designation} {company}
             </p>
           </div>
 
