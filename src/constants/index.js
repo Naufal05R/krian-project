@@ -360,7 +360,7 @@ export const footerLinks = [
       },
       {
         text: "Email: smpalamalizzah@gmail.com",
-        url: "",
+        url: "mailto:smpalamalizzah@gmail.com",
         hash: "",
       },
     ],

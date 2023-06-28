@@ -7,7 +7,7 @@ import { navLinks, footerLinks, footerIcons } from "../constants";
 import { HashLink } from "react-router-hash-link";
 
 const FooterLinksItem = ({ text, url, hash }) => {
-  if (url.slice(0, 4) === "http") {
+  if (url.slice(0, 4) === "http" || url.slice(0, 4) === "mail") {
     return (
       <Link
         to={url}
